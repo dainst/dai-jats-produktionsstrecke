@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<journal-meta>
+    <!-- Basis-Metadaten des Journal -->
+    <journal-id journal-id-type="publisher-id">AA</journal-id>
+    <journal-title-group>
+        <journal-title>Archäologischer Anzeiger</journal-title>
+    </journal-title-group>
+    <!-- Herausgeber -->
+    <contrib-group content-type="Editors">
+        <role>Editors:</role>
+        <contrib contrib-type="Editor">
+            <name>
+                <surname>Fless</surname>
+                <given-names>Friederike</given-names>
+            </name>
+        </contrib>
+        <contrib contrib-type="Editor">
+            <name>
+                <surname>von Rummel</surname>
+                <given-names>Philipp</given-names>
+            </name>
+        </contrib>
+    </contrib-group>
+    <!-- Mit-Herausgeber -->
+    <contrib-group content-type="Co-Editors">
+        <role>The Directors of the departments and commissions:</role>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Dally</surname>
+                <given-names>Ortwin</given-names>
+            </name>
+            <address>
+                <city>Rom</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Sporn</surname>
+                <given-names>Katja</given-names>
+            </name>
+            <address>
+                <city>Athen</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Seidlmayer</surname>
+                <given-names>Stephan</given-names>
+            </name>
+            <address>
+                <city>Kairo</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Pirson</surname>
+                <given-names>Felix</given-names>
+            </name>
+            <address>
+                <city>Istanbul</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Marzoli</surname>
+                <given-names>Dirce</given-names>
+            </name>
+            <address>
+                <city>Madrid</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Eichmann</surname>
+                <given-names>Ricardo</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Hansen</surname>
+                <given-names>Svend</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Bánffy</surname>
+                <given-names>Eszter</given-names>
+            </name>
+            <address>
+                <city>Frankfurt a. M.</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Schuler</surname>
+                <given-names>Christof</given-names>
+            </name>
+            <address>
+                <city>München</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Vogt</surname>
+                <given-names>Burkhard</given-names>
+            </name>
+            <address>
+                <city>Bonn</city>
+            </address>
+        </contrib>
+    </contrib-group>  
+    <!-- Wissenschaftlicher Beirat -->
+    <contrib-group content-type="Advisory Board">
+        <role>Advisory Board:</role>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Benecke</surname>
+                <given-names>Norbert</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Bingöl</surname>
+                <given-names>Orhan</given-names>
+            </name>
+            <address>
+                <city>Ankara</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Durugönül</surname>
+                <given-names>Serra</given-names>
+            </name>
+            <address>
+                <city>Mersin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Klinger</surname>
+                <given-names>Jörg W.</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Ladstätter</surname>
+                <given-names>Sabine</given-names>
+            </name>
+            <address>
+                <city>Wien</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Lang</surname>
+                <given-names>Franziska</given-names>
+            </name>
+            <address>
+                <city>Darmstadt</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Osanna</surname>
+                <given-names>Massimo</given-names>
+            </name>
+            <address>
+                <city>Matera</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Rohn</surname>
+                <given-names>Corinna</given-names>
+            </name>
+            <address>
+                <city>Wiesbaden</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Rose</surname>
+                <given-names>Brian</given-names>
+            </name>
+            <address>
+                <city>Philadelphia</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Shapiro</surname>
+                <given-names>Alan</given-names>
+            </name>
+            <address>
+                <city>Baltimore</city>
+            </address>
+        </contrib>
+    </contrib-group>
+    <!-- ISSN/ISBN -->
+    <issn publication-format="online">2510-4713</issn>
+    <issn publication-format="print">0003-8105</issn>
+    <isbn publication-format="print">978-3-95490-455-6</isbn>
+    <!-- Herausgeber -->
+    <publisher>
+        <publisher-name>Deutsches Archäologisches Institut</publisher-name>
+        <publisher-loc>
+            <addr-line>Podbielskiallee 69–71</addr-line>
+            <city>14195 Berlin</city>
+            <country>Deutschland</country>
+            <ext-link ext-link-type="uri">http://www.dainst.org</ext-link>
+        </publisher-loc>
+    </publisher>
+    <!-- Custom-Meta-Felder für nicht im JATS-Metadatenmodell vorgesehene Informationen -->
+    <custom-meta-group>
+        <custom-meta>
+            <meta-name>publishing-history</meta-name>
+            <meta-value>published since 1889</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>peer-review-label</meta-name>
+            <meta-value>Peer Review</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>peer-review-text</meta-name>
+            <meta-value>All articles submitted to the Archäologischer Anzeiger are reviewed
+                by international experts in a double-blind peer review process.</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-label</meta-name>
+            <meta-value>Editing and Typesetting</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-publishing-editor</meta-name>
+            <meta-value>Publishing editor: Deutsches Archäologisches Institut, Redaktion an
+                der Zentrale in Berlin
+               (https://www.dainst.org/standort/zentrale/redaktion)</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-article-submissions</meta-name>
+            <meta-value>Contact for article submissions:
+                redaktion.zentrale@dainst.de</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-editing</meta-name>
+            <meta-value>Editing: Dorothee Fillies, Berlin
+                (www.redaktion-layout-satz.de)</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-typesetting</meta-name>
+            <meta-value>Typesetting: LMK Büro für Kommunikationsdesign,
+                Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-layout</meta-name>
+            <meta-value>Corporate Design: LMK Büro für Kommunikationsdesign,
+                Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-webdesign</meta-name>
+            <meta-value>Webdesign: LMK Büro für Kommunikationsdesign, Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-webdesign-url</meta-name>
+            <meta-value>https://lm-kommunikation.de/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-conversion</meta-name>
+            <meta-value>XML Conversion: digital publishing competence, München</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-conversion-url</meta-name>
+            <meta-value>https://www.dpc-consulting.org/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-development</meta-name>
+            <meta-value>Programming Viewer: LEAN BAKERY, München</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-development-url</meta-name>
+            <meta-value>https://leanbakery.com/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>printing-notice</meta-name>
+            <meta-value>Printed and bound in Germany</meta-value>
+        </custom-meta>
+    </custom-meta-group>
+</journal-meta>

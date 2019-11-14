@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?><article article-type="research-article" dtd-version="1.2" xml:lang="de-DE">
+   <front><journal-meta>
+    <!-- Basis-Metadaten des Journal -->
+    <journal-id journal-id-type="publisher-id">AA</journal-id>
+    <journal-title-group>
+        <journal-title>Archäologischer Anzeiger</journal-title>
+    </journal-title-group>
+    <!-- Herausgeber -->
+    <contrib-group content-type="Editors">
+        <role>Editors:</role>
+        <contrib contrib-type="Editor">
+            <name>
+                <surname>Fless</surname>
+                <given-names>Friederike</given-names>
+            </name>
+        </contrib>
+        <contrib contrib-type="Editor">
+            <name>
+                <surname>von Rummel</surname>
+                <given-names>Philipp</given-names>
+            </name>
+        </contrib>
+    </contrib-group>
+    <!-- Mit-Herausgeber -->
+    <contrib-group content-type="Co-Editors">
+        <role>The Directors of the departments and commissions:</role>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Dally</surname>
+                <given-names>Ortwin</given-names>
+            </name>
+            <address>
+                <city>Rom</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Sporn</surname>
+                <given-names>Katja</given-names>
+            </name>
+            <address>
+                <city>Athen</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Seidlmayer</surname>
+                <given-names>Stephan</given-names>
+            </name>
+            <address>
+                <city>Kairo</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Pirson</surname>
+                <given-names>Felix</given-names>
+            </name>
+            <address>
+                <city>Istanbul</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Marzoli</surname>
+                <given-names>Dirce</given-names>
+            </name>
+            <address>
+                <city>Madrid</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Eichmann</surname>
+                <given-names>Ricardo</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Hansen</surname>
+                <given-names>Svend</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Bánffy</surname>
+                <given-names>Eszter</given-names>
+            </name>
+            <address>
+                <city>Frankfurt a. M.</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Schuler</surname>
+                <given-names>Christof</given-names>
+            </name>
+            <address>
+                <city>München</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Vogt</surname>
+                <given-names>Burkhard</given-names>
+            </name>
+            <address>
+                <city>Bonn</city>
+            </address>
+        </contrib>
+    </contrib-group>  
+    <!-- Wissenschaftlicher Beirat -->
+    <contrib-group content-type="Advisory Board">
+        <role>Advisory Board:</role>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Benecke</surname>
+                <given-names>Norbert</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Bingöl</surname>
+                <given-names>Orhan</given-names>
+            </name>
+            <address>
+                <city>Ankara</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Durugönül</surname>
+                <given-names>Serra</given-names>
+            </name>
+            <address>
+                <city>Mersin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Klinger</surname>
+                <given-names>Jörg W.</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Ladstätter</surname>
+                <given-names>Sabine</given-names>
+            </name>
+            <address>
+                <city>Wien</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Lang</surname>
+                <given-names>Franziska</given-names>
+            </name>
+            <address>
+                <city>Darmstadt</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Osanna</surname>
+                <given-names>Massimo</given-names>
+            </name>
+            <address>
+                <city>Matera</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Rohn</surname>
+                <given-names>Corinna</given-names>
+            </name>
+            <address>
+                <city>Wiesbaden</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Rose</surname>
+                <given-names>Brian</given-names>
+            </name>
+            <address>
+                <city>Philadelphia</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Shapiro</surname>
+                <given-names>Alan</given-names>
+            </name>
+            <address>
+                <city>Baltimore</city>
+            </address>
+        </contrib>
+    </contrib-group>
+    <!-- ISSN/ISBN -->
+    <issn publication-format="online">2510-4713</issn>
+    <issn publication-format="print">0003-8105</issn>
+    <isbn publication-format="print">978-3-95490-455-6</isbn>
+    <!-- Herausgeber -->
+    <publisher>
+        <publisher-name>Deutsches Archäologisches Institut</publisher-name>
+        <publisher-loc>
+            <addr-line>Podbielskiallee 69–71</addr-line>
+            <city>14195 Berlin</city>
+            <country>Deutschland</country>
+            <ext-link ext-link-type="uri">http://www.dainst.org</ext-link>
+        </publisher-loc>
+    </publisher>
+    <!-- Custom-Meta-Felder für nicht im JATS-Metadatenmodell vorgesehene Informationen -->
+    <custom-meta-group>
+        <custom-meta>
+            <meta-name>publishing-history</meta-name>
+            <meta-value>published since 1889</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>peer-review-label</meta-name>
+            <meta-value>Peer Review</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>peer-review-text</meta-name>
+            <meta-value>All articles submitted to the Archäologischer Anzeiger are reviewed
+                by international experts in a double-blind peer review process.</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-label</meta-name>
+            <meta-value>Editing and Typesetting</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-publishing-editor</meta-name>
+            <meta-value>Publishing editor: Deutsches Archäologisches Institut, Redaktion an
+                der Zentrale in Berlin
+               (https://www.dainst.org/standort/zentrale/redaktion)</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-article-submissions</meta-name>
+            <meta-value>Contact for article submissions:
+                redaktion.zentrale@dainst.de</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-editing</meta-name>
+            <meta-value>Editing: Dorothee Fillies, Berlin
+                (www.redaktion-layout-satz.de)</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-typesetting</meta-name>
+            <meta-value>Typesetting: LMK Büro für Kommunikationsdesign,
+                Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-layout</meta-name>
+            <meta-value>Corporate Design: LMK Büro für Kommunikationsdesign,
+                Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-webdesign</meta-name>
+            <meta-value>Webdesign: LMK Büro für Kommunikationsdesign, Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-webdesign-url</meta-name>
+            <meta-value>https://lm-kommunikation.de/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-conversion</meta-name>
+            <meta-value>XML Conversion: digital publishing competence, München</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-conversion-url</meta-name>
+            <meta-value>https://www.dpc-consulting.org/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-development</meta-name>
+            <meta-value>Programming Viewer: LEAN BAKERY, München</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-development-url</meta-name>
+            <meta-value>https://leanbakery.com/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>printing-notice</meta-name>
+            <meta-value>Printed and bound in Germany</meta-value>
+        </custom-meta>
+    </custom-meta-group>
+</journal-meta><article-meta><article-id pub-id-type="doi">10.34780/x04h-kv97</article-id><title-group><article-title>Editorial </article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Fless</surname><given-names>Friederike</given-names></name><address/></contrib><contrib contrib-type="author"><name><surname>von Rummel</surname><given-names>Philipp</given-names></name><address/></contrib></contrib-group><pub-date pub-type="collection"><year>2019</year><month>11</month><day>15</day></pub-date><volume>1</volume><permissions><copyright-statement content-type="print">© 2019 Deutsches Archäologisches Institut – Dr. Ludwig Reichert Verlag Wiesbaden</copyright-statement><copyright-statement content-type="online">© 2019 Deutsches Archäologisches Institut</copyright-statement><copyright-holder content-type="print">Verlag/Publisher: Dr. Ludwig Reichert Verlag Wiesbaden (www.reichert-verlag.de)</copyright-holder><license license-type="print"><license-p content-type="copyright">All rights reserved.</license-p><license-p content-type="terms-of-use">All rights reserved. No parts of this publication may be reproduced, translated, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the German Archaeological Institute and the publisher.</license-p></license><license license-type="online"><license-p content-type="terms-of-use">https://publications.dainst.org/journals</license-p></license></permissions><self-uri content-type="pdf-urn">urn:nbn:de:0048-journals.aa-2019-1-Fless-vonRummel.1</self-uri><self-uri content-type="online-url">https://publications.dainst.org/journals/aa/issue/375</self-uri><custom-meta-group><custom-meta><meta-name>issue-summary</meta-name><meta-value>AA 2019/1 • 350 pages with 330 illustrations</meta-value></custom-meta><custom-meta><meta-name>citation-guideline</meta-name><meta-value>F. Fless – Ph. von Rummel, Editorial, AA 2019/1, § 1–10, https://doi.org/10.34780/x04h-kv97</meta-value></custom-meta><custom-meta><meta-name>issue-bibliography</meta-name><meta-value>https://zenon.dainst.org/Record/001588387</meta-value></custom-meta><custom-meta><meta-name>pod-order</meta-name><meta-value>https://reichert-verlag.de</meta-value></custom-meta><custom-meta><meta-name>cover-illustration</meta-name><meta-value>AA Anzeige (T. Lemke-Mahdavi)</meta-value></custom-meta></custom-meta-group></article-meta></front>
+   <body>
+      <sec id="s-1">
+         <title>Wissenschaftlich publizieren / Print. Online. Open Access</title>
+         <p id="p-1">
+            <named-content content-type="paragraph-counter">1</named-content>Zu seinem 130. Geburtstag macht der traditionsreiche Archäologische Anzeiger einen bedeutenden Schritt in die digitale Zukunft. Von nun an erscheint er neben der gedruckten Fassung in neuem Gewand gleichzeitig auch digital im Open Access. Die Zeitschrift kann fortan von einer weit größeren Leserschaft weltweit konsultiert werden als bisher und so dem internationalen wissenschaftlichen Austausch und der Kooperation schneller und effektiver dienen. Ein Internetzugang genügt, um einen Beitrag aus dem Archäologischen Anzeiger bereits am Erscheinungstag lesen zu können, überall auf der Welt und unabhängig von den individuellen Möglichkeiten, gut ausgestattete Fachbibliotheken besuchen zu können. Der Anzeiger fügt sich damit ein in die offenen Online-Angebote der iDAI.world, der umfassenden digitalen Forschungsumgebung des Deutschen Archäologischen Instituts. </p>
+         <p id="p-2">
+            <named-content content-type="paragraph-counter">2</named-content>Der Archäologische Anzeiger wurde erstmals 1889 als Beiblatt zum Jahrbuch des Deutschen Archäologischen Instituts veröffentlicht; 1976 als eigenständige Zeitschrift eingerichtet, erscheint er seit 2002 in zwei Teilbänden pro Jahr. Von Anfang an war er ein Ort für Aufsätze, Berichte und kleinere Mitteilungen einer breiten, internationalen Fachcommunity und wird dies auch bleiben. Der geographisch-chronologische Schwerpunkt liegt auf der Archäologie des Mittelmeerraumes und Vorderasiens von der Prähistorie bis zur Spätantike. Dem Profil der Zeitschrift und der Forschungspraxis des Instituts entsprechend sind auch Beiträge im Archäologischen Anzeiger willkommen, die großräumige Verbindungen und Vernetzungen der antiken Welt in den nordeuropäischen, eurasischen und afrikanischen Raum thematisieren. Die Qualität des Archäologischen Anzeigers wird durch ein doppelt anonymes Peer-Review-Verfahren sowie eine intensive Text- und Bildredaktion gesichert. Auch in der digitalen Welt wird dies selbstverständlich weiterhin der Fall sein. </p>
+         <p id="p-3">
+            <named-content content-type="paragraph-counter">3</named-content>Mit der Neugestaltung des Archäologischen Anzeigers betritt das DAI konzeptionell und technisch Neuland. Die wichtigste Neuerung ist, dass die Beiträge auch in einem responsiven Viewer-Format im Open Access über das Portal iDAI.publications abrufbar sind. Für die Gestaltung der responsiven Webansicht wurde großer Wert darauf gelegt, Text, Anmerkungen und Abbildungen in nebeneinanderlaufenden Spalten anzuordnen, so dass alle Beitragsinhalte klar strukturiert und gut erfassbar sind. Abbildungen und Anmerkungen lassen sich parallel zum Text aufrufen, ohne dass ein ›Springen‹ innerhalb des Beitrages notwendig ist. Durch die flexible Anordnung der Inhalte sind die Artikel auch auf Tablets oder sogar Smartphones bequem und einfach lesbar. Die abonnierbare Buchausgabe in hochwertiger Druckqualität bleibt weiterhin bestehen, und auch künftig werden parallel zusätzliche PDFs frei zur Verfügung gestellt. Für die Leserinnen und Leser wird es dabei völlig unerheblich sein, mit welchem Medium sie arbeiten. Alle drei Ausgabeformen ‒ Viewer-Artikel, Buchausgabe oder PDF ‒ sind mit sämtlichen relevanten Angaben für die wissenschaftliche Zitation inklusiver persistenter Identifikatoren wie URNs und DOIs ausgestattet. Die Beiträge verfügen zudem über eine Absatznummerierung, die es erlaubt, auch die Viewerausgabe wissenschaftlich korrekt zu zitieren.</p>
+         <p id="p-4">
+            <named-content content-type="paragraph-counter">4</named-content>Einzigartig in der Altertumswissenschaft ist, dass der DAI-Journal-Viewer die Möglichkeit eröffnet, die Artikel in leicht erfassbarer Form mit digitalen Supplementen oder Forschungsdaten zu verschränken und zu ergänzen. Diese digitalen Kataloge, die integraler Bestandteil der Artikel sind und ebenso dem Peer-Review-Verfahren unterliegen, werden über den Reiter »Supplements« angezeigt. Sie werden in strukturierter Form in den inhaltlich dafür vorgesehenen Systemen der iDAI.world publiziert ‒ allen voran iDAI.objects/Arachne ‒ und dann zielgenau an der dafür vorgesehenen Stelle in der Viewer-Ausgabe des Beitrags angezeigt. Darüber hinaus können dem Beitrag mittels Verlinkungen illustrierende und ergänzende Informationen wie Vergleichsstücke, Geodaten oder Ähnliches beigefügt werden, die über den Reiter »Extra Features« angezeigt werden. Die Beiträge werden dadurch gleichzeitig besser erschließ- und auffindbar. Neu und bereits von vielen Autorinnen und Autoren gewünscht ist, dass durch die Nutzung von etablierten Identifikatoren wie ORCID- oder GND-IDs die Autorschaft präzise zuschreibbar wird und in Kombination mit den anderen Identifikatoren, wie den DOIs, zudem auch die wissenschaftliche Verbreitung der Artikel aufzeigbar gemacht werden kann.</p>
+         <p id="p-5">
+            <named-content content-type="paragraph-counter">5</named-content>Durch die genannten neuen Features und die Integration von Inhalten aus Informationsressourcen und digitalen Diensten möchte der Archäologische Anzeiger neue Akzente für eine zeitgemäße Publikationsform archäologischer und altertumswissenschaftlicher Journals setzen. Als frei zugängliche und vernetzte digitale Publikation ist er zugleich ein neuer zentraler Baustein auf dem Weg hin zu einem Forschungsdatenmanagement, das sich konsequent an den Kriterien von Auffindbarkeit, Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit orientiert. Herausgeber und Redaktion des nun digitalen Anzeigers mit grenzenlosem Zugang blicken sehr zuversichtlich auf die Zukunft der Zeitschrift und laden dazu ein, das neue Konzept mit Inhalten zu füllen.</p>
+      </sec>
+      <sec id="s-2">
+         <title>Scientific Publishing</title>
+         <p id="p-6">
+            <named-content content-type="paragraph-counter">6</named-content>
+            <italic>On its 130th birthday, the </italic>Archäologischer Anzeiger<italic>, a journal rich in tradition, will take an important step forward into the digital future. From now on its printed version will be simultaneously accompanied by a redesigned and open access digital version. The journal can now be consulted by a much larger readership worldwide than before and supports a faster and more effective international scholarly exchange and collaboration. An internet connection is all it takes to be able to read a contribution in the </italic>Archäologischer Anzeiger<italic> on the day of its publication, everywhere on the globe, and independently of the individual possibilities to visit a well-equipped specialist library. The Anzeiger will fit into the open online infrastructure of the iDAI.world, the comprehensive digital research environment of the German Archaeological Institute. </italic>
+         </p>
+         <p id="p-7">
+            <named-content content-type="paragraph-counter">7</named-content>
+            <italic>The </italic>Archäologischer Anzeiger<italic> was first introduced in 1889 as a supplement to the </italic>Jahrbuch des Deutschen Archäologischen Instituts<italic>. In 1976 it was established as a separate journal and has appeared since 2002 with two issues per year. From the beginning, it was a place for essays, reports, and small papers for a broad, international scientific community and it will remain such. The geographical and chronological focus is on the archaeology of the Mediterranean and Near East from Prehistory to Late Antiquity. In accordance with the journal’s scope and the research practice of the department, contributions to the </italic>Archäologischer Anzeiger<italic> are also welcome that discuss the large-scale connections and networks of the ancient world to the northern European, Eurasian and African regions. The quality of the </italic>Archäologischer Anzeiger<italic> is guaranteed by a double blind peer-review process as well as thorough text and image editing. Naturally, this will continue to be the case in the digital world. </italic>
+         </p>
+         <p id="p-8">
+            <named-content content-type="paragraph-counter">8</named-content>
+            <italic>Through the redesign of the </italic>Archäologischer Anzeiger<italic> the DAI is entering conceptually and technically uncharted territory. The most important new feature is that the contributions will be accessible over a responsive viewer format as open access through the portal iDAI.publications. For the design of the responsive web viewer considerable emphasis was placed on arranging the text, notes, and figures in parallel columns so that all contributions are clearly structured and easy to follow. Images and notes can be retrieved adjacent to the text without the need to ›jump‹ within the contribution. Through the flexible arrangement of the contents, articles can also be conveniently and easily read on a tablet or even a smartphone. The subscription book edition in high quality print will remain and at the same time additional PDFs will also be made available free of charge in the future. For the reader it is completely negligible with which medium they are working. All three output formats – viewer article, book, or PDF – are furnished with all relevant information for the scientific citation, including persistent identifiers such as URNs and DOIs. The contributions will also feature a paragraph numbering so that even the viewer format can be correctly cited.</italic>
+         </p>
+         <p id="p-9">
+            <named-content content-type="paragraph-counter">9</named-content>
+            <italic>For the first time within the field of Archaeology, the DAI-Journal-Viewer provides for the possibility of connecting and expanding articles with digital supplements or research data in an easily accessible format. These digital catalogs, which are an integral part of the articles and also are part of the peer-review process, can be accessed through the heading »Supplements«. They will be published in a structured form in the contextually appropriate and designated systems of the iDAI.world – first and foremost in iDAI.objects/Arachne – and then presented in the space precisely provided in the viewer. Furthermore, the contributions can be enhanced with links to explanatory and supporting information, such as comparanda, geodata, or similar items, which will be displayed in the header »Extra Features«. In this way the findability and accessibility of the contributions will be increased. An additional aspect will be new and has been requested by many authors, namely the addition of established persistent identifiers, such as ORCID- or GND IDs in order to make the contributions uniquely and personally identifiable and to visualize – in combination with other identifiers like DOIs – the scientific dissemination of articles.</italic>
+         </p>
+         <p id="p-10">
+            <named-content content-type="paragraph-counter">10</named-content>
+            <italic>Through the above mentioned new features and the integration of content from information resources and digital services, the </italic>Archäologischer Anzeiger<italic> will draw attention to new accents for an up-to-date publication format in archaeological and classical studies journals. As a freely and connected digital publication it will also function as a new central building block for the development of a research data management that is consistently in line with the criteria of findability, accessibility, interoperability, and reusability. The publishers and editors of the now digital </italic>Anzeiger<italic> with unlimited access confidently look ahead to the future of the journal and invite all to fill the new concept with content.</italic>
+         </p>
+         <p>
+            <italic>(English translation by Nicole High-Steskal)</italic>
+         </p>
+         <sec id="images-container"><title>Abbildungen</title>
+            <fig id="poster-image" fig-type="poster-image"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Editorial_Lens-web-resources/image/AA_2019_1_Editorial.jpg"/></fig>
+         </sec>
+      </sec>
+   </body>
+   <back>
+      
+      
+   </back>
+</article>

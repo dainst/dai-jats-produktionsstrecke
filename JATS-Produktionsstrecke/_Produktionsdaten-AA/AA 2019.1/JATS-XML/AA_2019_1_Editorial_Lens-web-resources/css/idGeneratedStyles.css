@@ -1,0 +1,352 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin:0;
+	padding:0;
+	border-width:0;
+}
+body {
+	-epub-hyphens:auto;
+}
+div.article-meta {
+	border-style:solid;
+}
+div.authors {
+	border-style:solid;
+}
+div.body {
+	border-style:solid;
+}
+div.content-picture {
+	border-style:solid;
+}
+div.journal-meta {
+	border-style:solid;
+}
+div.title {
+	border-style:solid;
+}
+p.article-meta {
+	color:#000000;
+	font-family:"Noto Sans Light", sans-serif;
+	font-size:9px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:300;
+	line-height:1.505;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.author {
+	color:#736e67;
+	font-family:"Noto Sans Light", sans-serif;
+	font-size:9px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:300;
+	line-height:1.505;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.authors-start {
+	color:#918a82;
+	font-family:"Noto Sans", sans-serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.6;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.authors-h {
+	color:#000000;
+	font-family:"Noto Sans Med", sans-serif;
+	font-size:9px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:500;
+	line-height:1.505;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:uppercase;
+	widows:1;
+}
+p.body-h1 {
+	color:#e2510d;
+	font-family:"Noto Sans", sans-serif;
+	font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.286;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.body-text {
+	color:#000000;
+	font-family:"Noto Serif Light", serif;
+	font-size:9px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:300;
+	line-height:1.505;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.journal-meta {
+	color:#000000;
+	font-family:"Noto Sans Light", sans-serif;
+	font-size:9px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:300;
+	line-height:1.505;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.journal-title {
+	color:#000000;
+	font-family:"Noto Sans Light", sans-serif;
+	font-size:9px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:300;
+	line-height:1.505;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:justify;
+	text-align-last:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+p.title-de {
+	color:#e2510d;
+	font-family:"Noto Sans Light", sans-serif;
+	font-size:30px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:300;
+	line-height:1.267;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	orphans:1;
+	page-break-after:auto;
+	page-break-before:auto;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-transform:none;
+	widows:1;
+}
+span.article-title {
+	font-family:"Noto Sans", sans-serif;
+	font-style:normal;
+	font-weight:normal;
+}
+span.body-italic {
+	font-style:italic;
+	font-weight:normal;
+}
+span.citation-guideline {
+	font-family:"Noto Sans", sans-serif;
+	font-style:normal;
+	font-weight:normal;
+}
+span.copyright-holder-print {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.copyright-print {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.copyright-statement-online {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.copyright-statement-print {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.issue-bibliography-link {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.issue-number {
+	font-family:"Noto Sans", sans-serif;
+	font-style:normal;
+	font-weight:normal;
+}
+span.issue-summery {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.license-online {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.license-print {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.online-doi {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.online-issn {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.online-url {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.online-urn {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.print-isbn {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.print-issn {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.publishing-day {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.publishing-month {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.publishing-year {
+	font-family:"Noto Sans Light", sans-serif;
+	font-style:normal;
+	font-weight:300;
+}
+span.text-absatzzahlen {
+	color:#b4afa7;
+	font-family:"Noto Sans Light", sans-serif;
+	font-size:8px;
+	font-style:normal;
+	font-weight:300;
+}
+#_idContainer000 {
+	display:inline-block;
+	height:475px;
+	overflow:hidden;
+	width:595px;
+}
+img._idGenObjectAttribute-1 {
+	-ms-transform:translate(0.000%,0.000%) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
+	-ms-transform-origin:0% 0%;
+	-webkit-transform:translate(0.000%,0.000%) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
+	-webkit-transform-origin:0% 0%;
+	height:100.00%;
+	min-width:100%;
+	transform:translate(0.000%,0.000%) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
+	transform:translate(0.000%,0.000%) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
+	transform-origin:0% 0%;
+	transform-origin:0% 0%;
+	width:100.00%;
+}
+div._idGenObjectLayout-1 {
+	text-align:center;
+}

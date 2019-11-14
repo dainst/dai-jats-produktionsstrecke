@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?><article article-type="research-article" dtd-version="1.2" xml:lang="de-DE">
+   <front><journal-meta>
+    <!-- Basis-Metadaten des Journal -->
+    <journal-id journal-id-type="publisher-id">AA</journal-id>
+    <journal-title-group>
+        <journal-title>Archäologischer Anzeiger</journal-title>
+    </journal-title-group>
+    <!-- Herausgeber -->
+    <contrib-group content-type="Editors">
+        <role>Editors:</role>
+        <contrib contrib-type="Editor">
+            <name>
+                <surname>Fless</surname>
+                <given-names>Friederike</given-names>
+            </name>
+        </contrib>
+        <contrib contrib-type="Editor">
+            <name>
+                <surname>von Rummel</surname>
+                <given-names>Philipp</given-names>
+            </name>
+        </contrib>
+    </contrib-group>
+    <!-- Mit-Herausgeber -->
+    <contrib-group content-type="Co-Editors">
+        <role>The Directors of the departments and commissions:</role>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Dally</surname>
+                <given-names>Ortwin</given-names>
+            </name>
+            <address>
+                <city>Rom</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Sporn</surname>
+                <given-names>Katja</given-names>
+            </name>
+            <address>
+                <city>Athen</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Seidlmayer</surname>
+                <given-names>Stephan</given-names>
+            </name>
+            <address>
+                <city>Kairo</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Pirson</surname>
+                <given-names>Felix</given-names>
+            </name>
+            <address>
+                <city>Istanbul</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Marzoli</surname>
+                <given-names>Dirce</given-names>
+            </name>
+            <address>
+                <city>Madrid</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Eichmann</surname>
+                <given-names>Ricardo</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Hansen</surname>
+                <given-names>Svend</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Bánffy</surname>
+                <given-names>Eszter</given-names>
+            </name>
+            <address>
+                <city>Frankfurt a. M.</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Schuler</surname>
+                <given-names>Christof</given-names>
+            </name>
+            <address>
+                <city>München</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Co-Editor">
+            <name>
+                <surname>Vogt</surname>
+                <given-names>Burkhard</given-names>
+            </name>
+            <address>
+                <city>Bonn</city>
+            </address>
+        </contrib>
+    </contrib-group>  
+    <!-- Wissenschaftlicher Beirat -->
+    <contrib-group content-type="Advisory Board">
+        <role>Advisory Board:</role>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Benecke</surname>
+                <given-names>Norbert</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Bingöl</surname>
+                <given-names>Orhan</given-names>
+            </name>
+            <address>
+                <city>Ankara</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Durugönül</surname>
+                <given-names>Serra</given-names>
+            </name>
+            <address>
+                <city>Mersin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Klinger</surname>
+                <given-names>Jörg W.</given-names>
+            </name>
+            <address>
+                <city>Berlin</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Ladstätter</surname>
+                <given-names>Sabine</given-names>
+            </name>
+            <address>
+                <city>Wien</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Lang</surname>
+                <given-names>Franziska</given-names>
+            </name>
+            <address>
+                <city>Darmstadt</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Osanna</surname>
+                <given-names>Massimo</given-names>
+            </name>
+            <address>
+                <city>Matera</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Rohn</surname>
+                <given-names>Corinna</given-names>
+            </name>
+            <address>
+                <city>Wiesbaden</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Rose</surname>
+                <given-names>Brian</given-names>
+            </name>
+            <address>
+                <city>Philadelphia</city>
+            </address>
+        </contrib>
+        <contrib contrib-type="Advisory Board Member">
+            <name>
+                <surname>Shapiro</surname>
+                <given-names>Alan</given-names>
+            </name>
+            <address>
+                <city>Baltimore</city>
+            </address>
+        </contrib>
+    </contrib-group>
+    <!-- ISSN/ISBN -->
+    <issn publication-format="online">2510-4713</issn>
+    <issn publication-format="print">0003-8105</issn>
+    <isbn publication-format="print">978-3-95490-455-6</isbn>
+    <!-- Herausgeber -->
+    <publisher>
+        <publisher-name>Deutsches Archäologisches Institut</publisher-name>
+        <publisher-loc>
+            <addr-line>Podbielskiallee 69–71</addr-line>
+            <city>14195 Berlin</city>
+            <country>Deutschland</country>
+            <ext-link ext-link-type="uri">http://www.dainst.org</ext-link>
+        </publisher-loc>
+    </publisher>
+    <!-- Custom-Meta-Felder für nicht im JATS-Metadatenmodell vorgesehene Informationen -->
+    <custom-meta-group>
+        <custom-meta>
+            <meta-name>publishing-history</meta-name>
+            <meta-value>published since 1889</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>peer-review-label</meta-name>
+            <meta-value>Peer Review</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>peer-review-text</meta-name>
+            <meta-value>All articles submitted to the Archäologischer Anzeiger are reviewed
+                by international experts in a double-blind peer review process.</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-label</meta-name>
+            <meta-value>Editing and Typesetting</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-publishing-editor</meta-name>
+            <meta-value>Publishing editor: Deutsches Archäologisches Institut, Redaktion an
+                der Zentrale in Berlin
+               (https://www.dainst.org/standort/zentrale/redaktion)</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-article-submissions</meta-name>
+            <meta-value>Contact for article submissions:
+                redaktion.zentrale@dainst.de</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-editing</meta-name>
+            <meta-value>Editing: Dorothee Fillies, Berlin
+                (www.redaktion-layout-satz.de)</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-typesetting</meta-name>
+            <meta-value>Typesetting: LMK Büro für Kommunikationsdesign,
+                Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-layout</meta-name>
+            <meta-value>Corporate Design: LMK Büro für Kommunikationsdesign,
+                Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-webdesign</meta-name>
+            <meta-value>Webdesign: LMK Büro für Kommunikationsdesign, Berlin</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-webdesign-url</meta-name>
+            <meta-value>https://lm-kommunikation.de/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-conversion</meta-name>
+            <meta-value>XML Conversion: digital publishing competence, München</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-conversion-url</meta-name>
+            <meta-value>https://www.dpc-consulting.org/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-development</meta-name>
+            <meta-value>Programming Viewer: LEAN BAKERY, München</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>editing-notice-development-url</meta-name>
+            <meta-value>https://leanbakery.com/</meta-value>
+        </custom-meta>
+        <custom-meta>
+            <meta-name>printing-notice</meta-name>
+            <meta-value>Printed and bound in Germany</meta-value>
+        </custom-meta>
+    </custom-meta-group>
+</journal-meta><article-meta><article-id pub-id-type="doi">10.34780/m01n-7q09</article-id><title-group><article-title>Die Kleinsiedlung Babunjë </article-title><subtitle>Neue Forschungen zur territorialen Siedlungsstruktur zwischen Apollonia und Epidamnos/Dyrrhachion (Albanien)  </subtitle></title-group><contrib-group><contrib contrib-type="author"><name><surname>Fiedler</surname><given-names>Manuel</given-names><prefix>Dr.</prefix></name><address><addr-line>Memlingstr. 16</addr-line><city>12203 Berlin</city><country>Deutschland</country><email>manuel.fiedler@hu-berlin.de</email></address></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-6899-1483</contrib-id><name><surname>Shehi</surname><given-names>Eduard</given-names><prefix>Prof. ass. Dr.</prefix></name><aff><institution-wrap><institution-id institution-id-type="gnd">http://d-nb.info/gnd/1151002119</institution-id><institution>Instituti i Arkeologjise, Akademia e Studimeve Albanologjike</institution></institution-wrap><addr-line>Sheshi Nënë Tereza, Nr. 3</addr-line><city>Tiranë</city><country>Shqipëri</country><email>eduardshehi@hotmail.com</email></aff></contrib><contrib contrib-type="author"><name><surname>Pánczél MA</surname><given-names>Szilamér Péter</given-names><prefix>Drd.</prefix></name><aff><institution>Muzeul Județean Mureș</institution><addr-line>Strada Mărăști 8a</addr-line><city>Târgu Mureș</city><country>540328 Romania</country></aff></contrib><contrib contrib-type="author"><name><surname>Döhner M.A.</surname><given-names>Gregor</given-names></name><aff><institution>archaeofakt GbR</institution><addr-line>Bizetstr. 104</addr-line><city>13088 Berlin</city><country>Deutschland</country></aff></contrib></contrib-group><pub-date pub-type="collection"><year>2019</year><month>11</month><day>15</day></pub-date><volume>1</volume><permissions><copyright-statement content-type="print">© 2019 Deutsches Archäologisches Institut – Dr. Ludwig Reichert Verlag Wiesbaden</copyright-statement><copyright-statement content-type="online">© 2019 Deutsches Archäologisches Institut</copyright-statement><copyright-holder content-type="print">Verlag/Publisher: Dr. Ludwig Reichert Verlag Wiesbaden (www.reichert-verlag.de)</copyright-holder><license license-type="print"><license-p content-type="copyright">All rights reserved.</license-p><license-p content-type="terms-of-use">All rights reserved. No parts of this publication may be reproduced, translated, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the German Archaeological Institute and the publisher.</license-p></license><license license-type="online"><license-p content-type="terms-of-use">https://publications.dainst.org/journals</license-p></license></permissions><self-uri content-type="pdf-urn">urn:nbn:de:0048-journals.aa-2019-1-Fiedler.9</self-uri><self-uri content-type="online-url">https://publications.dainst.org/journals/aa/issue/375</self-uri><abstract xml:lang="de-DE">
+            <title>Zusammenfassung</title>
+            <p><styled-content style-type="abstract-title">Die Kleinsiedlung Babunjë </styled-content></p>
+            <p><styled-content style-type="abstract-subtitle">Neue Forschungen zur territorialen Siedlungsstruktur zwischen Apollonia und Epidamnos/Dyrrhachion (Albanien)</styled-content></p>
+            <p><styled-content style-type="abstract-author">Manuel Fiedler, Eduard Shehi, Szilamér Péter Pánczél, Gregor Döhner</styled-content></p>
+            <p><styled-content style-type="abstract-text">Die Ausgrabungen in Babunjë zielen darauf ab, den in spätarchaischer Zeit gegründeten und im frühen Hellenismus aufgegebenen Ort in seiner urbanen Struktur, den Privatbauten und insbesondere seiner Fortifikation zu untersuchen und beispielhaft zugleich die komplexe Siedlungsstruktur an der Ostküste des südlichen Adriatischen Meeres zu erkunden. Die Kleinsiedlung von nur ca. 5 ha Größe, die nach geophysikalischen Messungen ein regelhaftes Straßenraster in Form archai-scher Streifenstädte hatte, könnte ein von Apollonia abhängiger Ort gewesen sein. Die Grabungen belegen, dass Babunjë im 5. Jh. v. Chr. mit einer Fortifikation befestigt wurde. Unterschiedlichen Bautechniken und -materialien zufolge – verwendet wurden Konglomeratgestein, Lehmziegel und geschichtete Dachziegel – hatte man die Umfassungsmauer offenbar in Eile errichtet. In der Stratigraphie lassen sich Details der Bauvorgänge ablesen. Untersucht wurde ebenso ein klassisches Haus, von dem bislang zwei von der Straße abgewandte – und möglicherweise auf einen angrenzenden Hof orientierte – Räume angeschnitten wurden. Bemerkenswert unter den Funden ist insbesondere die Bronzestatuette eines auf einem Pferd galoppierenden Kriegers.</styled-content></p>
+         </abstract><trans-abstract xml:lang="en-GB">
+            <title>Abstract</title>
+            <p><styled-content style-type="abstract-title">The Small Settlement of Babunjë </styled-content></p>
+            <p><styled-content style-type="abstract-subtitle">New Research on the Territorial Settlement Structure Between Apollonia and Epidamnos/Dyrrhachion (Albania) </styled-content></p>
+            <p><styled-content style-type="abstract-author">Manuel Fiedler – Eduard Shehi – Szilamér Péter Pánczél – Gregor Döhner </styled-content></p>
+            <p><styled-content style-type="abstract-text">The excavations at Babunjë are aimed at clarifying the urban structure, private buildings and in particular the fortifications of the site, which was founded in late Archaic times and abandoned in the early Hellenistic period, and seek to examine it as an example of the complex settlement structure on the east coast of the southern Adriatic. The small settlement of only approx. 5 ha, which geophysical surveys have shown to possess a regular street grid with long, narrow insulae, could have been dependent on Apollonia. The excavations prove that Babunjë was fortified with a circuit wall in the 5th cent. B.C. Different construction techniques and building materials – conglomerate, mud-bricks and layered roof tiles were used – indicate the wall was built in a hurry. Details of the construction processes can be discerned in the stratigraphy. A Classical building has also been investigated; two rooms – turned away from the street and possibly oriented towards an adjoining courtyard – have been exposed so far. An especially noteworthy find is the bronze statuette of a warrior on a galloping horse.</styled-content></p>
+         </trans-abstract><kwd-group xml:lang="de-DE">
+            <title>Schlagworte</title>
+            <kwd>Albanien</kwd><kwd>griechische Kolonisation</kwd><kwd>Fortifikation</kwd><kwd>klassische Wohnhäuser</kwd><kwd>Bronzestatuette</kwd>
+         </kwd-group><kwd-group xml:lang="en-GB">
+            <title>Keywords</title>
+            <kwd>Albania</kwd><kwd>Greek colonization</kwd><kwd>fortification</kwd><kwd>Classical housing</kwd><kwd>bronze statuette</kwd>
+         </kwd-group><custom-meta-group><custom-meta><meta-name>issue-summary</meta-name><meta-value>AA 2019/1 • 350 pages with 330 illustrations</meta-value></custom-meta><custom-meta><meta-name>citation-guideline</meta-name><meta-value>M. Fiedler – E. Shehi – Sz. P. Pánczél – G. Döhner, Die Kleinsiedlung Babunjë. Neue Forschungen zur territorialen Siedlungsstruktur zwischen Apollonia und Epidamnos/Dyrrhachion (Albanien), AA 2019/1, § 1–43, https://doi.org/10.34780/m01n-7q09</meta-value></custom-meta><custom-meta><meta-name>issue-bibliography</meta-name><meta-value>https://zenon.dainst.org/Record/001588396</meta-value></custom-meta><custom-meta><meta-name>pod-order</meta-name><meta-value>https://reichert-verlag.de</meta-value></custom-meta><custom-meta><meta-name>cover-illustration</meta-name><meta-value>Der Bronzereiter von Babunjë (M. Fiedler)</meta-value></custom-meta></custom-meta-group></article-meta></front>
+   <body>
+      <p id="p-1">
+         <named-content content-type="paragraph-counter">1</named-content>In 
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2757868">Babunjë</ext-link>
+          wird im Rahmen der albanisch-deutschen Apollonia-Kooperation derzeit ein Ort untersucht<xref ref-type="fn" rid="fn-1">[1]</xref>, der innerhalb der vielschichtigen Siedlungslandschaft des antiken Albaniens offenbar eine Sonderstellung innehatte: Es handelt sich um eine relativ kleine, geschlossene Ansiedlung, die zwischen den großen korinthisch-korkyräischen Kolonien 
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2066113">Apollonia</ext-link>
+          und 
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2066133">Epidamnos/Dyrrhachion</ext-link>
+          auf einem Hügel am Unterlauf des Apsos, unweit der antiken Küste, situiert war (<xref ref-type="fig" rid="f-1">Abb. 1</xref>). Durch seine Lage kontrollierte der Ort die Einfahrt in den vermutlich schiffbaren Apsos (Seman), neben Genousos (Shkumbin) und Aoos (Vjossa) dem drittgrößten Fluss der weiten Myzeqe-Küstenebene; nahe der Siedlung müsste ein Überlandweg zwischen Apollonia und Epidamnos, der aus Schriftquellen erschlossen werden kann, den Fluss überquert haben.</p>
+      <p id="p-2">
+         <named-content content-type="paragraph-counter">2</named-content>Die Untersuchungen dienen neben der eigentlichen Erkundung des Platzes dazu, die Siedlungsstrukturen im Umland Apollonias zu erhellen: Denn auffällig ist, dass südlich von Apollonia mit Orikos und Triport sowie nördlich von Apollonia mit Babunjë und möglicherweise Bishtçukas eine Reihe küstennaher Kleinsiedlungen existierte (<xref ref-type="fig" rid="f-2">Abb. 2</xref>), deren Verbindungen zu der korinthisch-korkyräischen Kolonie derzeit ungeklärt sind. Im Einzelnen müssten Datierungen und Siedlungsentwicklungen erfasst sowie Fragen zu den Einwohnern geklärt werden, um ihren Rang im Spannungsfeld zwischen einheimischen Illyrern und den griechischen Kolonisten beurteilen zu können.</p>
+      <p id="p-3">
+         <named-content content-type="paragraph-counter">3</named-content>Für Babunjë ergaben systematische Feldarbeiten von 2013, die eine Vermessung, geophysikalische Messungen sowie eine archäologische Prospektion (sog. Intensivsurvey) umfassten<xref ref-type="fn" rid="fn-2">[2]</xref>, dass man die ca. 5 ha große Siedlung im Laufe der zweiten Hälfte des 6. Jhs. v. Chr., wenige Generationen später als Apollonia, gegründet hatte. Trotz intensiver Besiedlung, die sich in einer großen Menge an Oberflächen-Fundmaterial niedergeschlagen hat, war die Siedlung bereits im 3. Jh. v. Chr. wieder verlassen. Die Geophysikbilder bezeugen eine einheitliche urbane Gliederung (<xref ref-type="fig" rid="f-3">Abb. 3</xref>. <xref ref-type="fig" rid="f-4">4</xref>): Erkennbar ist ein rechtwinkliges Straßenraster einer kleinen Planstadt mit einer Strukturierung in schmale, lange Insulae. Mit etwa 3 m Breite entsprachen die Straßen ungefähr den engen Gassen von Apollonias Oberstadt oder etwa Straßenbreiten, die zuweilen in 
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2361900">Kerkyra</ext-link>
+         
+         <xref ref-type="fn" rid="fn-3">[3]</xref> oder auf der Ortygia-Halbinsel von 
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2345156">Syrakus</ext-link>
+         
+         <xref ref-type="fn" rid="fn-4">[4]</xref> bezeugt sind. Die Insula-Breiten – von nur ca. 15 m – sind allerdings ungewöhnlich: Wiederum lässt sich Apollonias Oberstadt als Vergleich anführen, ein spätes Beispiel liegt mit der kleinen epirotischen Bergstadt 
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2361776">Orraon</ext-link>
+          vor<xref ref-type="fn" rid="fn-5">[5]</xref>. Aus der ungewöhnlichen Schmalheit der Insulae resultiert, dass weitgehend Unklarheit herrscht, wie die Häuser auf den engen Grundstücken strukturiert gewesen sein können. Orraon mit seiner einzeiligen Wohnbebauung von ›Herdraumhäusern‹ kann hier nur bedingt einen Eindruck vermitteln, da der Ort in spätklassischer Zeit erst gegründet wurde, als Babunjë bereits seinen Niedergang erlebte. Da auch für Apollonia Strukturen der frühen Stadtanlage noch weitgehend ungeklärt sind und Geophysikbilder von Babunjë im Detail keine Aussagen zur Wohnbebauung zulassen, konzentrierten sich in einer ersten Grabungskampagne 2018 die Untersuchungen auf einen Wohnbereich der Siedlung (Grabungsareal B). </p>
+      <p id="p-4">
+         <named-content content-type="paragraph-counter">4</named-content>Zudem blieb nach Feldarbeiten 1988/1989, die das Kreismuseum von Lushnjë durchgeführt hatte und dabei offenbar auf Reste einer Fortifikation gestoßen war<xref ref-type="fn" rid="fn-6">[6]</xref>, noch undeutlich, ob und in welcher Art der Ort mit einer Befestigungsmauer umgeben war. An der Oberfläche sind davon kaum Spuren sichtbar. Als mächtigstes Bauwerk charakterisiert eine Fortifikation nicht unerheblich eine solche Siedlung, zumal staatsrechtliche Fragen beim Bau der Befestigung eine Rolle gespielt haben dürften. Grabungsareal A von 2018 widmete sich deshalb der Erforschung der Umfassungsmauer.</p>
+      <sec id="s-1">
+         <title>Die Fortifikation – Grabungsbereich A</title>
+         <p id="p-5">
+            <named-content content-type="paragraph-counter">5</named-content>Die Untersuchungen nahmen am Nordrand der Siedlung ihren Ausgangspunkt, wo großformatige Steine eine Mauer vermuten ließen. Nach Anlegen einer Sondage, in der die Mauer zutage trat, wurde eine Grabungsfläche von 5 m × 5 m geöffnet, unterteilt in einen Südwest- und einen Nordostteil mit dazwischenliegendem Profilsteg. Auf weiteren 3,5 m südlich der Fläche konnte der Mauerzug noch oberflächlich gereinigt und dokumentiert werden (<xref ref-type="fig" rid="f-5">Abb. 5</xref>. <xref ref-type="fig" rid="f-6">6</xref>. <xref ref-type="fig" rid="f-7">7</xref>). Am Nordwestende des Schnittes, wo auf 3 m Breite der gewachsene Boden erreicht wurde, ließ sich die feldseitige Maueraußenseite freilegen. Im Südostbereich verhinderten ein Steinversturz und andere Befunde, den Schnitt in die Tiefe zu führen. </p>
+         <p id="p-6">
+            <named-content content-type="paragraph-counter">6</named-content>Zum Vorschein kam insgesamt ein Abschnitt einer mächtigen, ca. 3 m breiten Fortifikation, die an der Außenschale (<italic>extra muros</italic>) und der Innenschale (<italic>intra muros</italic>) unterschiedliche Bautechniken aufweist: </p>
+         <p id="p-7">
+            <named-content content-type="paragraph-counter">7</named-content>Als Steinmaterial der Außenseite (<xref ref-type="fig" rid="f-8">Abb. 8</xref>. <xref ref-type="fig" rid="f-9">9</xref>) hatte man hauptsächlich lokal anstehendes Konglomeratgestein verwendet, das – schwierig zu bearbeiten – zur Bildung lediglich recht grober Blöcke geeignet war. Die Steine wurden in horizontalen Lagen versetzt, wofür man einheitliche Höhen der Blöcke von 40 bis 50 cm anstrebte; die Breiten blieben uneinheitlich. An den Vorderseiten war ein senkrechter Fugenschnitt beabsichtigt, hinten beließ man die Blöcke mit einem unregelmäßigen Zuschnitt. Dem Baumaterial geschuldet ergaben sich häufig Zwickel, die mit kleineren Steinen geschlossen wurden. Mehrere sorgfältig nebeneinandergesetzte Kalksteinquader stellen dagegen Spolien dar: Einer der Quader zeigt an seiner Oberseite Abkantungen zur beabsichtigten Einklinkung aufliegender Blöcke, bemerkenswerterweise fehlt es allerdings an solchen korrespondierenden Steinen. Insgesamt konnte ein Mauerabschnitt freigelegt werden, der wegen des abfallenden Hanges im Fundament eine Abtreppung als Niveauausgleich aufweist. So sind an der höher gelegenen Südhälfte des Schnittes vier Steinlagen von insgesamt 1,90 m Höhe, dagegen in der Nordhälfte acht Lagen von insgesamt 3,30 m Höhe erhalten. </p>
+         <p id="p-8">
+            <named-content content-type="paragraph-counter">8</named-content>Die untersten Steinlagen der Ost- und der Westhälfte kragen jeweils mit einem groben, unförmigen Block hervor, der auf einer Ausgleichsschicht aus kompaktem Lehm lagert (Cx. 27). Die Außenflächen der darüber folgenden Lagen wurden nur grob egalisiert. Erst an der zuoberst erhaltenen Steinlage, die wiederum etwa 10 cm zurückspringt und an der die Oberflächen regelmäßiger geebnet wurden, erkennt man, dass hier auf Sicht gearbeitete Blöcke vorliegen (Cx. 2). Entsprechend handelt es sich darunter um im Erdreich verborgene, nicht auf Ansicht gearbeitete Blöcke vom Fundament der Befestigungsmauer.</p>
+         <p id="p-9">
+            <named-content content-type="paragraph-counter">9</named-content>Aus der Schichtenabfolge, die nördlich vor der Mauer dokumentiert werden konnte, lassen sich aufschlussreiche Details des bauzeitlichen Arbeitsprozesses rekonstruieren: Vor den Steinblöcken befand sich ein ca. 2,50 m hohes kompaktes Lehmpaket (<xref ref-type="fig" rid="f-9">Abb. 9</xref> links), das hauptsächlich durch trennende, horizontale Steinsplittlagen in verschiedene Lehmschichten unterteilt werden kann. Diese relativ dünnen Steinsplittkonzentrationen (<xref ref-type="fig" rid="f-9">Abb. 9</xref> links, Cx. 8, 12, 26, 28, 33), die aus Konglomerat-Absplissen bestehen, haben sich in verschiedenen Höhen stets nahe der Steinmauer abgelagert (<xref ref-type="fig" rid="f-9">Abb. 9</xref>. <xref ref-type="fig" rid="f-10">10</xref>. <xref ref-type="fig" rid="f-11">11</xref>): Ihre Positionen korrespondieren jeweils mit der Oberkante von Konglomeratblöcken. Aus dem Befund lässt sich folgende Verlagetechnik ableiten: Da es sonst an umfänglichem Steinsplitt fehlt, müssen die Konglomeratblöcke weitgehend vorgefertigt aus dem Steinbruch an die Baustelle transportiert – oder zumindest an einem anderen Ort zugearbeitet – worden sein. Nach Verlegen einer Lehm-Ausgleichsschicht und Versetzen der (im Norden) untersten drei bzw. (im Süden) untersten Lage(n) hob man in vermutlich einem gemeinsamen Arbeitsgang das Niveau vor der entstehenden Mauer durch Auffüllung von Lehmschichten (Cx. 43, 38, 34 bis 37) auf eine temporäre Arbeitsebene an. Daraufhin wurden die Steine der aktuell obersten Lage an ihrer Oberseite horizontal abgeflacht, die Blöcke gesäubert und das abgetragene Steinmaterial auf den Lehm der Arbeitsebene gekehrt. Anschließend setzte man die Konglomeratblöcke der nächsten Lage auf – es darf angenommen werden, dass man zuvor andernorts die Unterseiten begradigt hatte –, worauf sich der Vorgang wiederholte: Die nächste Lehmlage wurde bis zur Stein-Oberkante eingebracht, die Oberseite des Blockes begradigt, der entstandene Steinsplitt auf den Lehm der aktuellen Arbeitsebene gekehrt. Es folgte dann wiederum die nächste Steinlage. Im Nordprofil des Schnittes sind auf fünf Ebenen die Splittschichten identifizierbar (Cx. 8, 12, 26, 28, 33), im Südprofil, wo die Fundamentierung wegen des ansteigenden Hanges mit geringerer Höhe erhalten ist, auf noch drei Ebenen. Das heterogene und schwierig zu bearbeitende Konglomeratgestein machte sicherlich eine solche Anpassung der Blöcke vor Ort unabdingbar. Zugute kam dem Prozedere vermutlich, dass auf eine ausgefallene Hebetechnik weitgehend verzichtet werden konnte. </p>
+         <p id="p-10">
+            <named-content content-type="paragraph-counter">10</named-content>Die Innenschale errichtete man in gänzlich anderer Mauerbautechnik, während als Füllung zwischen den Schalen unförmiges Konglomeratgestein und Steinsplitt in Lehmsediment eingebracht wurde.</p>
+         <p id="p-11">
+            <named-content content-type="paragraph-counter">11</named-content>Auf dem kurzen Abschnitt der freigelegten Innenschale wechselte zweimal die Mauerbautechnik (<xref ref-type="fig" rid="f-6">Abb. 6</xref>. <xref ref-type="fig" rid="f-7">7</xref>. <xref ref-type="fig" rid="f-12">12</xref>): Im mittleren Bereich liegt in der obersten erhaltenen Lage ein Konglomeratquader. Südwestlich davon fand sich ein Abschnitt einer aus flachen Dachziegeln aufgeschichteten Ziegelsetzung, die in ihrer Ausrichtung und Breite mit dem Steinblock korrespondiert, weshalb der Stein und die Ziegelsetzung als eine Einheit anzusehen sind. Die Ziegelsetzung weist mehrere Lagen großformatiger Bruchstücke von Dachziegeln (Stroteren italischen Typs) auf, die man in Lehmbettung versetzt hatte. Die Original-Leistenkanten hatte man jeweils nach Außen gerichtet, womit eine solide Konstruktion geschaffen wurde. Jenseits des Blockes trafen die Grabungen auf der entsprechenden Höhe auf dichten, hellen Lehm, der sich jenseits des Steges in der nordöstlichen Schnitterweiterung bis zur Schnittkante – auf eine nachgewiesene Länge von insgesamt 2,80 m – fortsetzte (Cx. 21). Einige Dachziegelbruckstücke zwischen Stein und Lehm scheinen einen Übergang ausgefüllt zu haben. Beim sorgfältigen Abtiefen des Lehms innerhalb des südwestlichen Schnittes ergab sich trotz fehlender deutlicher Spuren der Eindruck, dass diese Lehmpartie strukturiert gewesen sein könnte: Im Profil waren hellere und dunklere Flecken mit unterschiedlichen Einschlüssen festzustellen. Mehrfach ließen sich Bruchstücke von ca. 9 cm Stärke lösen und in einem Fall eine gerade Kante an einem Bruchstück identifizieren (<xref ref-type="fig" rid="f-13">Abb. 13</xref>). Dies spricht dafür, dass wir es mit einer Konstruktion aus luftgetrockneten Lehmziegeln zu tun haben; die Ziegel müssten in Lehmbettung versetzt gewesen sein, weswegen die Identifizierung von exakten Kanten und Übergängen erheblich erschwert wird.</p>
+         <p id="p-12">
+            <named-content content-type="paragraph-counter">12</named-content>Der Lehm brach mit einem Gefälle nach Südosten hin ab, woraus sich ableiten lässt, dass sich die Konstruktion im Prozess der Zerstörung auflöste und der Lehm allmählich Richtung Südosten zerfloss. </p>
+         <p id="p-13">
+            <named-content content-type="paragraph-counter">13</named-content>Beim Abtiefen des Bereiches südöstlich der Innenschale erschien sehr unregelmäßiges Steinmaterial unterschiedlichster Größe und ohne erkennbare Anordnung. Es könnte sich entweder um Überreste einer massiven Zerstörungsschicht handeln, bei der sich Steinblöcke ungeordnet vor der Mauer auftürmten, oder wir befinden uns hier unterhalb des innerstädtischen Laufniveaus mit Resten vom Baumaterial, das man nach Beendigung der Bauarbeiten nicht wegnahm, sondern unterhalb des Laufniveaus verschwinden ließ.</p>
+         <p id="p-14">
+            <named-content content-type="paragraph-counter">14</named-content>Zusammenfassend sind also drei unterschiedliche Bautechniken innerhalb der insgesamt 3 m breiten Mauer zu erkennen: Miteinander verschränkt wurden die jeweils eigenständig konstruierten Partien der Konglomeratblöcke, der Dachziegel und der mutmaßlichen Lehmziegel. An der (feldseitigen) Außenschale wandte man allein die – sicherlich stabilere – Steinkonstruktion an, während an der Innenschale Stein, Ziegel und Lehm im Wechsel zum Einsatz kamen. Dass es Reparaturen oder Ausbesserungen gab, ließ sich nicht erkennen, weshalb von einer einzigen Bauphase und einem einheitlichen Bauvorgang ausgegangen werden kann. Die Hintergründe für diese Wechsel könnten sich aus der Verwendung der Spolien an der Außenschale erhellen: Offensichtlich wurde in einem eiligen Bauvorgang das unterschiedliche Baumaterial zusammengetragen. Zieht man in Betracht, dass der Ort einerseits in einer steinarmen Gegend liegt, in der gutes Steinmaterial per Schiff über weite Distanz herantransportiert werden musste<xref ref-type="fn" rid="fn-7">[7]</xref>, andererseits aber Konglomeratgestein<xref ref-type="fn" rid="fn-8">[8]</xref> sowie Lehm reichhaltig vorhanden sind, so bestätigt sich der Eindruck eines schnellen Prozesses. Unter Zeitdruck ergab es sicherlich Sinn, ungünstig zu bearbeitendes Konglomeratgestein, Spolien, Dachziegelbruch und Lehm zusammenzutragen und damit zeitgleich unterschiedliche Gewerke bei der Errichtung dieser insgesamt für den kleinen Ort sehr mächtig wirkenden Fortifikation einzubinden.</p>
+         <p id="p-15">
+            <named-content content-type="paragraph-counter">15</named-content>Für die Datierung des Bauwerks ergeben sich aus der Bautechnik keine Anhaltspunkte. Die Verwendung von Lehmziegeln im Stadtmauerbau hatte zu diesem Zeitpunkt eine lange Tradition, wie sich an den vielen Beispielen gerade der unteritalischen Kolonien zeigt<xref ref-type="fn" rid="fn-9">[9]</xref>. Auch in der weiteren Region wurden noch im 4. Jh. v. Chr. Lehmziegelaufbauten für Stadtmauern errichtet, wofür die gut erhaltene Stadtmauer von 
+               <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2100908">Alyzia</ext-link>
+             ein Beispiel gibt<xref ref-type="fn" rid="fn-10">[10]</xref>. Apollonia und Epidamnos besaßen in ihren Stadtmauern vermutlich ebenfalls Lehmziegelaufbauten; der ungenügende Forschungsstand und fehlende Datierungen verunklären hier allerdings die Situation<xref ref-type="fn" rid="fn-11">[11]</xref>. Ungewöhnlich ist die Verwendung von Dachziegeln im Mauerwerksverband, die sich in der Gegend aber besonderer Beliebtheit erfreute (s. unten), bevor die Herstellung gebrannter Bauziegel begann.</p>
+         <p id="p-16">
+            <named-content content-type="paragraph-counter">16</named-content>Aus stratigraphischen Zusammenhängen und dem Fundmaterial gewinnt man zur chronologischen Einordnung des Mauerbaues indes einen relativ guten Eindruck:</p>
+         <p id="p-17">
+            <named-content content-type="paragraph-counter">17</named-content>Vor Beginn aller Maurerarbeiten hatte man eine Baugrube ausgehoben, die in dem engen Grabungsschnitt nur auf einer kurzen Strecke identifizierbar war; es wird sich bei der Fortsetzung der Grabungen zeigen, ob die oben genannten Lehm- und Splittschichten die Verfüllung einer umfänglichen Baugrube oder eher eine Auffüllung zur Niveauanhebung und eventuell Stabilisierung des Mauerwerks darstellen. Zu erkennen war jedenfalls ganz zuunterst eine Baugrubengrenze, im Bereich unterhalb der untersten Steinlage in der Südhälfte bzw. der untersten beiden Lagen in der Nordhälfte des Schnittes. Mit präzisen Abstichen hatte man in der Südhälfte (<xref ref-type="fig" rid="f-14">Abb. 14</xref>) in eine ältere Kulturschicht (Cx. 17) eingegriffen bzw. in der Nordhälfte zwei materialführende Schichten (Cx. 44 und 45) abgetreppt und den gewachsenen Boden erreicht (<xref ref-type="fig" rid="f-9">Abb. 9</xref> links). </p>
+         <p id="p-18">
+            <named-content content-type="paragraph-counter">18</named-content>Diese drei vorbauzeitlichen Schichten enthielten Keramikmaterial, das zur Datierung der Bauvorgänge beiträgt. Die Auswertung der Funde steht erst am Anfang, doch erscheint eine Datierung der Mauer ab der Mitte des 5. Jhs. v. Chr. plausibel: Neben nur allgemein in klassische Zeit zu datierenden Bruchstücken verschiedener Schälchen (<xref ref-type="fig" rid="f-15">Abb. 15</xref> e. f), einer Lekythe (<xref ref-type="fig" rid="f-15">Abb. 15</xref> g) oder von tongrundigen Kannen/Krügen (<xref ref-type="fig" rid="f-15">Abb. 15</xref> h. i) liegt beispielsweise mit Scherben einer – aus Attika importieren – Kylix wohl aus dem zweiten Viertel des 5. Jhs. v. Chr. (<xref ref-type="fig" rid="f-15">Abb. 15</xref> a)<xref ref-type="fn" rid="fn-12">[12]</xref> und von verschiedenen Skyphoi mit gestreckter Wandung des späten 6. Jhs. oder der ersten Hälfte des 5. Jhs. v. Chr. (<xref ref-type="fig" rid="f-15">Abb. 15</xref> b–d) Material hauptsächlich aus der ersten Jahrhunderthälfte des 5. Jhs. v. Chr. vor. Aus der relativ kurzen Ortsgeschichte mit einer raschen Aufgabe der Siedlung ergibt sich, dass die Mauer nicht allzu viel später errichtet worden sein kann.</p>
+         <p id="p-19">
+            <named-content content-type="paragraph-counter">19</named-content>Damit gelangen wir in eine Zeit, in der zwei historisch belegte Ereignisse ihre Spuren in der Region hinterlassen haben dürften. Nur durch das Apolloniaten-Weihgeschenk und dessen Inschrift in Olympia lässt sich ein offensichtlich tiefgreifender Konflikt Apollonias mit einer der Nachbarstädte, dem noch nicht lokalisierten Thronion südlich von Apollonia, erschließen, dessen Eroberung sich um die Mitte des 5. Jhs. v. Chr. abgespielt haben muss<xref ref-type="fn" rid="fn-13">[13]</xref>. Wir wissen nicht, inwieweit sich diese Auseinandersetzung weiter im Norden auswirkte. Zweifelsfrei einen noch tiefgreifenderen Einfluss auf die Sicherheitslage dürfte allerdings die Eskalation des Konfliktes zwischen Epidamnos, Korinth und Kerkyra gehabt haben, die einen Ausgangspunkt des Peloponnesischen Krieges darstellte. Dass 435 v. Chr. das korinthische Hilfskontingent auf dem Landweg von Apollonia nach Epidamnos (Thuk. 1, 26, 2) auch Babunjë berührte, ist sehr wahrscheinlich. So könnte der Mauerbau mit diesen äußeren Ereignissen in Zusammenhang gestanden haben.</p>
+      </sec>
+      <sec id="s-2">
+         <title>Die Wohnhausbebauung – Grabungsbereich B</title>
+         <p id="p-20">
+            <named-content content-type="paragraph-counter">20</named-content>Mit den Grabungen auf der Terrasse im Nordostbereich des Siedlungshügels sollen die Ergebnisse der Geophysikmessungen, die eine Gliederung der Siedlungsfläche in regelmäßige Insulae belegen, vertieft und Anhaltspunkte zur Binnengliederung der Insulae wie auch der Häuser gewonnen werden. Insbesondere verunklärten auf der einzigen horizontalen Fläche Babunjas, die auch als öffentlicher Platz geeignet gewesen sein könnte, moderne Eingriffe die Geophysikbilder: Vor etwa 15 Jahren hatte ein Anwohner Gruben für Punktfundamente angelegt, um ein Privathaus zu errichten; seine Arbeiten wurden gestoppt, nachdem antike Mauerspuren zum Vorschein gekommen waren. </p>
+         <p id="p-21">
+            <named-content content-type="paragraph-counter">21</named-content>Die Untersuchungen setzten deshalb im Bereich der modernen Eingriffe ein (<xref ref-type="fig" rid="f-16">Abb. 16</xref>. <xref ref-type="fig" rid="f-17">17</xref>), weil man nach Säuberung dieser Alt-Gruben zu einem Grundverständnis für den Erhaltungszustand der Befunde und über stratigraphische Verhältnisse kommen konnte. Der Plan in Abbildung 17 fasst einerseits die Hauptbefunde im Grabungsschnitt I, andererseits die bei der Säuberung der Punktfundamentgruben zum Vorschein gekommenen Mauern (westlich des Grabungsschnittes) zusammen.</p>
+         <p id="p-22">
+            <named-content content-type="paragraph-counter">22</named-content>Angelegt wurde zunächst ein 3 m breiter und 16,5 m langer Schnitt, der gemäß der zu erwartenden Hauptbefunde annähernd einer Nordwest-Südost-Orientierung folgte. Später wurde der Schnitt im mittleren Bereich nochmals um 2 m × 5 m erweitert, womit die Untersuchungsfläche auf insgesamt 59,5 m<sup>2</sup> anwuchs. </p>
+         <p id="p-23">
+            <named-content content-type="paragraph-counter">23</named-content>Mit einer Sondage am Nordostende des Schnittes, die im Bereich einer mutmaßlichen Straße lag, sollten Stratigraphie und erste Anhaltspunkte zu den ältesten Schichten geklärt werden: Abgetieft wurde eine der modernen Punktfundamentgruben von 1 m × 1 m Ausdehnung bis auf den gewachsenen Boden. Die älteste Keramik lässt sich hier in das frühe 5. Jh. v. Chr. datieren.</p>
+         <p id="p-24">
+            <named-content content-type="paragraph-counter">24</named-content>Im übrigen Schnitt konnten die Grabungen die jüngsten Versturzschichten mit den zuoberst gelegenen Baubefunden und Laufhorizonten erreichen: Am nordöstlichsten Schnittende müsste ein Straßenabschnitt aufgedeckt worden sein, geht man von der Orientierung angrenzender Mauerbefunde und der Korrelation der Befunde mit den Geophysikplänen aus. Der Straßenkörper setzt sich aus massiven Lehmschichten zusammen. Ein zweiter Straßenbereich scheint sich 10 m südöstlich abzuzeichnen: Zwei parallele Mauern in Punktfundamentgruben (Tr. 1926-1; 1926-4) weisen zueinandergerichtete Außenseiten der verwendeten Kalksteinblöcke auf, und eine relativ leicht gebaute, lineare Struktur im zentralen Bereich des Grabungsschnittes, die der Orientierung folgt, könnte als Fundamentierung einer einfachen, wenig stabilen Mauer oder eines Zaunes, gedient haben (Cx. 11). Die Existenz einer Straße an dieser Stelle wirft Fragen auf, die nur durch eine Erweiterung der Schnitte zu klären sein werden. Denn ihr Abstand zueinander würde um 10 m betragen und ließe sich nicht mit den Geophysikmessungen in Einklang bringen. Für Insula-Breiten von 10 m fehlt es bislang an Vergleichen.</p>
+         <p id="p-25">
+            <named-content content-type="paragraph-counter">25</named-content>Nichtsdestotrotz erscheint der übrige Baubefund relativ klar: Im Bereich zwischen den mutmaßlichen Straßen wurden Überreste einer rechtwinklig angelegten Insula-Bebauung angetroffen. Die Befunde teilen sich einerseits in Mauern eines Gebäudes im Ostteil des Schnittes, andererseits in eine offene, unbebaute Fläche – also wohl einen Hof – westlich dieses Baues. </p>
+         <p id="p-26">
+            <named-content content-type="paragraph-counter">26</named-content>Zwei Räume des Gebäudes lassen sich bislang identifizieren, ein Raum (1) von 3 m Breite und ein Raum (2) von 4,80 m Breite (<xref ref-type="fig" rid="f-16">Abb. 16</xref>. <xref ref-type="fig" rid="f-17">17</xref>. <xref ref-type="fig" rid="f-18">18</xref>). Die Raumtiefen sind wegen des limitierten Grabungsausschnittes noch unklar, ebenso Ein- und Durchgänge. Die Räume sind im Verhältnis zum Straßenraum hintereinander gestaffelt; ob sie mit Öffnungen zum Hof hin orientiert waren oder eher abgewandt vom Hof lagen, bleibt derzeit fraglich. Der größere Raum 2 hatte einen Lehmestrich. Auch Raum 1 besaß in seinem Nordostteil einen Lehmestrich, im Übrigen aber einen gefestigten Boden aus horizontal ausgelegten Flachziegeln (<xref ref-type="fig" rid="f-19">Abb. 19</xref>, Cx. 23). Er dürfte die Substruktion oder Plattform für irgendeine im Raum bestehende Konstruktion dargestellt haben.</p>
+         <p id="p-27">
+            <named-content content-type="paragraph-counter">27</named-content>Der Hof nahm die gesamte Länge über beide Räume auf und scheint ohne erkennbare Binnengliederung bei einer Länge von 10 m von der nördlichen zur südlichen Straße gereicht zu haben. Seine Breite könnte, legt man die nächste Mauer in den Punktfundamentgruben zugrunde, 6,5 m betragen haben. Als Abgrenzung zur Straße diente im Süden das erwähnte, wenig stabile Fundament Cx. 11, im Norden ließ sich trotz guter Befunderhaltung keine Begrenzung ausmachen. Zumindest einen Zaun wird man aber als Trennung zwischen privatem und öffentlichem Raum erwarten dürfen: Er kann aus ephemerem Baumaterial – Holz, Schilf, Stroh – gebaut gewesen sein. </p>
+         <p id="p-28">
+            <named-content content-type="paragraph-counter">28</named-content>Der Boden im Hof bestand aus sandigem Lehm, den faustgroße Flusskiesel, kleine Bruchsteine und Ziegelfragmente festigten. Entlang der Gebäudemauer wurde ein Streifen dicht und sorgfältig gesetzter Flusskiesel und Bruchsteine (Cx. 16) auf Höhe des Laufniveaus entdeckt (<xref ref-type="fig" rid="f-20">Abb. 20</xref>). Es handelt sich augenscheinlich um einen gefestigten Saum unterhalb der Tropfkante des Hausdaches, der als Spritzschutz für das Mauerwerk diente und das Eindringen von Feuchtigkeit ins Fundament mindern sollte. </p>
+         <p id="p-29">
+            <named-content content-type="paragraph-counter">29</named-content>Westlich des Hofes ließ sich eine weitere Bebauung durch Mauerabschnitte in den Punktfundamentgruben nachweisen. Die Mauern zeigen eine eigentümliche, in der Gegend aber gut bekannte Art der Konstruktion (<xref ref-type="fig" rid="f-16">Abb. 16</xref>. <xref ref-type="fig" rid="f-18">18</xref>): Zuunterst liegen als Fundament Sandstein- und Konglomeratblöcke. Gut erhaltene Abschnitte der Hausmauern zeigen, dass man auf die Steinblöcke Bruchstücke flacher Dachziegel geschichtet und dabei Lehm als Bindematerial verwendet hatte. Die Originalkanten der Strotere wurden nach außen gerichtet, womit eine gradlinige Struktur entstand. Da die überdeckenden Sedimente stark lehmig waren, muss auf der Dachziegelsetzung ein Mauerwerk aus ungebranntem Lehm aufgesessen haben. Ob hier eher Lehmziegel- oder Stampflehmtechnik in Frage kommt, kann aus dem Befund heraus nicht beantwortet werden.</p>
+         <p id="p-30">
+            <named-content content-type="paragraph-counter">30</named-content>Die Verwendung von Dachziegeln im Mauerwerk scheint eine frühe Erscheinung in der Mauerwerkstechnik zu sein, bevor gebrannte Bauziegel entwickelt wurden. Vergleichbar sind Hausmauern in der Oberstadt von Apollonia, die in das 5. Jh. v. Chr. zu datieren sind<xref ref-type="fn" rid="fn-14">[14]</xref>; in Epidamnos hatte man beispielsweise den Bothros des Artemis-Heiligtums in dieser Technik erbaut<xref ref-type="fn" rid="fn-15">[15]</xref>. Allein schon diese Bautechnik verweist auf eine Datierung unseres Babunjë-Hauses in klassische Zeit. </p>
+         <p id="p-31">
+            <named-content content-type="paragraph-counter">31</named-content>Dies bestätigt das ausnahmslos klassische Fundmaterial. Die relativ hohe Qualität der Keramik fällt auf, die man – ein nicht untypisches Phänomen auch an anderen Orten dieser Zeit – im Gegensatz zu den recht einfach wirkenden Gebäudestrukturen sehen könnte: Importe aus Korinth, Athen und Unteritalien bezeugen die vielfältigen Handelsbeziehungen der Bewohner Babunjas. Einige Stücke folgen korinthischem Formengut, wie die Terrakotta-Büste einer weiblichen Figur mit Polos (<xref ref-type="fig" rid="f-21">Abb. 21</xref> c), einem Model zur Ausformung eines Hahnes (<xref ref-type="fig" rid="f-21">Abb. 21</xref> b)<xref ref-type="fn" rid="fn-16">[16]</xref> oder einer Dekor-Scheibe (<xref ref-type="fig" rid="f-21">Abb. 21</xref> a)<xref ref-type="fn" rid="fn-17">[17]</xref>. Unter der rotfigurigen Keramik und Scherben mit rotfigurig-floralen Verzierungen sind einige attische Importe vertreten (<xref ref-type="fig" rid="f-22">Abb. 22</xref> a–e), aber die meiste rotfigurige Keramik wird wohl von der gegenüberliegenden Adriaküste ihren Weg nach Babunjë gefunden haben, wie Skyphosscherben (<xref ref-type="fig" rid="f-22">Abb. 22</xref> f. g) sowie das Fragment eines Fischtellers vielleicht aus dem dritten Viertel des 4. Jhs. v. Chr. (<xref ref-type="fig" rid="f-22">Abb. 22</xref> h)<xref ref-type="fn" rid="fn-18">[18]</xref>. Auffällig ist das Fehlen einheimisch-illyrischer Keramik – das in breiter Varianz vorhandene Haushaltsgeschirr, das tongrundige Geschirr, die Kochutensilien (<xref ref-type="fig" rid="f-23">Abb. 23</xref> j–l) und die sonstige Küchenkeramik (<xref ref-type="fig" rid="f-23">Abb. 23</xref> h. i. m) folgen gänzlich dem griechischen Formengut. </p>
+         <p id="p-32">
+            <named-content content-type="paragraph-counter">32</named-content>Die Keramik in den obersten Versturzschichten, die relativ großstückig erhalten ist, gibt genügend Hinweise darauf, wann das Haus verlassen wurde: Neben späten ›korinthischen‹ Skyphoi mit schmalem Pokalfuß aus der zweiten Hälfte des 4. Jhs. v. Chr. (<xref ref-type="fig" rid="f-23">Abb. 23</xref> a)<xref ref-type="fn" rid="fn-19">[19]</xref>, Tellern mit Rundstablippe aus dieser Zeit (<xref ref-type="fig" rid="f-23">Abb. 23</xref> b) und Salznäpfen (<xref ref-type="fig" rid="f-23">Abb. 23</xref> c)<xref ref-type="fn" rid="fn-20">[20]</xref> sind verschiedene Lekythen des 4. Jhs. v. Chr., eine Netzlekythe (<xref ref-type="fig" rid="f-23">Abb. 23</xref> d)<xref ref-type="fn" rid="fn-21">[21]</xref> und zwei Lekythen der Talcott-Klasse mit Trichterrand (<xref ref-type="fig" rid="f-23">Abb. 23</xref> f. g)<xref ref-type="fn" rid="fn-22">[22]</xref> vertreten. Ein riefenverziertes Kännchen schließt sich hier ebenso an (<xref ref-type="fig" rid="f-23">Abb. 23</xref> e)<xref ref-type="fn" rid="fn-23">[23]</xref> wie figürliche Terrakotten (<xref ref-type="fig" rid="f-21">Abb. 21</xref> e), die mit ihrer Beinstellung erst ab spätklassischer Zeit entstanden sein können.</p>
+         <p id="p-33">
+            <named-content content-type="paragraph-counter">33</named-content>Aus diesen Versturzschichten<xref ref-type="fn" rid="fn-24">[24]</xref> über den Gebäudestrukturen lassen sich ferner Anhaltspunkte zu den Umständen der Aufgabe des Hauses gewinnen. Auffällig wenig Dachziegelversturz überlagerte die Strukturen, obgleich die Deckschichten gut erhalten blieben. Aus verschiedenen Überlagerungen und Sturzrichtungen kann der allmähliche Verfall des Gebäudes abgelesen werden. Deshalb verwundert das Fehlen umfangreichen Ziegelmaterials, das sich sonst hauptsächlich an den Gebäudemauern fand und deshalb nicht zum Dach-, sondern zum Mauerversturz zu zählen ist. </p>
+         <p id="p-34">
+            <named-content content-type="paragraph-counter">34</named-content>Da man kaum annehmen wird, dass Dachziegel ausschließlich für den Bau der Mauern verwendet wurden, sondern in ihrer primären Funktion auch als Dachziegel dienten, lässt sich schließen, dass mit Verlassen des Hauses die Ziegel für eine Wiederverwendung abtransportiert wurden. Weder Feuer- noch sonst irgendwelche Einwirkungen katastrophaler Natur waren dem Befund abzulesen, weshalb die Bewohner offensichtlich ihr Gebäude relativ ohne Zeitnot verließen. Sie hatten genügend Zeit, ihr Hab und Gut mit sich zu nehmen, und Dachziegel gehörten sicherlich zu kostspieligen – und zwar mobilen – ›Gegenständen‹<xref ref-type="fn" rid="fn-25">[25]</xref>, die beispielsweise über den nahen Fluss problemlos abtransportiert worden sein können. </p>
+         <p id="p-35">
+            <named-content content-type="paragraph-counter">35</named-content>Wie die Funde zeigen, haben vermutlich in der zweiten Hälfte des 4. Jhs. v. Chr. die Bewohner das Wohnhaus offengelassen. Damit bestätigt sich das Bild, das die Prospektionen bereits aufzeigten, denn wir kommen mit dem Fundmaterial in eine Zeit, in der die Siedlungsaktivitäten in Babunjë generell stark zurückgingen. Im dritten und zweiten vorchristlichen Jahrhundert war das Leben auf dem Siedlungshügel erloschen, während gelegentliche römische Funde anzeigen<xref ref-type="fn" rid="fn-26">[26]</xref>, dass der Platz auch in späterer Zeit zuweilen aufgesucht wurde – mit einem urbanen Leben haben diese Streufunde nichts mehr zu tun. </p>
+      </sec>
+      <sec id="s-3">
+         <title>Der Bronzereiter von Babunjë</title>
+         <p id="p-36">
+            <named-content content-type="paragraph-counter">36</named-content>Ein äußerst ungewöhnlicher Einzelfund kam mit einer fast vollständig erhaltenen Reiter-Kleinbronze bei Pflugarbeiten, die in den Tagen der Grabung 2018 im Zentrum der Siedlung stattfanden, ans Tageslicht (<xref ref-type="fig" rid="f-24">Abb. 24</xref>. <xref ref-type="fig" rid="f-25">25</xref>. <xref ref-type="fig" rid="f-26">26</xref>. <xref ref-type="fig" rid="f-27">27</xref>. <xref ref-type="fig" rid="f-28">28</xref>)<xref ref-type="fn" rid="fn-27">[27]</xref>. Trotz der noch ausstehenden Restaurierung – Details sind entsprechend noch von Sediment-Anhaftungen überdeckt – lässt sich die hervorragende Qualität des im Vollguss hergestellten, ca. 14,2 cm hoch erhaltenen, 13,85 cm langen und ca. 5,5 cm tiefen Stückes erahnen, das eine detailreiche Binnenzeichnung besitzt. Unterhalb der Pferdefuß-Gelenke ist es jeweils gebrochen, weshalb das Stück an einem Gegenstand montiert gewesen sein müsste oder eine Standplatte hatte. </p>
+         <p id="p-37">
+            <named-content content-type="paragraph-counter">37</named-content>Wiedergegeben ist ein im Lauf befindliches Pferd – das geöffnete Maul, die weit zurückgezogene Trense und eine wehende Mähne vermitteln trotz relativ wenig ausgestellter Beine und einem unorganisch nach unten geführten Schwanz die Schnelle des Laufes – , auf dem in gerader Körperhaltung ein Reiter aufsitzt. Sein Oberkörper ist im Verhältnis zum Pferdekörper leicht zur Seite gedreht. Mit der Linken greift der Reiter die Zügel im Bereich der Mähne, während sein rechter, gestreckter Arm weit nach hinten genommen ist. Die geöffnete, etwas angewinkelte Hand belegt, dass er ursprünglich einen Gegenstand fasste: Er wird im Moment des Wurfes eines Speeres dargestellt gewesen sein, wie es neben der Armstellung auch aus der kraftvoll wirkenden Körperhaltung hervorgeht. Die Restaurierungen werden ergeben, ob er einen Helm trug. Zu erahnen sind ein Panzer und ein Untergewand, das in einem feinen, auf den Pferdekörper gelegten Saum ausläuft (<xref ref-type="fig" rid="f-28">Abb. 28</xref>). Der Ansatz eines Schwertes und ein Schwertgehänge, das um die rechte Schulter gelegt ist (<xref ref-type="fig" rid="f-26">Abb. 26</xref>), bestätigen, dass wir es mit der Darstellung eines Kriegers zu tun haben. </p>
+         <p id="p-38">
+            <named-content content-type="paragraph-counter">38</named-content>Vergleichbare Bildnisse in der Gattung der Kleinbronzen sind sehr selten überliefert – innerhalb Albaniens handelt es sich um ein singuläres Stück<xref ref-type="fn" rid="fn-28">[28]</xref> –, allerdings bezeugt die Verbreitung ähnlicher Bronzereiter-Statuetten die weite Beliebtheit des Sujets. Als Vergleiche anzuführen wären zwei Reiter aus 
+               <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2298524">Dodona</ext-link>
+            
+            <xref ref-type="fn" rid="fn-29">[29]</xref>, zwei Reiter von der Athener Akropolis<xref ref-type="fn" rid="fn-30">[30]</xref>, der Reiter aus 
+               <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2102222">Mantineia</ext-link>
+             im Boston Museum<xref ref-type="fn" rid="fn-31">[31]</xref>, der sog. Grumentum-Reiter vermutlich aus dem lukanischen Armeno im Britischen Museum<xref ref-type="fn" rid="fn-32">[32]</xref> sowie verschiedene Stücke im Princeton Museum<xref ref-type="fn" rid="fn-33">[33]</xref>, im New Yorker Metropolitan Museum<xref ref-type="fn" rid="fn-34">[34]</xref> und im J. P. Getty Museum<xref ref-type="fn" rid="fn-35">[35]</xref>. Im schnellen Lauf der Pferde sind am Bronzekrater von Trebenishte in Makedonien die Reiter wiedergegeben<xref ref-type="fn" rid="fn-36">[36]</xref>, während sich am Krater von 
+               <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2110534">Vix</ext-link>
+             Details der Pferdedarstellungen, beispielsweise die Gestaltung der geflochtenen Schwänze oder die breiten Vordermähnen, ähneln<xref ref-type="fn" rid="fn-37">[37]</xref>. Sie verweisen einerseits auf die Datierung des Babunjë-Reiters, die man in spätarchaisch-frühklassische Zeit wird ansetzen dürfen, womit das Stück zu den frühesten Funden von Babunjë zählt. </p>
+         <p id="p-39">
+            <named-content content-type="paragraph-counter">39</named-content>Andererseits führen die Parallelen vor Augen, in welchem Kontext der Babunjë-Reiter ursprünglich gestanden haben mag. Die Pferdebeine sind unten weggebrochen, wie es bei fast allen Vergleichsstücken der Fall ist. Wie reich und ausgefallen Bronzegefäße und -geräte dieser Zeit dekoriert gewesen sein können, zeigen neben den Krateren von Trebenishte und Vix beispielsweise die Hydria von 
+               <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2359581">Pesaro</ext-link>
+             mit ihren Hopliten- und Tierdarstellungen<xref ref-type="fn" rid="fn-38">[38]</xref>, der sog. Metapont-Stabdreifuß in Berlin mit Pferdeköpfen, Löwen- und Stierappliken<xref ref-type="fn" rid="fn-39">[39]</xref>, kampanische Dinoi mit u. a. vollplastischen, auf den Gefäßrändern applizierten Pferden, Reitern und Sphingen<xref ref-type="fn" rid="fn-40">[40]</xref> oder aber Metallspiegel mit unterschiedlichsten Dekoren<xref ref-type="fn" rid="fn-41">[41]</xref>. Sie geben eine Vorstellung davon, wie der Babunjë-Reiter wohl ebenfalls als Applik eines Bronzegefäßes gedient haben kann. Dass er sich damit anderen Bronzen aus Babunjë und der Region an die Seite stellt, zeigen Altfunde eines ›Kouros-Henkels‹ wohl einer Hydria oder Oinochoe<xref ref-type="fn" rid="fn-42">[42]</xref> sowie eines Palmettenhenkels von einem klassischen Kessel<xref ref-type="fn" rid="fn-43">[43]</xref> jeweils aus Babunjë; aus Apollonia sind neben einfacheren verzierten Bronzegefäßen, wie dem einer Hydria mit Gorgonen-, Sirenen-, Löwenkopf- und Schlangenverzierung<xref ref-type="fn" rid="fn-44">[44]</xref>, verschiedene Bronzen beispielsweise einer Nike<xref ref-type="fn" rid="fn-45">[45]</xref> bekannt, die Teile von Handspiegeln gewesen sein können. Unter den Altfunden von Babunjë befindet sich zudem ein keramisches Model für die Herstellung einer bronzenen Palmettenzier, und eine entsprechende Bronze-Ausformung ist aus Apollonia erhalten<xref ref-type="fn" rid="fn-46">[46]</xref>. In Babunjë müssen also nicht nur Bronzegefäße beliebt gewesen sein, sondern auch lokale Bronzewerkstätten zur Deckung dieses Bedarfes nach Bronzegerät existiert haben. Nichtsdestotrotz fällt die hohe Qualität des Babunjë-Reiters ins Auge, der zu einem außerordentlichen Prunkgefäß gehört haben wird. Erst zukünftige Analysen und die Restaurierung werden Fragen zur kulturlandschaftlichen Einordnung und Provenienz klären können.</p>
+         <p id="p-40">
+            <named-content content-type="paragraph-counter">40</named-content>Auch ist derzeit unklar, in welchem funktionalen Kontext man sich das mutmaßliche Gefäß wird vorstellen können. Bei den Rekonstruktionen des Straßennetzes gingen wir davon aus, dass an der Fundstelle des Reiters eine übliche Insula mit Wohnbebauung bestand. Aus den Geophysikbildern ist jedenfalls eine auffällige Bebauung, die beispielsweise auf ein Heiligtum hinweisen würde, nicht ersichtlich. Gehörte unser Stück also zur Prunkausstattung eines Wohnhauses?</p>
+         <p id="p-41">
+            <named-content content-type="paragraph-counter">41</named-content>Die Forschungen in der Siedlung von Babunjë konzentrieren sich auf die Gestalt des Ortes und der Wohnbebauung; sie gehen dabei insbesondere auch der Frage zur kulturhistorischen und geopolitischen Einbettung der Siedlung und ihrer Einwohner nach. Die Hintergründe für die Ansiedlung dieses Postens im Schatten von Apollonia und Epidamnos werden erst Schritt für Schritt offensichtlich: Aus den Geophysikbildern ergibt sich, dass die urbanen Strukturen Elemente sog. archaischer Streifenstädte – griechischer Kolonien – aufweisen. Die Grabungen, die erst am Anfang stehen, können dies bestätigen, denn das freigelegte Gebäude stellt sich als Teil einer konzipierten Insula-Bebauung dar. Ob ein erster Eindruck einer rhythmisierten Bebauung, eines von den Straßen abgewandten Hauses mit einem seitlich des Gebäudes situierten Hof, der an die Straßen grenzte, treffend ist, wird sich zeigen. Das archaische 
+               <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2281516">Megara Hyblaia</ext-link>
+             mit seinen Ein-, Zwei- und Dreiraumhäusern käme dann beispielsweise als Vergleich in Betracht<xref ref-type="fn" rid="fn-47">[47]</xref>. </p>
+         <p id="p-42">
+            <named-content content-type="paragraph-counter">42</named-content>Das Fundmaterial ist ganz dem griechischen Formenspektrum, sowohl in Koch- und übriger Küchenkeramik als auch im Tafelgeschirr, verhaftet, während es an einheimisch-illyrischen Elementen fast vollständig fehlt. Die Provenienzen reichen in der Frühzeit nach Korinth – es bleibt zu untersuchen, ob hierzu auch der Bronzereiter zu zählen ist – später nach Attika und Unteritalien. Ein Großteil des Alltagsgeschirrs könnte lokal hergestellt worden sein, wie es auch für die Ziegel nachgewiesen ist<xref ref-type="fn" rid="fn-48">[48]</xref>. </p>
+         <p id="p-43">
+            <named-content content-type="paragraph-counter">43</named-content>Babunjë kristallisiert sich vermutlich als eine griechische Kleinsiedlung in der Nachbarschaft Apollonias heraus und dürfte ein von Apollonia abhängiger Ort auf dessen Territorium gewesen sein. Seine außerordentliche Bedeutung im Siedlungsgefüge der Region und die Prosperität der Bewohner veranschaulicht das reiche Fundmaterial, allen voran der Bronzereiter. Welche Faktoren dazu führten, den Platz im 5. Jh. v. Chr. mit einer mächtigen Fortifikation zu versehen und ihn bereits im Laufe des späteren 4. Jhs. v. Chr. zu verlassen, bleibt zu untersuchen.</p>
+         <sec id="images-container"><title>Abbildungen</title>
+            <fig id="poster-image" fig-type="poster-image"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_content_picture.jpg"/></fig>
+            <fig id="f-1" fig-type="content-image"><label>Abb. 1</label><caption><p>Der Siedlungshügel von Babunjë (von Osten)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_1.jpg"/><attrib>Quelle: M. Fiedler</attrib></fig>
+            <fig id="f-2" fig-type="content-image"><label>Abb. 2</label><caption><p>Die Myzeqe-Ebene Mittelalbaniens, mit Siedlungen des 6./5. Jhs. v. Chr.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_2_ohne_Linien.jpg"/><attrib>Quelle: M. Fiedler auf Kartengrundlage maps-for-free.com</attrib></fig>
+            <fig id="f-3" fig-type="content-image"><label>Abb. 3</label><caption><p>Der Siedlungshügel von Babunjë mit dem Ergebnis der geomagnetischen Messungen (M. 1 : 3000)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_3.jpg"/><attrib>Quelle: M. Fiedler – G. Döhner</attrib></fig>
+            <fig id="f-4" fig-type="content-image"><label>Abb. 4</label><caption><p>Babunjë mit rekonstruiertem Straßennetz; bei A und B liegen die Grabungsschnitte von 2018 (M. 1 : 3000)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_4.jpg"/><attrib>Quelle: Topographische Messungen: B. Lischewsky; Geophysik: L. Lenkey</attrib></fig>
+            <fig id="f-5" fig-type="content-image"><label>Abb. 5</label><caption><p>Babunjë, Abschnitt der Fortifikation in Grabungsareal A</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_5.jpg"/><attrib>Quelle: R. Nushi</attrib></fig>
+            <fig id="f-6" fig-type="content-image"><label>Abb. 6</label><caption><p>Babunjë, Abschnitt der Fortifikation in Grabungsareal A (M. 1 : 75)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_6_bearbeitet.jpg"/><attrib>Quelle: K. Velo</attrib></fig>
+            <fig id="f-7" fig-type="content-image"><label>Abb. 7</label><caption><p>Babunjë, Grabungsareal A</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_7.jpg"/><attrib>Quelle: G. Döhner – K. Velo</attrib></fig>
+            <fig id="f-8" fig-type="content-image"><label>Abb. 8</label><caption><p>Babunjë, feldseitige Ansicht der Fortifikation</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_8.jpg"/><attrib>Quelle: G. Döhner – K. Velo</attrib></fig>
+            <fig id="f-9" fig-type="content-image"><label>Abb. 9</label><caption><p>Babunjë, rechts: West-Ansicht der Fortifikation; links: angrenzendes Nord-Profil (M. 1 : 50)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_9.jpg"/><attrib>Quelle: K. Velo</attrib></fig>
+            <fig id="f-10" fig-type="content-image"><label>Abb. 10</label><caption><p>Bauzeitliche Steinsplittschicht (Cx. 12)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_11.jpg"/><attrib>Quelle: K. Velo</attrib></fig>
+            <fig id="f-11" fig-type="content-image"><label>Abb. 11</label><caption><p>Bauzeitliche Steinsplittschichten im Nord-Profil</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_10.jpg"/><attrib>Quelle: K. Velo</attrib></fig>
+            <fig id="f-12" fig-type="content-image"><label>Abb. 12</label><caption><p>Babunjë, stadtseitige Sicht auf die Reste der Fortifikation</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_12.jpg"/><attrib>Quelle: K. Velo</attrib></fig>
+            <fig id="f-13" fig-type="content-image"><label>Abb. 13</label><caption><p>Babunjë, Bruchstück eines Lehmziegels aus der Fortifikation; max. erh. L 15 cm</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_13.jpg"/><attrib>Quelle: K. Velo</attrib></fig>
+            <fig id="f-14" fig-type="content-image"><label>Abb. 14</label><caption><p>Babunjë, Abstich der Baugrube in ältere Kulturschicht, im Südprofil</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_14.jpg"/><attrib>Quelle: K. Velo</attrib></fig>
+            <fig id="f-15" fig-type="content-image"><label>Abb. 15</label><caption><p>Babunjë, Keramik aus den Kulturschichten unterhalb der Baugrube und Fortifikation (M. 1 : 3)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_15.jpg"/><attrib>Quelle: Fotos M. Fiedler; Umzeichnungen M. Koci</attrib></fig>
+            <fig id="f-16" fig-type="content-image"><label>Abb. 16</label><caption><p>Babunjë, Drohnen-Aufnahme der Haus-Grabung in Grabungsareal B</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_16.jpg"/><attrib>Quelle: R. Nushi</attrib></fig>
+            <fig id="f-17" fig-type="content-image"><label>Abb. 17</label><caption><p>Babunjë, Gesamtplan von Grabungsareal B (M. 1 : 100)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_17.jpg"/><attrib>Quelle: L. Daczó</attrib></fig>
+            <fig id="f-18" fig-type="content-image"><label>Abb. 18</label><caption><p>Babunjë, Hausmauern mit Steinsockel und aufgeschichteten Dachziegeln, Ansicht von Norden</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_18.jpg"/><attrib>Quelle: Sz. P. Pánczél</attrib></fig>
+            <fig id="f-19" fig-type="content-image"><label>Abb. 19</label><caption><p>Babunjë, Boden in Raum 1 mit Flachziegeln</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_19.jpg"/><attrib>Quelle: Sz. P. Pánczél</attrib></fig>
+            <fig id="f-20" fig-type="content-image"><label>Abb. 20</label><caption><p>Babunjë, Saum aus Bruchsteinen, Kieseln und Ziegelbruch entlang der Hausmauer, vermutlich Spritzschutz unterhalb der Dachtraufe (Cx 16)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_20.jpg"/><attrib>Quelle: Sz. P. Pánczél</attrib></fig>
+            <fig id="f-21" fig-type="content-image"><label>Abb. 21</label><caption><p>Babunjë, Terrakotta-Model (a, b) und Terrakotten (c–e) vom Haus und dem mutmaßlichen Hof von Grabungsareal B (M. 1 : 3)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_21_entzerrt.jpg"/><attrib>Quelle: M. Fiedler</attrib></fig>
+            <fig id="f-22" fig-type="content-image"><label>Abb. 22</label><caption><p>Babunjë, verzierte Keramik vom Haus und dem mutmaßlichen Hof von Grabungsareal B (M. 1 : 2)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_22_entzerrt.jpg"/><attrib>Quelle: Fotos M. Fiedler; Umzeichnungen M. Koci</attrib></fig>
+            <fig id="f-23" fig-type="content-image"><label>Abb. 23</label><caption><p>Babunjë, Keramik aus den Auflassungsschichten von Grabungsareal B (M. 1 : 2)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_23.jpg"/><attrib>Quelle: Fotos M. Fiedler; Umzeichnungen M. Koci</attrib></fig>
+            <fig id="f-24" fig-type="content-image"><label>Abb. 24</label><caption><p>Der Bronzereiter von Babunjë</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_24.jpg"/><attrib>Quelle: M. Fiedler</attrib></fig>
+            <fig id="f-25" fig-type="content-image"><label>Abb. 25</label><caption><p>Der Bronzereiter von Babunjë, Details</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_25.jpg"/><attrib>Quelle: M. Fiedler</attrib></fig>
+            <fig id="f-26" fig-type="content-image"><label>Abb. 26</label><caption><p>Der Bronzereiter von Babunjë, Details mit mutmaßlichem Schwertgehänge</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_26.jpg"/><attrib>Quelle: M. Fiedler</attrib></fig>
+            <fig id="f-27" fig-type="content-image"><label>Abb. 27</label><caption><p>Der Bronzereiter von Babunjë, Details</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_27.jpg"/><attrib>Quelle: M. Fiedler</attrib></fig>
+            <fig id="f-28" fig-type="content-image"><label>Abb. 28</label><caption><p>Der Bronzereiter von Babunjë, Details mit Gewandsaum</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="AA_2019_1_Fiedler_Lens-web-resources/image/AA_Fiedler_28.jpg"/><attrib>Quelle: M. Fiedler</attrib></fig>
+         </sec>
+      </sec>
+   </body>
+   <back>
+      <ref-list content-type="references">
+         <ref id="ref-AlbanienAusstellungHildesheim1988"><label>Albanien. Ausstellung Hildesheim 1988</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000209975">
+               Albanien. Schätze aus dem Land der Skipetaren. Ausstellung Hildesheim 1988 (Mainz 1988)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Amore2010"><label>Amore 2010</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000849291">
+               M. G. Amore, The Complex of Tumuli 9, 10 and 11 in the Necropolis of Apollonia (Albania), BARIntSer 2059 (Oxford 2010)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-ArtémisàDyrrhachion2009"><label>Artémis à Dyrrhachion 2009</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000850156">
+               A. Muller – F. Tartari (Hrsg.), Artémis à Dyrrhachion, Guides de Durrës 1 (Tirana 2009)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Balandier2000"><label>Balandier 2000</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000365607">
+               C. Balandier, Un rempart en briques cuites à Apollonia d’Illyrie (Albanie)? Problèmes de datation et de définition, in: P. Boucheron – H. Broise – Y. Thébert (Hrsg.), La brique antique et médiévale. Production et commercialisation, CEFR 272 (Rom 2000) 77–85
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Bereti2011"><label>Bereti 2011</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001365382">
+               V. Bereti, Les vases de bronze de la période classique et hellénistique provenant d’Apollonia, Amantia et d’autres sites, in: J.-L. Lamboley – M. P. Castiglioni (Hrsg.), L’Illyrie méridionale et l’Epire dans l’Antiquité. Actes du Ve colloque international de Grenoble 8–11 octobre 2008 (Paris 2011) 499–511
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Broneer1938"><label>Broneer 1938</label><mixed-citation>
+            O. Broneer, Excavations on the North Slope of the Acropolis, 1937, Hesperia 7, 1938, 161–263</mixed-citation></ref>
+         <ref id="ref-Bumke2004"><label>Bumke 2004</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000145343">
+               H. Bumke, Statuarische Gruppen in der frühen griechischen Kunst, JdI Ergh. 32 (Berlin 2004)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Burkhardt2011"><label>Burkhardt 2011</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001070093">
+               N. Burkhardt, Die Lehmziegelmauer der Heuneburg im mediterranen Vergleich, in: »Fürstensitze« und Zentralorte der frühen Kelten. Abschlusskolloquium des DFG-Schwerpunktprogramms 1171 »Frühe Zentralisierungs- und Urbanisierungsprozesse. Zur Genese und Entwicklung frühkeltischer Fürstensitze und ihres territorialen Umlandes« in Stuttgart 12.–15. Oktober 2009 (Stuttgart 2011) 29–50
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Cammarota2011"><label>Cammarota 2011</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001363902">
+               D. Cammarota, La decorazione plastica dei dinoi campani, in: F. Roncalli (Hrsg.), Munuscula. Omaggio degli allievi napoletani a Mauro Cristofani (Pozzuoli 2011) 91–130
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Ceka1963"><label>Ceka 1963</label><mixed-citation>
+            H. Ceka, Muri rrethues i Apollonisë, Buletin i Universitetit Shtetëror të Tiranës. Seria Shkencat Shoqërore 3, 1963, 117–168</mixed-citation></ref>
+         <ref id="ref-ComstockVermeule1971"><label>Comstock – Vermeule 1971</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000952057">
+               M. Comstock – C. Vermeule, Greek, Etruscan and Roman Bronzes in the Museum of Fine Arts Boston (Boston 1971)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Çuko1988"><label>Çuko 1988</label><mixed-citation>
+            P. Çuko, Babunjë (Lushnje), Iliria 18, 2, 1988, 254 f.</mixed-citation></ref>
+         <ref id="ref-Çuko1989"><label>Çuko 1989</label><mixed-citation>
+            P. Çuko, Babunjë (Lushnjë), Iliria 19,2, 1989, 274</mixed-citation></ref>
+         <ref id="ref-Dakaris1986"><label>Dakaris 1986</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000405239">
+               S. Ι. Dakaris, To Óρραoν. To σπίτι στην αρχαία Ήπειρo, ArchEphem 125, 1986, 108–146
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Davidson1952"><label>Davidson 1952</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000184036">
+               G. R. Davidson, The Minor Objects, Corinth 12 (Princeton 1952)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-DöhnerFiedler2019"><label>Döhner – Fiedler 2019</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001569909">
+               G. Döhner – M. Fiedler, Examples of the Early Use of Fired Bricks in Apollonia (Albania), in: J. Bonetto – E. Bukowiecki – R. Volpe (Hrsg.), Alle origini del laterizio romano. Nascita e diffusione del mattone cotto nel Mediterraneo tra IV e I sec. a.C. Atti del II Convegno internazionale ›Laterizio‹ Padova 26–28 aprile 2016 (Rom 2019) 61–70
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Dontas1966"><label>Dontas 1966</label><mixed-citation>
+            G. S. Dontas, Ανασκαφή οικ. Ευελπίδη, ADelt 21, 1966, 321–324</mixed-citation></ref>
+         <ref id="ref-Fiedler2014"><label>Fiedler 2014</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001410019">
+               M. Fiedler, Aspekte der städtebaulichen Entwicklung Apollonias. Die deutsch-albanischen Forschungen 2006–2013, in: L. Përzhita – I. Gjipali – G. Hoxha – B. Muka (Hrsg.), Proceedings of the International Congress of Albanian Archaeological Studies. 65th Anniversary of Albanian Archaeology Tirana 21.–22. November 2013 (Tirana 2014) 253–265
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Fiedler2017"><label>Fiedler 2017</label><mixed-citation>
+            M. Fiedler‚ ›Schwarzgefirnißtes‹ aus Babunjë (Albanien), in: M. Ugarković – A. De Bonis (Hrsg.), Identifying Black-glazed Pottery Productions in the Central Mediterranean: an Interdisciplinary Approach. International Workshop, Forum Archaeologiae 83/VI/2017 (&lt;http://farch.net&gt;)</mixed-citation></ref>
+         <ref id="ref-Fiedlerua2018"><label>Fiedler u. a. 2018</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001568062">
+               M. Fiedler – G. Döhner – Sz.-P. Pánczél, Babunjë. Eine spätarchaisch-klassische Kleinsiedlung zwischen Apollonia und Dyrrhachion (Albanien), in: J.-L. Lamboley – L. Përzhita – A. Skenderaj (Hrsg.), L’Illyrie méridionale et l’Epire dans l’Antiquité VI. Actes du VIe colloque international de Tirana 20–30 mai 2015 (Paris 2018) 1003–1016
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-FiedleruainVorb"><label>Fiedler u. a. in Vorb.</label><mixed-citation>
+            M. Fiedler – G. Döhner – Sz.-P. Pánczél, Babunjë, eine spätarchaisch-klassische Kleinsiedlung bei Apollonia (Albanien). Ein Beitrag zur Untersuchung der griechischen Kolonisierung an den Ostküsten des Ionischen und südlichen Adriatischen Meeres (Monographie, in Vorbereitung)</mixed-citation></ref>
+         <ref id="ref-Hill1958"><label>Hill 1958</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000505551">
+               D. K. Hill, A Class of Bronze Handles of the Archaic and Classical Periods, AJA 62, 1958, 193–201
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-HoepfnerSchwandner1994"><label>Hoepfner – Schwandner 1994</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000007625">
+               W. Hoepfner – E.-L. Schwandner, Haus und Stadt im klassischen Griechenland 2(München 1994)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Hoepfnerua1999"><label>Hoepfner u. a. 1999</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000207725">
+               W. Hoepfner – E.-L. Schwandner – S. Dakaris, Orraon. Eine geplante Kleinstadt in Epirus, in: W. Hoepfner (Hrsg.), Geschichte des Wohnens 1: 5000 v. Chr.–500 n. Chr. Vorgeschichte, Frühgeschichte, Antike (Stuttgart 1999) 384–411
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Jones1960"><label>Jones 1960</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001477082">
+               F. F. Jones, Ancient Art in the Art Museum Princeton University (Princeton 1960)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Jucker1966"><label>Jucker 1966</label><mixed-citation>
+            
+            H. Jucker, Bronzehenkel und Bronzehydria in Pesaro, Studia Oliveriana 13/14 (Pesaro 1966)
+         </mixed-citation></ref>
+         <ref id="ref-Kunisch1989"><label>Kunisch 1989</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000040070">
+               N. Kunisch, Griechische Fischteller. Natur und Bild (Berlin 1989)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Ley2009"><label>Ley 2009</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000807400">
+               J. Ley, Stadtbefestigungen in Akarnanien. Ein bauhistorischer Beitrag zur urbanen Entwicklungsgeschichte einer antiken Landschaft (Diss. Technische Universität Berlin 2009)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-ManoZisiPopović1969"><label>Mano-Zisi – Popović 1969</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000314082">
+               Đ. Mano-Zisi – Lj. B. Popović, Novi Pazar. Ilirsko-grčki nalaz – The Illyrian-Greek Find. Ausstellungskatalog Belgrad 1969 (Belgrad 1969)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Marchetti1977"><label>Marchetti 1977</label><mixed-citation>
+            P. Marchetti, Rapport sur les fouilles dans la proprieté Evelpidis, ADelt 32 B, 1977, 186–189</mixed-citation></ref>
+         <ref id="ref-Merker2006"><label>Merker 2006</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000228393">
+               G. S. Merker, The Greek Tile Works at Corinth: The Site and the Finds, Hesperia Suppl. 35 (Athen 2006)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-MindandBody1989"><label>Mind and Body 1989</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000769103">
+               O. Tzachou-Alexandri (Hrsg.), Mind and Body. Athletic Contests in Ancient Greece. Ausstellungskatalog Athen 1989 (Athen 1989)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-PassionforAntiquities1994"><label>Passion for Antiquities 1994</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000169706">
+               M. True – K. Hamma (Hrsg.), A Passion for Antiquities. Ancient Art from the Collection of Barbara and Lawrence Fleischman. Ausstellungskatalog Malibu 1994 (Malibu 1994)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-PrekaAlexandri1991"><label>Preka-Alexandri 1991</label><mixed-citation>
+            K. Preka-Alexandri, Νόμος Κερκύρας, ADelt 46 B, 1991, 254–273</mixed-citation></ref>
+         <ref id="ref-Richter1953"><label>Richter 1953</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000775151">
+               G. M. A. Richter, The Metropolitan Museum of Art. Handbook of the Greek Collection (New York 1953)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-deRidder1896"><label>de Ridder 1896</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000208963">
+               A. de Ridder, Catalogue des Bronzes trouvés sur l’Acropole d’Athènes (Paris 1896)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Rolley1967"><label>Rolley 1967</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000211008">
+               C. Rolley, Die Bronzen, Monumenta Graeca et Romana 5. Griechische Kleinkunst 1 (Leiden 1967)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Rolley1983"><label>Rolley 1983</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/AT000775705">
+               C. Rolley, Les Bronzes grecs (Fribourg 1983)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Rolley2003"><label>Rolley 2003</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000068972">
+               C. Rolley (Hrsg.), La tombe princière de Vix (Paris 2003)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Sassi2017"><label>Sassi 2017</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001499895">
+               B. Sassi, Dyrrachium III. Storia e archeologia di una città portuale tra Oriente e Occidente (Bari 2017)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Schwandner1999"><label>Schwandner 1999</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000207725">
+               E.-L. Schwandner, Einzelprobleme, in: W. Hoepfner (Hrsg.), Geschichte des Wohnens 1: 5000 v. Chr.–500 n. Chr. Vorgeschichte, Frühgeschichte, Antike (Stuttgart 1999) 525–536
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Shehi2019"><label>Shehi 2019</label><mixed-citation>
+            E. Shehi, Rishikim mbi topografinë e Durrësit antik në dritën e të dhënave të reja arkeologjiko-historike, Iliria 2019, 229–289</mixed-citation></ref>
+         <ref id="ref-Sparkes1977"><label>Sparkes 1977</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000450985">
+               B. A. Sparkes, Quintain and the Talcott Class, AntK 20, 1977, 8–25
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-SparkesTalcott1970"><label>Sparkes – Talcott 1970</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000153237">
+               B. A. Sparkes – L. Talcott, Black and Plain Pottery of the 6th, 5th, and 4th Centuries B.C., Agora 12 (Princeton 1970)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Stibbe2003"><label>Stibbe 2003</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000929570">
+               M. Stibbe, Trebenishte. The Fortunes of an Unusual Excavation (Rom 2003)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Stillwell1948"><label>Stillwell 1948</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000154915">
+               A. N. Stillwell, The Potters’ Quarter, Corinth 15, 1 (Princeton 1948)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Valletua1976"><label>Vallet u. a. 1976</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000192022">
+               G. Vallet – Fr. Villard – P. Auberson, Mégara Hyblaea 1. Le Quartier de l’agora archaïque, CEFR 1 (Rom 1976)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Vulić1932"><label>Vulić 1932</label><mixed-citation>
+            N. Vulić, Ein neues Grab bei Trebenishte, ÖJh 27, 1932, 1–42</mixed-citation></ref>
+         <ref id="ref-Walters1915"><label>Walters 1915</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000174489">
+               H. B. Walters, British Museum. Select Bronzes, Greek, Roman, and Etruscan, in the Departments of Antiquities (London 1915)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Zimmermann1998"><label>Zimmermann 1998</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000043629">
+               N. Zimmermann, Beziehungen zwischen Ton- und Metallgefäßen spätklassischer und frühhellenistischer Zeit, Internationale Archäologie 20 (Rahden 1998)
+            </ext-link>
+         </mixed-citation></ref>
+      </ref-list>
+      <fn-group content-type="footnotes">
+         <title>Fussnoten</title>
+         <fn id="fn-1"><label>1</label><p>
+               Babunjë liegt im heutigen Kreis Lushnjë in Mittelalbanien. Das Projekt wird von Bashkim Lahi (Tirana) und Manuel Fiedler (Berlin) geleitet. Die Arbeiten konnten zunächst durch die Fritz Thyssen Stiftung (2013, 2015) und ab 2018 im Rahmen eines Erasmus+-Partnerländerprogrammes zwischen der Humboldt-Universität zu Berlin und dem Archäologischen Institut des Albanologischen Forschungszentrums Tirana finanziell getragen werden. Für die großzügige Unterstützung der Kampagne 2018 danken wir Stephan G. Schmid (Berlin) und Luan Perzhita (Tirana) ebenso herzlich wie für das große Engagement der Mitarbeiter/-innen und Studierenden Klodian Velo, Levente Daczó, Thomas Martin, Victoria Kant, Hanna Koch, Léa Geisler, Renald Meta, Dafina Kuliqi, Nina Horn-Wittkuhn, Jonathan Ritter, Daniela Ferko, Niko Ferro sowie Adriatik, Euro, Edmond und Robert Rrasa. Vielfältige Hilfe erhielten wir von Bashkim Lahi, Henner von Hesberg und nicht zuletzt Dietmar Buchmann, Matthias Parske und Karolina Kozikowska; die Keramik-Umzeichnungen verdanken wir Marlon Koci. Die Grabung und Fundaufnahme fanden von Ende August bis Ende Oktober 2018 statt.</p></fn>
+         <fn id="fn-2"><label>2</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Fiedler2017">Fiedler 2017</xref>; <xref ref-type="bibr" rid="ref-Fiedlerua2018">Fiedler u. a. 2018</xref>; <xref ref-type="bibr" rid="ref-FiedleruainVorb">Fiedler u. a. in Vorb.</xref> Die Geophysikmessungen unternahm L. Lenkey, ELTE-Universität Budapest.</p></fn>
+         <fn id="fn-3"><label>3</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Dontas1966">Dontas 1966</xref>, 322 Abb. 2; <xref ref-type="bibr" rid="ref-Marchetti1977">Marchetti 1977</xref>, 187 Abb. 1 (Grundstück Ευελπίδη); die Maßstäbe stimmen auf den Plänen nicht überein; ob die Straße 2,50 oder 3,80 m breit war, lässt sich daraus nicht ersehen. <xref ref-type="bibr" rid="ref-PrekaAlexandri1991">Preka-Alexandri 1991</xref>, 258 Abb. 2 (Grundstück Ζωχιού) 259–261 Abb. 3 (Grundstück Χαλικιόπουλου).</p></fn>
+         <fn id="fn-4"><label>4</label><p>
+               
+               <xref ref-type="bibr" rid="ref-HoepfnerSchwandner1994">Hoepfner – Schwandner 1994</xref>, 2–4, dort mit 2,50 m breiten Nebenstraßen.</p></fn>
+         <fn id="fn-5"><label>5</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Dakaris1986">Dakaris 1986</xref>; <xref ref-type="bibr" rid="ref-Hoepfnerua1999">Hoepfner u. a. 1999</xref>.</p></fn>
+         <fn id="fn-6"><label>6</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Çuko1988">Çuko 1988</xref>; <xref ref-type="bibr" rid="ref-Çuko1989">Çuko 1989</xref>.</p></fn>
+         <fn id="fn-7"><label>7</label><p>
+               Die nächsten Kalksteinbrüche liegen an der Karaburun-Halbinsel ca. 50 km Luftlinie südlich von Babunjë.</p></fn>
+         <fn id="fn-8"><label>8</label><p>
+               Der Siedlungshügel und der nach Norden anschließende Höhenrücken bestehen in Teilen aus Konglomeratgestein.</p></fn>
+         <fn id="fn-9"><label>9</label><p>
+               Einen Überblick bietet <xref ref-type="bibr" rid="ref-Burkhardt2011">Burkhardt 2011</xref>, 35–42.</p></fn>
+         <fn id="fn-10"><label>10</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Ley2009">Ley 2009</xref>, 21–25.</p></fn>
+         <fn id="fn-11"><label>11</label><p>
+               Zu einem Mauerabschnitt an der Ostseite von Apollonias Oberstadt s. <xref ref-type="bibr" rid="ref-Ceka1963">Ceka 1963</xref>; <xref ref-type="bibr" rid="ref-Balandier2000">Balandier 2000</xref>. Cekas Beschreibungen der Mauerfüllung lassen wie der steinerne Sockel die ursprüngliche Verwendung von Lehmziegeln vermuten; die Außenschale wurde wohl – in spätklassischer oder hellenistischer Zeit – mit gebrannten Ziegeln erneuert. Zu Epidamnos <xref ref-type="bibr" rid="ref-Shehi2019">Shehi 2019</xref>; ein (vermutlich klassischer) Rundturm an der Ostseite der Stadt dürfte einen Lehmziegelaufbau auf einem Steinsockel gehabt haben (<xref ref-type="bibr" rid="ref-Shehi2019">Shehi 2019</xref>, 239 f. Abb. 9). </p></fn>
+         <fn id="fn-12"><label>12</label><p>
+               Vgl. <xref ref-type="bibr" rid="ref-SparkesTalcott1970">Sparkes – Talcott 1970</xref>, 93–94. 265–266 Nr. 434–437. 440 Abb. 5 Taf. 20, ca. 475–460 v. Chr. </p></fn>
+         <fn id="fn-13"><label>13</label><p>
+               Zur ausführlichen Diskussion des Apolloniaten-Anathems s. <xref ref-type="bibr" rid="ref-Bumke2004">Bumke 2004</xref>, 171–184.</p></fn>
+         <fn id="fn-14"><label>14</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Fiedler2014">Fiedler 2014</xref>, 254 f. Abb. 2. 3; <xref ref-type="bibr" rid="ref-DöhnerFiedler2019">Döhner – Fiedler 2019</xref>, 70 f. Abb. 1.</p></fn>
+         <fn id="fn-15"><label>15</label><p>
+               
+               <xref ref-type="bibr" rid="ref-ArtémisàDyrrhachion2009">Artémis à Dyrrhachion 2009</xref>, 7 Abb. 3. 4; <xref ref-type="bibr" rid="ref-Sassi2017">Sassi 2017</xref>, 22. 212 Abb. 9.</p></fn>
+         <fn id="fn-16"><label>16</label><p>
+               Vgl. <xref ref-type="bibr" rid="ref-Davidson1952">Davidson 1952</xref>, 39 Taf. 15 Nr. 206. 207; <xref ref-type="bibr" rid="ref-Dontas1966">Dontas 1966</xref>, 321 Taf. 331 δ (aus Kerkyra).</p></fn>
+         <fn id="fn-17"><label>17</label><p>
+               Solche Scheiben waren in Babunjë offensichtlich beliebt, s. <xref ref-type="bibr" rid="ref-Fiedlerua2018">Fiedler u. a. 2018</xref>, 1006. 1007 Abb. 7, 9–11. Ähnlich <xref ref-type="bibr" rid="ref-Merker2006">Merker 2006</xref>, 24 f. Abb. 9, 2 aus Korinth; <xref ref-type="bibr" rid="ref-Stillwell1948">Stillwell 1948</xref>, 112 f. Taf. 46 Nr. 103–106.</p></fn>
+         <fn id="fn-18"><label>18</label><p>
+               Nach <xref ref-type="bibr" rid="ref-Kunisch1989">Kunisch 1989</xref>, 42 liegt hier die Blütezeit der unteritalischen Fischteller.</p></fn>
+         <fn id="fn-19"><label>19</label><p>
+               Aus Apollonia liegen einige formgleiche Stücke aus Gräbern vor; vgl. ähnlich auch <xref ref-type="bibr" rid="ref-Amore2010">Amore 2010</xref>, 423 Nr. 2153. </p></fn>
+         <fn id="fn-20"><label>20</label><p>
+               Das Stück Abb. 23 c weist auf der Unterseite ein Graffito »IA« auf. Solche Buchstabenkürzel sind im Bestand öfter vorhanden.</p></fn>
+         <fn id="fn-21"><label>21</label><p>
+               Netzlekythen sind aus Babunjë bereits aus Gräbern bekannt: <xref ref-type="bibr" rid="ref-FiedleruainVorb">Fiedler u. a. in Vorb.</xref>
+            </p></fn>
+         <fn id="fn-22"><label>22</label><p>
+               
+               <xref ref-type="bibr" rid="ref-SparkesTalcott1970">Sparkes – Talcott 1970</xref>, 162. 163 Taf. 39 Nr. 1201–1203 (425–350 v. Chr.); <xref ref-type="bibr" rid="ref-Sparkes1977">Sparkes 1977</xref>, bes. 16–19, ungefähr wie die Stücke Abb. 7, 8. 9 oder Abb. 8, 1. 2 der Jahrzehnte um die Mitte des 4. Jhs. v. Chr.; <xref ref-type="bibr" rid="ref-Zimmermann1998">Zimmermann 1998</xref>, 42–47.</p></fn>
+         <fn id="fn-23"><label>23</label><p>
+               
+               <xref ref-type="bibr" rid="ref-SparkesTalcott1970">Sparkes – Talcott 1970</xref>, 73. 251 Abb. 3 Nr. 217 (420 v. Chr.).</p></fn>
+         <fn id="fn-24"><label>24</label><p>
+               Kontexte BAB-B-I-8; BAB-B-I-9; BAB-B-I-10; BAB-B-I-14; BAB-B-I-15.</p></fn>
+         <fn id="fn-25"><label>25</label><p>
+               s. <xref ref-type="bibr" rid="ref-Schwandner1999">Schwandner 1999</xref>, 535. In Kassope blieben beim Auszug aus den Häusern Stapel von Dachziegeln liegen.</p></fn>
+         <fn id="fn-26"><label>26</label><p>
+               Unter den Neufunden sind gelegentliche Glasfunde und Fragmente ›illyrischer‹ Kochtöpfe. Die Stücke können mit Baustrukturen nicht verbunden werden, sondern sind Streufunde in den obersten Schichten (Kontexte BAB-B-I-7=BAB-B-I-17).</p></fn>
+         <fn id="fn-27"><label>27</label><p>
+               Die Fundstelle liegt ca. 170 bis 200 m südlich der beiden Grabungsstellen im Quadranten 1224. Die Pflugarbeiten wurden seitens des Grabungsteams beobachtet, als das Stück hochgepflügt wurde.</p></fn>
+         <fn id="fn-28"><label>28</label><p>
+               Einem heute verlorenen Bronzepferd aus Apollonia saß kein Reiter auf: Inv. 12899; Abbildungen im Archiv des Archäologischen Instituts Tirana (1990).</p></fn>
+         <fn id="fn-29"><label>29</label><p>
+               Jetzt im Pariser Louvre und im Athener Nationalmuseum: <xref ref-type="bibr" rid="ref-Rolley1967">Rolley 1967</xref>, 5 Taf. 15 Nr. 49; <xref ref-type="bibr" rid="ref-MindandBody1989">Mind and Body 1989</xref>, 141 f. Nr. 32, etwas älter aus der ersten Hälfte des 6. Jhs. v. Chr.</p></fn>
+         <fn id="fn-30"><label>30</label><p>
+               Brunnenfund vom Nordhang der Akropolis: <xref ref-type="bibr" rid="ref-Broneer1938">Broneer 1938</xref>, 203–208 Abb. 38. 39; <xref ref-type="bibr" rid="ref-deRidder1896">de Ridder 1896</xref>, 277–279 Abb. 260 Nr. 752.</p></fn>
+         <fn id="fn-31"><label>31</label><p>
+               Eng verwandt ist insbesondere die Gestaltung der Mähne und des fächerförmigen Ponys: <xref ref-type="bibr" rid="ref-ComstockVermeule1971">Comstock – Vermeule 1971</xref>, 34 Nr. 32 (vermutlich peloponnesische Arbeit, ca. 525 v. Chr.). Ein weiteres Stück eines galoppierenden Reiters in Boston weist weniger Ähnlichkeiten auf, soll aber aus einer korinthischen Werkstatt stammen: <xref ref-type="bibr" rid="ref-ComstockVermeule1971">Comstock – Vermeule 1971</xref>, 35 Nr. 33 (ca. 520 v. Chr.).</p></fn>
+         <fn id="fn-32"><label>32</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Walters1915">Walters 1915</xref>, Taf. 1; <xref ref-type="bibr" rid="ref-Rolley1983">Rolley 1983</xref>, 123 f. Abb. 110. Zum Fundort s. &lt;https://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=399493&amp;partId=1&gt; (31.05.2019)</p></fn>
+         <fn id="fn-33"><label>33</label><p>
+               Mit nur 8,4 cm recht klein im Vergleich zu den übrigen Exemplaren: <xref ref-type="bibr" rid="ref-Jones1960">Jones 1960</xref>, 38 f.</p></fn>
+         <fn id="fn-34"><label>34</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Richter1953">Richter 1953</xref>, 67 Abb. 49. 50.</p></fn>
+         <fn id="fn-35"><label>35</label><p>
+               Nur der Reiter ist erhalten: <xref ref-type="bibr" rid="ref-PassionforAntiquities1994">Passion for Antiquities 1994</xref>, 52 f. Nr. 14.</p></fn>
+         <fn id="fn-36"><label>36</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Stibbe2003">Stibbe 2003</xref>, 37. 85 Abb. 48; <xref ref-type="bibr" rid="ref-Vulić1932">Vulić 1932</xref>, 19–22 Abb. 31–34.</p></fn>
+         <fn id="fn-37"><label>37</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Rolley1983">Rolley 1983</xref>, 138 f. 142 Abb. 128. 129; <xref ref-type="bibr" rid="ref-Rolley2003">Rolley 2003</xref>, 77–143 Taf. 94 c. 96. 97. Vgl. auch die Reiter-Applik im J. P. Getty Museum: <xref ref-type="bibr" rid="ref-PassionforAntiquities1994">Passion for Antiquities 1994</xref>, 58 f. Nr. 18. </p></fn>
+         <fn id="fn-38"><label>38</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Jucker1966">Jucker 1966</xref>, Taf. 3.</p></fn>
+         <fn id="fn-39"><label>39</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Rolley1983">Rolley 1983</xref>, 118. 120 Abb. 106.</p></fn>
+         <fn id="fn-40"><label>40</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Rolley1983">Rolley 1983</xref>, 140. 142 Abb. 131. 132; <xref ref-type="bibr" rid="ref-Cammarota2011">Cammarota 2011</xref>.</p></fn>
+         <fn id="fn-41"><label>41</label><p>
+               Vgl. als herausragendes Beispiel einen Spiegel des mittleren 5. Jhs. v. Chr. aus Argos mit vollplastischen Hunden in wilder Fuchs- und Hasenjagd, Sphingen und Eroten sowie der als Peplosträgerin gestalteten Spiegelstütze, zu dem es ein Pendant in Leukas gibt: <xref ref-type="bibr" rid="ref-Rolley1983">Rolley 1983</xref>, 90 f. Abb. 68. </p></fn>
+         <fn id="fn-42"><label>42</label><p>
+               
+               <xref ref-type="bibr" rid="ref-FiedleruainVorb">Fiedler u. a. in Vorb.</xref>; Bildarchiv des Archäologischen Instituts Tirana Nr. 17077. Vgl. <xref ref-type="bibr" rid="ref-Rolley1983">Rolley 1983</xref>, 136 Nr. 125 aus Apulien; <xref ref-type="bibr" rid="ref-ManoZisiPopović1969">Mano-Zisi – Popović 1969</xref>, 78 Taf. 3 a–d aus Novi Pazar; vgl. schon die Zusammenstellung der weit verbreiteten Gattung Hill 1958. </p></fn>
+         <fn id="fn-43"><label>43</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Fiedlerua2018">Fiedler u. a. 2018</xref>, 1008. 1011 Abb. 11.</p></fn>
+         <fn id="fn-44"><label>44</label><p>
+               
+               <xref ref-type="bibr" rid="ref-AlbanienAusstellungHildesheim1988">Albanien. Ausstellung Hildesheim 1988</xref>, 304 f. Nr. 184; <xref ref-type="bibr" rid="ref-Bereti2011">Bereti 2011</xref>, 501 f. Taf. 2, 3–7. </p></fn>
+         <fn id="fn-45"><label>45</label><p>
+               
+               <xref ref-type="bibr" rid="ref-AlbanienAusstellungHildesheim1988">Albanien. Ausstellung Hildesheim 1988</xref>, 239 Nr. 108. </p></fn>
+         <fn id="fn-46"><label>46</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Fiedlerua2018">Fiedler u. a. 2018</xref>, 1010 f. Abb. 12, 7 mit Apollonia-Verweis. </p></fn>
+         <fn id="fn-47"><label>47</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Valletua1976">Vallet u. a. 1976</xref>.</p></fn>
+         <fn id="fn-48"><label>48</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Fiedlerua2018">Fiedler u. a. 2018</xref>, 1008. 1011 Abb. 12, 4–6.</p></fn>
+      </fn-group>
+      
+   </back>
+</article>
