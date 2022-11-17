@@ -49,6 +49,8 @@
       Listen-Elemente und Tabellen in Prüfung 2.1 ergänzt;
       Tabellen-Formate in Prüfung 2.2 ergänzt;
       Neues "italic"-Format in Prüfung 2.3 ergänzt;
+      Anpassung Prüfung 2.6: unerwartete Sprach-Attribute werden nun nur noch als Info ausgegeben;
+      
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -1051,15 +1053,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     <xsl:with-param name="CheckName">Korrekte Verwendung der Sprach-Attribute</xsl:with-param>
                     <xsl:with-param name="CheckResult">In  
                         <xsl:value-of select="$WrongLanguageElements"/>  
-                        unerwarteten Elementen wurden Sprach-Attribute gefunden: 
-                        <xsl:value-of select="$WrongLanguageElementsText"/> 
-                        Bitte prüfen Sie ihre InDesign-Struktur und passen Sie das Tagging so an, 
-                        dass Sprach-Attribute nur an den Absatz-Formaten mit den Namen 
+                        Elementen wurden unerwartete Sprach-Attribute gefunden. 
+                        Nachdem sich die Spracherkennung auf die Formatnamen
                         'title-[SPRACHE]', 'abstract-original-h-[SPRACHE]' oder 
-                        'abstract-translation-h-[SPRACHE]' ausgegeben werden. Ansonsten kann im 
-                    JATS-Konverter die korrekte Erkennung und Behandlung von Dokument-Sprache bzw.
-                    Abstract-Sprachen nicht gewährleistet werden. </xsl:with-param>
-                    <xsl:with-param name="Type">Fehler</xsl:with-param>
+                        'abstract-translation-h-[SPRACHE]' stützt, können Sie dies 
+                        als reine Information ansehen, an dieser Stelle sind keine Änderungen nötig. </xsl:with-param>
+                    <xsl:with-param name="Type">Info</xsl:with-param>
                 </xsl:call-template>
             </xsl:when>
             <xsl:otherwise>
