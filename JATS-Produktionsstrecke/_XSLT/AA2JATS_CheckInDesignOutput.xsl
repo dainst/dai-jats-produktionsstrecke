@@ -52,6 +52,7 @@
       Unerwartete Sprach-Attribute werden in Prüfung 2.6 nur noch als Info ausgegeben;
       Ergänzung der Grant-ID in Prüfung 3.4;
       Ergänzung der Formate co-author-institution-city und co-author-institution-country in Prüfung 8.4;
+      Ergänzung der Formate body-text-katalog und katalog-nummer in Prüfung 2.2;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -851,6 +852,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='body-h2' and 
             @class!='body-h3' and 
             @class!='body-text' and 
+            @class!='body-text-katalog' and
+            @class!='katalog-nummer' and
             @class!='Kein-Tabellenformat' and
             @class!='table' and
             @class!='HorizontalRule-1' and
@@ -863,6 +866,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='body-h2' and 
             @class!='body-h3' and 
             @class!='body-text' and 
+            @class!='body-text-katalog' and
+            @class!='katalog-nummer' and
             @class!='Kein-Tabellenformat' and
             @class!='table' and
             @class!='HorizontalRule-1' and
