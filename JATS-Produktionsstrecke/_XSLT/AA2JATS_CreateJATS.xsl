@@ -52,6 +52,7 @@
       Geordnete/Ungeordnete Listen und ihre Listenpunkte werden nun mit konvertiert;
       Format "italic" für Kursivstellungen wird nun unterstützt;
       Generierter Text für Quellenangaben bei Abbildungen angepasst;
+      Tabellencontainer und Inhalte werden mit allen nötigen Datenstrukturen erzeugt;
       
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
@@ -788,24 +789,40 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     <xsl:template match="table">
         <!-- Behandlung der Tabellen-Elemente in den Daten: Wir nehmen hier die Tabellen-Struktur aus 
         InDesign und reichen sie faktisch unverändert an JATS durch, es werden aber die notwendigen IDs
-        und der table-wrap-Container erzeugt. Die Formatklassen der Tabellen-Elemente werden aktuell entfernt.
-        ACHTUNG: In den aktuellen InDesign-Daten werden keine HTML-Tabellen verwendet, die 
-        tabellarischen Inhalte werden aus Kosten/Nutzen-Erwägungen zunächst ausschließlich als 
-        Bilder in die XML-Daten übernommen. Die Tabellen-Umsetzung hier im XSLT funktioniert 
-        grundsätzlich, die Ergebnisse sind aber noch einigermaßen rough. Sollten in Zukunft 
-        tatsächlich "echte" Tabellen in den JATS-Daten benutzt werden, muss hier noch einiges 
-        getan werden, inbesondere was Klassen-Design, Styling, Responsivität etc. angeht. -->
+        und der table-wrap-Container erzeugt. Aufgrund der Formaten an den p-'Elemente in den Zellen wird
+        das rules-Attribut für die Linierung der Tabelle bestimmt -->
         <xsl:element name="table-wrap">
             <xsl:attribute name="id">
                 <xsl:call-template name="CreateTableWrapID"/>
             </xsl:attribute>
+            <xsl:attribute name="position" select="'anchor'"/>
             <xsl:element name="table">
                 <xsl:attribute name="id">
                     <xsl:call-template name="CreateTableID"/>
                 </xsl:attribute>
+                <xsl:attribute name="rules">
+                    <!-- Abhängig von den Formaten an den Texten in den Zellen bestimmen wir hier,
+                         ob die Tabellen ein rules-Attribut für die Linierung bekommt oder nicht -->
+                    <xsl:choose>
+                        <xsl:when test="count(descendant::p[@class='table-text-rows']) &gt; 0">
+                            <xsl:text>rows</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="count(descendant::p[@class='table-text']) &gt; 0">
+                            <xsl:text>none</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>none</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+                <!-- Weitere Kind-Elemente werden bis auf <colgroup> schlicht durchgereicht -->
                 <xsl:apply-templates/>
             </xsl:element>
         </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="colgroup">
+        <!-- Wir filtern colgroup aus, da hier keine sinnvollen Informationen hängen -->
     </xsl:template>
 
     <!-- Body: Abbildungen -->
