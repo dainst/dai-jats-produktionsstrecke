@@ -51,6 +51,7 @@
       Neues "italic"-Format in Prüfung 2.3 ergänzt;
       Unerwartete Sprach-Attribute werden in Prüfung 2.6 nur noch als Info ausgegeben;
       Ergänzung der Grant-ID in Prüfung 3.4;
+      Ergänzung der Formate co-author-institution-city und co-author-institution-country in Prüfung 8.4;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -4284,6 +4285,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='co-author-institution-id' and 
             @class!='co-author-institution-address' and
             @class!='co-author-institution-tel' and
+            @class!='co-author-institution-city' and
+            @class!='co-author-institution-country' and
             @class!='co-author-identification'
             ])!=0])"/>
     </xsl:template>
@@ -4314,6 +4317,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='co-author-institution-id' and 
             @class!='co-author-institution-address' and
             @class!='co-author-institution-tel' and
+            @class!='co-author-institution-city' and
+            @class!='co-author-institution-country' and
             @class!='co-author-identification'
             ]">
             <xsl:text>Element: span</xsl:text>
