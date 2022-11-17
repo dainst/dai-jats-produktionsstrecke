@@ -29,12 +29,15 @@
     - Für den Backmatter-Bereich werden ausgewertet und mit Element-Containern herausgeschrieben:
     Fussnoten, Referenzen/Literaturverzeichnis, Abkürzungsverzeichnis/Glossar
     
-    Version:  1.0
-    Datum: 2019-11-12
+    Version:  1.1
+    Datum: 2022-11-17
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
-    - Version 1.0: Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
+    - Version 1.1:
+      Listen-Elemente in Template für Entfernung des XHTML-Namespace ergänzt
+    - Version 1.0: 
+      Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.5:
       Anpassung von CreateLOI: Das Zwischenformat für das Abbildungsverzeichnis wurde angepasst,
       damit in Abbildungsverzeichnis-Einträge nun auch mehr als ein Zeichen-Format enthalten sein
@@ -178,7 +181,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     <xsl:template match="body">
         <!-- body: Wir suchen hier explizit nach einem ehemaligen Textrahmen für den Haupttext mit 
         @class = 'bodytext' und behandeln alle Inhalte. -->
-        <xsl:apply-templates select="div[@class = 'body']"/>
+        <xsl:apply-templates select="child::div[@class = 'body']"/>
     </xsl:template>
 
     <xsl:template match="div[@class = 'body']">
@@ -236,7 +239,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     </xsl:template>
 
     <xsl:template
-        match="p | div | table | span | a | img | colgroup | col | tr | td | thead | tbody"
+        match="p | div | table | span | a | img | colgroup | col | tr | td | thead | tbody | ol | ul | li"
         xpath-default-namespace="http://www.w3.org/1999/xhtml">
         <!-- Wir sorgen hier dafür, dass die Elemente in der Matching-Group ohne die Namespace-Referenzen auf den 
         XHTML-Namespace übergeben werden. Geschieht das nicht, kommt es in den folgenden Transformationen zu Adressierungs-
