@@ -43,12 +43,18 @@
     Validierungsfehler als letzte Instanz geschehen, damit Fehler mit inhaltlichen Folgen nicht 
     unbemerkt aus den Daten verschwinden.
     
-    Version:  1.0
-    Datum: 2019-11-12
+    Version:  1.1
+    Datum: 2022-11-17
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
-    - Version 1.0: Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
+    - Version 1.1:
+      Geordnete/Ungeordnete Listen und ihre Listenpunkte werden nun mit konvertiert;
+      Format "italic" für Kursivstellungen wird nun unterstützt;
+      Generierter Text für Quellenangaben bei Abbildungen angepasst;
+      
+    - Version 1.0: 
+      Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
       Anpassungen aufgrund des Produktiv-Content der ersten Ausgabe von AA. Im Detail:
       Anpassungen an der Behandlung von <missing-references> bzw. einer <fn-group> ohne Fussnoten
@@ -377,8 +383,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     
     </xsl:template>
 
-    
-
     <xsl:template match="p[@class = 'author'] | p[@class = 'co-auther']">
         <!-- Wir filtern die Absatz-Elemente für Autor/Co-Autor hier auf Absatz-Ebene komplett 
             heraus. Im Detail sind hier so viele Fall-Unterscheidungen für den Aufbau eines 
@@ -485,7 +489,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xsl:element>
     </xsl:template>
 
-    <!-- Body: Absätze und Inline-Elemente im Fliesstext -->
+    <!-- Body: Absätze, Block-Elemente und Inline-Elemente im Fliesstext -->
 
     <xsl:template match="p[ancestor::body]">
         <!-- Der größte Teil des Body besteht zunächst aus reinen Fliesstext-Absätzen. Neben dem
@@ -514,6 +518,30 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             <xsl:value-of select="."/>
         </styled-content>
     </xsl:template>
+    
+    <!-- Listen -->
+    
+    <xsl:template match="ol">
+        <!-- HTML-Listenelemente werden abgefangen und in ihre JATS-Gegenstücke gewandelt -->
+        <list list-type="ordered">
+            <xsl:apply-templates/>
+         </list>
+    </xsl:template>
+    
+    <xsl:template match="ul">
+        <!-- HTML-Listenelemente werden abgefangen und in ihre JATS-Gegenstücke gewandelt -->
+        <list list-type="bullet">
+            <xsl:apply-templates/>
+        </list>
+    </xsl:template>
+    
+    <xsl:template match="li">
+        <!-- li hat im Output nur Inline-Content, d.h. wir fügen das <p> für den JATS-Output zusätzlich
+            zum list-item hinzu -->
+        <list-item><p>
+            <xsl:apply-templates/>
+        </p></list-item>
+    </xsl:template>
 
     <!-- Inline-Formatierungen -->
     
@@ -524,8 +552,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     
     <xsl:template match="span[@class = 'body-italic']|
         span[@class = 'footnotes-italic']|
-        span[@class = 'abstract-italic']">
+        span[@class = 'abstract-italic']|span[@class = 'italic']">
         <!-- Umsetzung Zeichen-Formate für Kursiv in italic -->
+        <!-- Seit Version 1.1 sollen in den Daten eigentlich nur noch die italic-Formate verwendet werden -->
+        <!-- Wir lassen die alten Namen aber weiterhin zu, damit Altdaten noch konvertiert werden können -->
         <italic>
             <xsl:apply-templates/>
         </italic>
@@ -1494,14 +1524,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     </xsl:template>
 
     <xsl:template name="CreateImageAttribution">
-        <!-- Erzeugen der Quellenangabe für die Abbildungen:
-         -->
+        <!-- Erzeugen der Quellenangabe für die Abbildungen:  -->
         <xsl:variable name="ImageID">
             <xsl:call-template name="CreateImageID"/>
         </xsl:variable>
         <xsl:if test="//loi/loi-entry[@id = $ImageID]">
             <attrib>
-                <xsl:text>Quelle: </xsl:text>
+                <xsl:text>Source: </xsl:text>
                 <xsl:for-each select="//loi/loi-entry[@id = $ImageID]/loi-text/child::*">
                     <xsl:apply-templates/>
                 </xsl:for-each>
