@@ -53,7 +53,7 @@
       Format "italic" für Kursivstellungen wird nun unterstützt;
       Generierter Text für Quellenangaben bei Abbildungen angepasst;
       Tabellencontainer und Inhalte werden mit allen nötigen Datenstrukturen erzeugt;
-      
+      Artikel-Metadaten können nun eine Grant-ID enthalten;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -273,6 +273,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             <xsl:apply-templates select="abstract-translation-container"/>
             <xsl:apply-templates select="keywords-container"/>
             <xsl:apply-templates select="keywords-translation-container"/>
+            <xsl:call-template name="CreateArticleMetaGrantID"/>
             <xsl:call-template name="CreateArticleMetaCustomMeta"/>
         </article-meta>
     </xsl:template>
@@ -1038,6 +1039,19 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             </article-id>
         </xsl:if>
     </xsl:template>
+
+
+    <xsl:template name="CreateArticleMetaGrantID">
+        <!--  -->
+        <xsl:if test="count(//article-meta-indesign//span[@class = 'grant-id']) = 1">
+            <funding-group>
+                <award-group>
+                    <award-id><xsl:value-of select="//article-meta-indesign//span[@class = 'grant-id']/text()"/></award-id>
+                </award-group>
+            </funding-group>
+        </xsl:if>
+    </xsl:template>
+
 
 
     <xsl:template name="CreateArticleMetaCustomMeta">
