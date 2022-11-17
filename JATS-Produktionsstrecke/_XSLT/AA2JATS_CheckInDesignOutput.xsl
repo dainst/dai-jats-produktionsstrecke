@@ -40,12 +40,16 @@
     auf valide Konvertierungsergebnisse besteht. Warnungen können ignoriert werden, 
     wenn die zugrundliegenden Strukturen inhaltlich richtig sind.
 
-    Version:  1.0
-    Datum: 2019-11-12
+    Version:  1.1
+    Datum: 2022-11-17
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
-    - Version 1.0: Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
+    - Version 1.1:
+      Listen-Elemente und Tabellen in Prüfung 2.1 ergänzt;
+      Neues "italic"-Format in Prüfung 2.3 ergänzt;
+    - Version 1.0: 
+      Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
       Anpassungen aufgrund des Produktiv-Content der ersten Ausgabe von AA. Im Detail:
       Anpassung Test 1.3/4.7: Fehlende Abstract-Translations in Artikeln werden nun nur 
@@ -762,7 +766,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
     <!-- Check 2.1: Enthält der Bodymatter nur die erwarteten Elemente?
         Wir zählen hier, ob die Menge der Kind-Elemente von div[@class='body'] der 
-        Summe der Kindelemente p, div, hr von div[@class='body'] entspricht. Wenn dieser
+        Summe der Kindelemente p, div, hr, ol, ul, table von div[@class='body'] entspricht. Wenn dieser
         Test erfolgreich ist, sind nur die erwarteten Elemente enthalten -->
 
     <xsl:template name="ContentCheck_2_1">
@@ -771,13 +775,22 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         <xsl:variable name="CountBodyChildParagraph" select="count(//body/div[@class='body']/child::p)"/>
         <xsl:variable name="CountBodyChildDiv" select="count(//body/div[@class='body']/child::div)"/>
         <xsl:variable name="CountBodyChildHR" select="count(//body/div[@class='body']/child::hr)"/>
+        <xsl:variable name="CountBodyChildOL" select="count(//body/div[@class='body']/child::ol)"/>
+        <xsl:variable name="CountBodyChildUL" select="count(//body/div[@class='body']/child::ul)"/>
+        <xsl:variable name="CountBodyChildTable" select="count(//body/div[@class='body']/child::table)"/>
         
         <xsl:choose>
-            <xsl:when test="$CountBodyChildren=($CountBodyChildDiv+$CountBodyChildParagraph+$CountBodyChildHR)">
+            <xsl:when test="$CountBodyChildren=
+                ($CountBodyChildDiv +
+                 $CountBodyChildParagraph +
+                 $CountBodyChildHR + 
+                 $CountBodyChildOL + 
+                 $CountBodyChildUL + 
+                 $CountBodyChildTable)">
                 <xsl:call-template name="WriteReportRow">
                     <xsl:with-param name="ID">2.1</xsl:with-param>
                     <xsl:with-param name="CheckName">Elemente in Bodymatter</xsl:with-param>
-                    <xsl:with-param name="CheckResult">Der Textrahmen 'body' für den Artikel-Haupttext enthält nur die erwarteten Auszeichnnungen, d.h. Absatz-Formate, Bilder/Bildcontainer und Trennlinien: OK</xsl:with-param>
+                    <xsl:with-param name="CheckResult">Der Textrahmen 'body' für den Artikel-Haupttext enthält nur die erwarteten Auszeichnnungen, d.h. die Elemente p, div, hr, ol, ul und table: OK</xsl:with-param>
                     <xsl:with-param name="Type">Info</xsl:with-param>
                 </xsl:call-template>
             </xsl:when>
@@ -785,7 +798,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                 <xsl:call-template name="WriteReportRow">
                     <xsl:with-param name="ID">2.1</xsl:with-param>
                     <xsl:with-param name="CheckName">Elemente in Bodymatter</xsl:with-param>
-                    <xsl:with-param name="CheckResult">Der Textrahmen 'body' für den Artikel-Haupttext enthält über die erwarteten Auszeichnnungen (Absatz-Formate, Bilder/Bildcontainer und Trennlinien) hinaus noch andere HTML-Elemente im Export: Bitte prüfen Sie, ob die Auszeichnung an dieser Stelle korrekt ist.</xsl:with-param>
+                    <xsl:with-param name="CheckResult">Der Textrahmen 'body' für den Artikel-Haupttext enthält über die erwarteten Auszeichnnungen (d.h. die Elemente p, div, hr, ol, ul und table) hinaus noch andere HTML-Elemente im Export: Bitte prüfen Sie, ob die Auszeichnung an dieser Stelle korrekt ist.</xsl:with-param>
                     <xsl:with-param name="Type">Fehler</xsl:with-param>
                 </xsl:call-template>
             </xsl:otherwise>
@@ -900,6 +913,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='notes-reference-link' and
             @class!='body-hyperlink' and
             @class!='body-medium' and
+            @class!='italic' and
             not(contains(@class, 'text-fussnote')) and
             not(contains(@class, 'body-superscript')) and
             not(contains(@class, 'body-subscript'))
@@ -919,6 +933,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='notes-reference-link' and
             @class!='body-hyperlink' and
             @class!='body-medium' and 
+            @class!='italic' and 
             not(contains(@class, 'text-fussnote')) and
             not(contains(@class, 'body-superscript')) and
             not(contains(@class, 'body-subscript'))
