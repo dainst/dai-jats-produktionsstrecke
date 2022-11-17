@@ -53,6 +53,8 @@
       Ergänzung der Grant-ID in Prüfung 3.4;
       Ergänzung der Formate co-author-institution-city und co-author-institution-country in Prüfung 8.4;
       Ergänzung der Formate body-text-katalog und katalog-nummer in Prüfung 2.2;
+      Ergänzung des Formates italic in Prüfung 4.15;
+      Entfernung des Formates online-urn aus Prüfung 3.8;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -1774,8 +1776,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         count(//body//div[@class='article-meta']
         [count(descendant::span[@class='citation-guideline'])=0]) +
         count(//body//div[@class='article-meta']
-        [count(descendant::span[@class='online-urn'])=0]) +
-        count(//body//div[@class='article-meta']
         [count(descendant::span[@class='issue-bibliography-link'])=0]) +
         count(//body//div[@class='article-meta']
         [count(descendant::span[@class='license-online'])=0]) +
@@ -1842,10 +1842,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             <xsl:if test="count(descendant::span[@class='citation-guideline'])=0">
                 <xsl:text>Element: span</xsl:text>
                 <xsl:text>, Format: citation-guideline; </xsl:text>
-            </xsl:if>
-            <xsl:if test="count(descendant::span[@class='online-urn'])=0">
-                <xsl:text>Element: span</xsl:text>
-                <xsl:text>, Format: online-urn; </xsl:text>
             </xsl:if>
             <xsl:if test="count(descendant::span[@class='issue-bibliography-link'])=0">
                 <xsl:text>Element: span</xsl:text>
@@ -2629,12 +2625,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     <xsl:template name="CountWrongAbstractInlineClasses">
         <xsl:value-of select="count(//body/div[@class='abstract-original']/descendant::span[
             @class!='abstract-italic' and 
+            @class!='italic' and 
             @class!='keyword' and 
             not(contains(@class, 'body-superscript')) and
             not(contains(@class, 'body-subscript'))
             ])+
             count(//body/div[@class='abstract-translation']/descendant::span[
             @class!='abstract-italic' and 
+            @class!='italic' and 
             @class!='keyword' and 
             not(contains(@class, 'body-superscript')) and
             not(contains(@class, 'body-subscript'))
@@ -2644,11 +2642,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     <xsl:template name="TextWrongAbstractInlineClasses">
         <xsl:for-each select="//body/div[@class='abstract-original']/descendant::span[
             @class!='abstract-italic' and 
+            @class!='italic' and 
             @class!='keyword' and 
             not(contains(@class, 'body-superscript')) and
             not(contains(@class, 'body-subscript'))
             ]|//body/div[@class='abstract-translation']/descendant::span[
             @class!='abstract-italic' and 
+            @class!='italic' and 
             @class!='keyword' and 
             not(contains(@class, 'body-superscript')) and
             not(contains(@class, 'body-subscript'))
