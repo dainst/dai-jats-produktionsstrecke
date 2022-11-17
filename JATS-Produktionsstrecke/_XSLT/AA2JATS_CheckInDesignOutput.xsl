@@ -47,6 +47,7 @@
     Changelog:
     - Version 1.1:
       Listen-Elemente und Tabellen in Prüfung 2.1 ergänzt;
+      Tabellen-Formate in Prüfung 2.2 ergänzt;
       Neues "italic"-Format in Prüfung 2.3 ergänzt;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
@@ -847,6 +848,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='body-h2' and 
             @class!='body-h3' and 
             @class!='body-text' and 
+            @class!='Kein-Tabellenformat' and
+            @class!='table' and
             @class!='HorizontalRule-1' and
             @class!='_idFootnotes'])"/>
     </xsl:template>
@@ -857,6 +860,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='body-h2' and 
             @class!='body-h3' and 
             @class!='body-text' and 
+            @class!='Kein-Tabellenformat' and
+            @class!='table' and
             @class!='HorizontalRule-1' and
             @class!='_idFootnotes']">
             <xsl:text>Element: </xsl:text><xsl:value-of select="local-name(.)"/>
