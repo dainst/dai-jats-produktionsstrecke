@@ -827,6 +827,15 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     </xsl:template>
 
     <!-- Body: Abbildungen -->
+    
+    <xsl:template match="img">
+        <!-- Umsetzung der Inline-Bilder: Das img-Template greift nur für diejenigen Bilder, die NICHT in den von
+        InDesign erzeugten div-Containern (aus den ehemaligen Objektrahmen) enthalten sind, sondern für <img>-Elemente 
+        die in anderen Kontexten (Absätze, Listen, Tabellen, etc. enthalten sind) -->
+        <inline-graphic>
+            <xsl:attribute name="xlink:href" select="@src"></xsl:attribute>
+        </inline-graphic>
+    </xsl:template>
 
     <xsl:template match="images-container">
         <!-- Container-Element für alle Bild-Elemente: Wir schreiben hier den Container als section-
