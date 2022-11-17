@@ -49,8 +49,8 @@
       Listen-Elemente und Tabellen in Prüfung 2.1 ergänzt;
       Tabellen-Formate in Prüfung 2.2 ergänzt;
       Neues "italic"-Format in Prüfung 2.3 ergänzt;
-      Anpassung Prüfung 2.6: unerwartete Sprach-Attribute werden nun nur noch als Info ausgegeben;
-      
+      Unerwartete Sprach-Attribute werden in Prüfung 2.6 nur noch als Info ausgegeben;
+      Ergänzung der Grant-ID in Prüfung 3.4;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -1462,6 +1462,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='print-isbn' and
             @class!='license-print' and
             @class!='pod-link' and
+            @class!='grant-id' and
             @class!='cover-illustration'
             ])"/>
     </xsl:template>
@@ -1490,6 +1491,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             @class!='print-isbn' and
             @class!='license-print' and
             @class!='pod-link' and
+            @class!='grant-id' and
             @class!='cover-illustration'
             ]">
             <xsl:text>Element: </xsl:text><xsl:value-of select="local-name(.)"/>
