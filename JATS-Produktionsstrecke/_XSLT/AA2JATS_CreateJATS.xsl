@@ -56,6 +56,7 @@
       Artikel-Metadaten können nun eine Grant-ID enthalten;
       Anpassung von CreateArticleCustomMeta: Formate department und topic-location werden 
       nun als neue custom-meta-Elemente erzeugt;
+      Ergänzung der Tabellen-Attribute um Werte "cols" und all;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -809,6 +810,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     <xsl:choose>
                         <xsl:when test="count(descendant::p[@class='table-text-rows']) &gt; 0">
                             <xsl:text>rows</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="count(descendant::p[@class='table-text-cols']) &gt; 0">
+                            <xsl:text>cols</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="count(descendant::p[@class='table-text-all']) &gt; 0">
+                            <xsl:text>all</xsl:text>
                         </xsl:when>
                         <xsl:when test="count(descendant::p[@class='table-text']) &gt; 0">
                             <xsl:text>none</xsl:text>
