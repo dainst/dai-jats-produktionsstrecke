@@ -41,7 +41,7 @@
     wenn die zugrundliegenden Strukturen inhaltlich richtig sind.
 
     Version:  1.1
-    Datum: 2022-11-17
+    Datum: 2022-11-18
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
@@ -55,6 +55,7 @@
       Ergänzung der Formate body-text-katalog und katalog-nummer in Prüfung 2.2;
       Ergänzung des Formates italic in Prüfung 4.15;
       Entfernung des Formates online-urn aus Prüfung 3.8;
+      Ergänzung der Formate department und topic-location in Prüfung 5.1;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -2714,6 +2715,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         <xsl:value-of select="count(//body//div[@class='title']/child::p[@class!='authors-start' and 
             not(starts-with(@class, 'title')) and 
             @class!='subtitle' and 
+            @class!='department' and 
+            @class!='topic-location' and 
             @class!='co-authers-group'])"/>
     </xsl:template>
     
@@ -2721,6 +2724,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         <xsl:for-each select="//body//div[@class='title']/child::p[@class!='authors-start' and 
             not(starts-with(@class, 'title')) and 
             @class!='subtitle' and 
+            @class!='department' and 
+            @class!='topic-location' and 
             @class!='co-authers-group']">
             <xsl:text>Element: </xsl:text><xsl:value-of select="local-name(.)"/>
             <xsl:text>, Format: </xsl:text><xsl:value-of select="@class"/>
