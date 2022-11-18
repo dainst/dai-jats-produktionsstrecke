@@ -44,7 +44,7 @@
     unbemerkt aus den Daten verschwinden.
     
     Version:  1.1
-    Datum: 2022-11-17
+    Datum: 2022-11-18
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
@@ -54,6 +54,8 @@
       Generierter Text für Quellenangaben bei Abbildungen angepasst;
       Tabellencontainer und Inhalte werden mit allen nötigen Datenstrukturen erzeugt;
       Artikel-Metadaten können nun eine Grant-ID enthalten;
+      Anpassung von CreateArticleCustomMeta: Formate department und topic-location werden 
+      nun als neue custom-meta-Elemente erzeugt;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -1119,6 +1121,28 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     <meta-value>
                         <xsl:value-of
                             select="//article-meta-indesign//span[@class = 'cover-illustration']"
+                        />
+                    </meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if
+                test="count(//title-container/p[@class = 'department']) = 1">
+                <custom-meta>
+                    <meta-name>title-department</meta-name>
+                    <meta-value>
+                        <xsl:value-of
+                            select="//title-container/p[@class = 'department']"
+                        />
+                    </meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if
+                test="count(//title-container/p[@class = 'topic-location']) = 1">
+                <custom-meta>
+                    <meta-name>title-topic-location</meta-name>
+                    <meta-value>
+                        <xsl:value-of
+                            select="//title-container/p[@class = 'topic-location']"
                         />
                     </meta-value>
                 </custom-meta>
