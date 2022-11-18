@@ -56,7 +56,8 @@
       Artikel-Metadaten können nun eine Grant-ID enthalten;
       Anpassung von CreateArticleCustomMeta: Formate department und topic-location werden 
       nun als neue custom-meta-Elemente erzeugt;
-      Ergänzung der Tabellen-Attribute um Werte "cols" und all;
+      Ergänzung der Tabellen-Attribute um Werte "cols" und "all";
+      Bugfix für Verweise in Fussnoten: Verweis-Texte werden nun nicht mehr Teil des Fussnoten-Label-Elementes;
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -919,7 +920,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                 <xsl:call-template name="CreateFootnoteID"/>
             </xsl:attribute>
             <label>
-                <xsl:value-of select="child::p[1]/child::a"/>
+                <xsl:value-of select="child::p[1]/child::a[1]"/>
             </label>
             <xsl:apply-templates select="p[parent::fn]"/>
         </xsl:element>
