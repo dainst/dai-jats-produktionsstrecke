@@ -24,12 +24,16 @@
     - Neben diesen Struktur- und Hierarchie-Anpassungen bleibt die Datei ansonsten unverändert und 
       wird über eine Identity-Transformation auf sich selbst abgebildet.
     
-    Version:  1.0
-    Datum: 2019-11-12
+    Version:  1.1
+    Datum: 2022-11-19
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
-    - Version 1.0: Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
+    - Version 1.1:
+      Neues Template für die Hierarchisierung von Contributor-Informationen im Journal-Meta,
+      realisiert analog zur Logik für die Autoren-Informationen in Article-Meta;
+    - Version 1.0: 
+      Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.4/0.5: 
       Keine inhaltlichen Änderungen, Version hochgezogen wg. gemeinsamer
       Versionszählung zu Step1 / Step3. In Step1 / Step3 hat sich aufgrund der Änderungen im 
@@ -193,6 +197,32 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                 </xsl:choose>
             </xsl:for-each-group>
         </author-container>
+    </xsl:template>
+    
+    <xsl:template match="contributor-container">
+        <!-- Hierarchisierung der Contributor-Informationen: Da die Contributor-Informationen in den
+        Quelldaten nur als lose Abfolge von Span-Formaten vorliegen, verwenden
+        wir hier den Autoren-Name darin, um eine Gruppierung für einen
+        neuen Contributor (<contributor>) zu beginnen. Im Ergebnis ist jeder Contributor dann mit 
+        seinen Metadaten in einem eigenen Container gekapselt, der von Step3 behandelt wird.
+        -->
+        <contributor-container>
+            <xsl:for-each-group select="*"
+                group-starting-with="span[@class='journal-meta_contrib-given-names']">
+                
+                <xsl:choose>
+                    <xsl:when
+                        test="current-group()[self::span[@class='journal-meta_contrib-given-names']]">
+                        <contributor>
+                            <xsl:apply-templates select="current-group()"/>
+                        </contributor>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="current-group()"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each-group>
+        </contributor-container>
     </xsl:template>
 
     <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   -->
