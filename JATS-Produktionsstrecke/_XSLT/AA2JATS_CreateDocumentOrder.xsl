@@ -30,12 +30,14 @@
     Fussnoten, Referenzen/Literaturverzeichnis, Abkürzungsverzeichnis/Glossar
     
     Version:  1.1
-    Datum: 2022-11-17
+    Datum: 2022-11-19
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
     - Version 1.1:
-      Listen-Elemente in Template für Entfernung des XHTML-Namespace ergänzt
+      Listen-Elemente in Template für Entfernung des XHTML-Namespace ergänzt;
+      Named-Template und Sub-Template für den Aufbau des Journal-Meta-Containers integriert;
+      
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.5:
@@ -445,8 +447,20 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     </xsl:template>
 
     <xsl:template name="CreateJournalMetaInDesign">
-        <!-- Wir kopieren hier zunächst die Journal-Metadaten 1:1 aus dem InDesign-Dokument in
-        die weitere Verarbeitung. Die Behandlung für das Endergebnis erfolgt in CreateJATS. -->
+        <!-- Aufbau der Grundstruktur für das journal-meta-Element in den JATS-Daten:
+        Wir bauen hier Stück für Stück Element-Container in der richtigen Reihenfolge auf, die dann
+        in CreateJATS für die Konvertierung in den Metadaten-Header benutzt werden. Die Inhalte stehen
+        in den InDesign-Export-Daten an  verschiedenen Stellen in der Inhalten und werden in den 
+        jeweiligen Create-Templates explizit per XPath ausgewertet und hier in einer definierten 
+        Reihenfolge herausgeschrieben. Daneben werden die gesamten Original-Metadaten aus dem InDesign-Artikel ebenfalls mit kopiert
+        in einen hier erzeugten Container. Die weitere Verarbeitung erfolgt dann in Step 3: CreateJATS.-->
+        <journal-meta>
+            <xsl:call-template name="CreateJournalTitle"/>
+            <xsl:call-template name="CreateJournalContributorContainers"/>
+            <xsl:call-template name="CreateJournalIdentifierContainer"/>
+            <xsl:call-template name="CreateJournalPublisherContainer"/>
+            <xsl:call-template name="CreateJournalCustomMeta"/>
+        </journal-meta>
         <xsl:if test="//div[@class = 'journal-meta']">
             <journal-meta-indesign>
                 <xsl:for-each select="//div[@class = 'journal-meta']/child::*">
@@ -456,6 +470,144 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     </xsl:element>
                 </xsl:for-each>
             </journal-meta-indesign>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="CreateJournalContributorContainers">
+        <!-- Wir holen hier die jeweiligen Elemente für die contrib-group-Sektionen und platzieren sie explizit
+        in der richtigen Reihenfolgen-->
+        <contrib-group contrib-type="Editors">
+            <!-- Rolle extrahieren -->
+            <xsl:if test="//p[@class='journal-meta_journal-meta-contrib-group-editors-role']">
+                <role>
+                    <xsl:value-of select="//p[@class='journal-meta_journal-meta-contrib-group-editors-role']/text()"/>
+                </role>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="//p[@class = 'journal-meta_journal-meta-contrib-group-editors']">
+                    <contributor-container>
+                        <xsl:for-each select="//p[@class = 'journal-meta_journal-meta-contrib-group-editors']/child::*">
+                            <xsl:element name="{local-name()}">
+                                <xsl:copy-of select="@*"/>
+                                <xsl:apply-templates/>
+                            </xsl:element>
+                        </xsl:for-each>
+                    </contributor-container>
+                </xsl:when>
+                <xsl:otherwise>
+                    <missing-contributor-container/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </contrib-group>
+        <contrib-group contrib-type="Co-Editors">
+            <!-- Rolle extrahieren -->
+            <xsl:if test="//p[@class='journal-meta_journal-meta-contrib-group-coeditors-role']">
+                <role>
+                    <xsl:value-of select="//p[@class='journal-meta_journal-meta-contrib-group-coeditors-role']/text()"/>
+                </role>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="//p[@class = 'journal-meta_journal-meta-contrib-group-coeditors']">
+                    <contributor-container>
+                        <xsl:for-each select="//p[@class = 'journal-meta_journal-meta-contrib-group-coeditors']/child::*">
+                            <xsl:element name="{local-name()}">
+                                <xsl:copy-of select="@*"/>
+                                <xsl:apply-templates/>
+                            </xsl:element>
+                        </xsl:for-each>
+                    </contributor-container>
+                </xsl:when>
+                <xsl:otherwise>
+                    <missing-contributor-container/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </contrib-group>
+        <contrib-group contrib-type="Advisory Board">
+            <!-- Rolle extrahieren -->
+            <xsl:if test="//p[@class='journal-meta_journal-meta-contrib-group-advisory-role']">
+                <role>
+                    <xsl:value-of select="//p[@class='journal-meta_journal-meta-contrib-group-advisory-role']/text()"/>
+                </role>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="//p[@class = 'journal-meta_journal-meta-contrib-group-advisory']">
+                    <contributor-container>
+                        <xsl:for-each select="//p[@class = 'journal-meta_journal-meta-contrib-group-advisory']/child::*">
+                            <xsl:element name="{local-name()}">
+                                <xsl:copy-of select="@*"/>
+                                <xsl:apply-templates/>
+                            </xsl:element>
+                        </xsl:for-each>
+                    </contributor-container>
+                </xsl:when>
+                <xsl:otherwise>
+                    <missing-contributor-container/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </contrib-group>
+    </xsl:template>
+    
+    <xsl:template name="CreateJournalCustomMeta">
+        <xsl:choose>
+            <xsl:when test="//p[starts-with(@class,'journal-meta_custom-meta')]">
+                <custom-meta-container>
+                    <xsl:for-each select="//p[starts-with(@class,'journal-meta_custom-meta')]">
+                        <xsl:element name="{local-name()}">
+                            <xsl:copy-of select="@*"/>
+                            <xsl:apply-templates/>
+                        </xsl:element>
+                    </xsl:for-each>
+                </custom-meta-container>
+            </xsl:when>
+            <xsl:otherwise>
+                <missing-custom-meta-container/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="CreateJournalIdentifierContainer">
+            <xsl:choose>
+                <xsl:when test="//p[starts-with(@class,'journal-meta_journal-meta-issn')]|
+                    //p[starts-with(@class,'journal-meta_journal-meta-isbn')]">
+                    <identifier-container>
+                        <xsl:for-each select="//p[starts-with(@class,'journal-meta_journal-meta-issn')]|
+                            //p[starts-with(@class,'journal-meta_journal-meta-isbn')]">
+                            <xsl:element name="{local-name()}">
+                                <xsl:copy-of select="@*"/>
+                                <xsl:apply-templates/>
+                            </xsl:element>
+                        </xsl:for-each>
+                    </identifier-container>
+                </xsl:when>
+                <xsl:otherwise>
+                    <missing-identifier-container/>
+                </xsl:otherwise>
+            </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="CreateJournalPublisherContainer">
+        <publisher-container>    
+                <xsl:if test="//p[starts-with(@class,'journal-meta_journal-meta-publisher')]">
+                    <xsl:for-each select="//p[starts-with(@class,'journal-meta_journal-meta-publisher')]">
+                        <xsl:element name="{local-name()}">
+                            <xsl:copy-of select="@*"/>
+                            <xsl:apply-templates/>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:if>
+        </publisher-container>
+    </xsl:template>
+    
+    <xsl:template name="CreateJournalTitle">
+        <xsl:if test="//p[@class='journal-meta_journal-meta-journal-id']">
+            <journal-id>
+                <xsl:value-of select="//p[@class='journal-meta_journal-meta-journal-id']/text()"/>
+            </journal-id>
+        </xsl:if>
+        <xsl:if test="//p[@class='journal-meta_journal-meta-journal-title']">
+            <journal-title>
+                <xsl:value-of select="//p[@class='journal-meta_journal-meta-journal-title']/text()"/>
+            </journal-title>
         </xsl:if>
     </xsl:template>
 
