@@ -44,7 +44,7 @@
     unbemerkt aus den Daten verschwinden.
     
     Version:  1.1
-    Datum: 2022-11-18
+    Datum: 2022-11-19
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
@@ -58,6 +58,10 @@
       nun als neue custom-meta-Elemente erzeugt;
       Ergänzung der Tabellen-Attribute um Werte "cols" und "all";
       Bugfix für Verweise in Fussnoten: Verweis-Texte werden nun nicht mehr Teil des Fussnoten-Label-Elementes;
+      Neue Variable ImageLabelPrefixPlural erstellt für Pluralformen-Erkennung;
+      Parametrisierung nach Konverter-Version für Erzeugung Journal-Metadaten integrieren;
+      Journal-Metadaten aus InDesign-Export erzeugen;
+      
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -211,6 +215,31 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </xsl:choose>
     </xsl:variable>
     
+    <xsl:variable name="ImageLabelPrefixPlural">
+        <!-- Ergänzung der Logik für die Ermittlung des Image-Label-Prefix: Wir testen nun auch die
+        Plural-Formen in den entsprechenden Sprachen ab. -->
+        <xsl:choose>
+            <xsl:when test="$DocumentLanguage='de-DE'">
+                <xsl:text>Abb.</xsl:text>
+            </xsl:when>
+            <xsl:when test="$DocumentLanguage='en-GB'">
+                <xsl:text>Figs.</xsl:text>
+            </xsl:when>
+            <xsl:when test="$DocumentLanguage='fr-FR'">
+                <xsl:text>Figs.</xsl:text>
+            </xsl:when>
+            <xsl:when test="$DocumentLanguage='sp-SP'">
+                <xsl:text>Figs.</xsl:text>
+            </xsl:when>
+            <xsl:when test="$DocumentLanguage='it-IT'">
+                <xsl:text>Figg.</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>#FEHLER</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
+    
     <!-- Pfad- und Dateinamens-Variablen -->
 
     <xsl:variable name="JournalMetaFile">
@@ -221,8 +250,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         über die Ausgaben hinweg stabiler Text sind. Sollten sich hier Änderungen ergeben, werden
         diese separat in der hier integrierten XML-Datei ausgeführt. Die hier angegebene XML-Datei
         wird in CreateJournalMeta eingelesen und in den Output kopiert. -->
+        <!-- Die hier angewandte Logik stammt aus V1 des Konverters und wird in V2 nicht mehr verwendet.
+        Hier werden die Journal-Metadaten aus dem InDesign-Export ausgelesen und verarbeitet. -->
         <xsl:value-of select="'journal-meta-aa.xml'"/>
     </xsl:variable>
+    
+    <xsl:param name="converter-version">
+        <!-- Mit diesem Parameter steuern wir, welche Versions-Logik gilt, da V2 gegenüber V1 nicht
+        komplett abwärts-kompatibel sein kann. Mit einer Parameter-Einstellung in der Konfiguration
+        des Oxygen-Transformations-Szenarios können wir hier notfalls manuell auf "V1" zurückschalten.
+        Diese Weiche betrifft insbesondere die Logik für den Aufbau der Journal-Metadaten. -->
+        <xsl:value-of select="'V2'"/>
+    </xsl:param>
 
     <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   -->
     <!-- Match-Templates -->
@@ -284,11 +323,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
     <xsl:template match="article-meta-indesign">
         <!-- Der Container article-meta-indesign wird explizit ausgefiltert, da seine Inhalte Element
-        für Element einzeln behandelt werden. -->
-    </xsl:template>
-
-    <xsl:template match="journal-meta-indesign">
-        <!-- Der Container journal-meta-indesign wird explizit ausgefiltert, da seine Inhalte Element
         für Element einzeln behandelt werden. -->
     </xsl:template>
 
@@ -468,7 +502,218 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             <kwd><xsl:value-of select="."/></kwd>
         </xsl:for-each>
     </xsl:template>
+    
+    <!-- Journal-Metadaten -->
+    
+    <xsl:template match="journal-meta-indesign">
+        <!-- Der Container journal-meta-indesign wird explizit ausgefiltert, da seine Inhalte Element
+        für Element einzeln behandelt werden. -->
+    </xsl:template>
 
+    <xsl:template match="journal-meta">
+        <journal-meta>
+            <xsl:apply-templates/>
+        </journal-meta>
+    </xsl:template>
+    
+    <xsl:template match="journal-id">
+        <!-- Journal-ID wird 1:1 übernommen -->
+        <journal-id journal-id-type="publisher-id">
+            <xsl:value-of select="."/>
+         </journal-id>
+    </xsl:template>
+    
+    <xsl:template match="journal-title">
+        <!-- Journal-Title wird 1:1 übernommen -->
+        <journal-title-group>
+            <journal-title>
+                <xsl:value-of select="."/>
+            </journal-title>
+        </journal-title-group>
+    </xsl:template>
+    
+    <xsl:template match="contrib-group">
+        <!-- contrib-group wird als Container-Element durchgereicht -->
+        <contrib-group>
+            <xsl:apply-templates/>
+        </contrib-group>
+    </xsl:template>
+    
+    <xsl:template match="contributor-container">
+        <!-- Für jeden Kind-Contributor aus den ursprünglichen Metadaten wir hier die nötige Element-Struktur
+        im Contributor-Element aufgebaut-->
+        <xsl:for-each select="child::contributor">
+            <contrib>
+                <xsl:attribute name="contrib-type">
+                    <xsl:choose>
+                        <xsl:when test="ancestor::contrib-group[@contrib-type='Editors']"><xsl:value-of select="'Editor'"/></xsl:when>
+                        <xsl:when test="ancestor::contrib-group[@contrib-type='Co-Editors']"><xsl:value-of select="'Co-Editor'"/></xsl:when>
+                        <xsl:when test="ancestor::contrib-group[@contrib-type='Advisory Board']"><xsl:value-of select="'Advisory Board Member'"/></xsl:when>
+                        <xsl:otherwise><xsl:value-of select="'No @contrib-type found'"/></xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+                <name>
+                    <xsl:if test="child::span[@class='journal-meta_contrib-surname']">
+                        <surname><xsl:value-of select="child::span[@class='journal-meta_contrib-surname']/text()"/></surname>
+                    </xsl:if>
+                    <xsl:if test="child::span[@class='journal-meta_contrib-given-names']">
+                        <given-names><xsl:value-of select="child::span[@class='journal-meta_contrib-given-names']/text()"/></given-names>
+                    </xsl:if>
+                </name>
+                <xsl:if test="child::span[@class='journal-meta_contrib-city']">
+                    <address>
+                        <city><xsl:value-of select="child::span[@class='journal-meta_contrib-city']/text()"/></city>
+                    </address>
+                </xsl:if>
+            </contrib>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="identifier-container">
+        <!-- Wenn die entsprechenden Journal-Identifier vorhanden sind, werden die korrespondierenden
+        ISSN- bzw. ISBN-Elemente in Journal-Meta erzeugt -->
+        <xsl:if test="child::p[@class='journal-meta_journal-meta-issn-online']">
+            <issn publication-format="online"><xsl:value-of select="child::p[@class='journal-meta_journal-meta-issn-online']/text()"/></issn>
+        </xsl:if>
+        <xsl:if test="child::p[@class='journal-meta_journal-meta-issn-print']">
+            <issn publication-format="print"><xsl:value-of select="child::p[@class='journal-meta_journal-meta-issn-print']/text()"/></issn>
+        </xsl:if>
+        <xsl:if test="child::p[@class='journal-meta_journal-meta-isbn-print']">
+            <isbn publication-format="print"><xsl:value-of select="child::p[@class='journal-meta_journal-meta-isbn-print']/text()"/></isbn>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="publisher-container">
+        <!-- Wir nehmen hier alle Publisher-Metadaten aus dem InDesign-Export und bauen darauf per einzelner Abfrage
+        die nötigen Datenfelder für das Modell des publisher-Elementes auf. -->
+        <publisher>
+            <xsl:if test="child::p[@class='journal-meta_journal-meta-publisher-name']">
+                <publisher-name><xsl:value-of select="child::p[@class='journal-meta_journal-meta-publisher-name']/text()"/></publisher-name>
+            </xsl:if>
+            <publisher-loc>
+                <xsl:if test="child::p[@class='journal-meta_journal-meta-publisher-surname']">
+                    <institution><xsl:value-of select="child::p[@class='journal-meta_journal-meta-publisher-surname']/text()"/></institution>
+                </xsl:if>
+                <xsl:if test="child::p[@class='journal-meta_journal-meta-publisher-adr-line']">
+                    <addr-line><xsl:value-of select="child::p[@class='journal-meta_journal-meta-publisher-adr-line']/text()"/></addr-line>
+                </xsl:if>
+                <xsl:if test="child::p[@class='journal-meta_journal-meta-publisher-city']">
+                    <city><xsl:value-of select="child::p[@class='journal-meta_journal-meta-publisher-city']/text()"/></city>
+                </xsl:if>
+                <xsl:if test="child::p[@class='journal-meta_journal-meta-publisher-country']">
+                    <country><xsl:value-of select="child::p[@class='journal-meta_journal-meta-publisher-country']/text()"/></country>
+                </xsl:if>
+                <xsl:if test="child::p[@class='journal-meta_journal-meta-publisher-ext-link']">
+                    <ext-link ext-link-type="uri"><xsl:value-of select="child::p[@class='journal-meta_journal-meta-publisher-ext-link']/text()"/></ext-link>
+                </xsl:if>
+            </publisher-loc>
+        </publisher>
+    </xsl:template>
+    
+    <xsl:template match="custom-meta-container">
+        <!-- Wir nehmen hier die Custom-Metadaten aus dem InDesign-Export und generieren daraus jeweils ein 
+        Custom-Meta-Element mit meta-name und meta-value. Dabei wird jede Kategorie für meta-name explizit abgefragt
+        da die Name in meta-name nicht im InDesign stehen und stabil bleiben müssen-->
+        <custom-meta-group>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-publishing-history']">
+                <custom-meta>
+                    <meta-name>publishing-history</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-publishing-history']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-peer-review-label']">
+                <custom-meta>
+                    <meta-name>peer-review-label</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-peer-review-label']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-peer-review-text']">
+                <custom-meta>
+                    <meta-name>peer-review-text</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-peer-review-text']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-label']">
+                <custom-meta>
+                    <meta-name>editing-notice-label</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-label']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-publishing-editor']">
+                <custom-meta>
+                    <meta-name>editing-notice-publishing-editor</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-publishing-editor']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-article-submissions']">
+                <custom-meta>
+                    <meta-name>editing-notice-article-submissions</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-article-submissions']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-editing']">
+                <custom-meta>
+                    <meta-name>editing-notice-editing</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-editing']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-typesetting']">
+                <custom-meta>
+                    <meta-name>editing-notice-typesetting</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-typesetting']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-layout']">
+                <custom-meta>
+                    <meta-name>editing-notice-layout</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-layout']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-webdesign']">
+                <custom-meta>
+                    <meta-name>editing-notice-webdesign</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-webdesign']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-webdesign-url']">
+                <custom-meta>
+                    <meta-name>editing-notice-webdesign-url</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-webdesign-url']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-conversion']">
+                <custom-meta>
+                    <meta-name>editing-notice-conversion</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-conversion']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-conversion-url']">
+                <custom-meta>
+                    <meta-name>editing-notice-conversion-url</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-conversion-url']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-development']">
+                <custom-meta>
+                    <meta-name>editing-notice-development</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-development']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-editing-notice-development-url']">
+                <custom-meta>
+                    <meta-name>editing-notice-development-url</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-editing-notice-development-url']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+            <xsl:if test="child::p[@class='journal-meta_custom-meta-printing-notice']">
+                <custom-meta>
+                    <meta-name>printing-notice</meta-name>
+                    <meta-value><xsl:value-of select="child::p[@class='journal-meta_custom-meta-printing-notice']/text()"/></meta-value>
+                </custom-meta>
+            </xsl:if>
+        </custom-meta-group>
+    </xsl:template>
+    
 
     <!-- ############################################################## -->
     <!-- Aufbau von Body: Gliederungsstruktur und Kapitel-Überschriften -->
@@ -1679,7 +1924,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     select="'Fehler: Kein Nummern-Element zum Erzeugen der Bild-ID gefunden.'"/>
             </xsl:otherwise>
         </xsl:choose>
-
+        
     </xsl:template>
 
     <xsl:template name="CreateImageElement">
@@ -1802,9 +2047,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     </xsl:template>
     
     <xsl:template name="CreateJournalMeta">
-        <!-- Der gesamte Journal-Meta-Block wird hier aus der als im Kopf per Variable definierten
-        XML-Datei extrahiert und in die Output-Daten kopiert. -->
-        <xsl:copy-of select="document($JournalMetaFile)//journal-meta"/>        
+        <xsl:if test="$converter-version='V1'">
+            <!-- Der gesamte Journal-Meta-Block wird hier aus der als im Kopf per Variable definierten
+            XML-Datei extrahiert und in die Output-Daten kopiert. -->
+            <xsl:copy-of select="document($JournalMetaFile)//journal-meta"/>  
+        </xsl:if>
+        <xsl:if test="$converter-version='V2'">
+            <xsl:apply-templates select="journal-meta"/>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template name="CreateParagraphID">
