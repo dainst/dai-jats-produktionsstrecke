@@ -40,11 +40,15 @@
     auf valide Konvertierungsergebnisse besteht. Warnungen können ignoriert werden, 
     wenn die zugrundliegenden Strukturen inhaltlich richtig sind.
 
-    Version:  1.1
-    Datum: 2022-11-18
+    Version:  2.0
+    Datum: 2022-11-25
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
+    - Version 2.0:
+      Integration der Pluralformen für die Abbildungs-Präfixe in Prüfung 6.8
+      Anpassung von Prüfung 3.1 für die Journal-Metadaten: Hinweistext bei Erfolg redaktionell angepasst,
+      Meldung bei fehlenden Metadaten zur Kategorie "Fehler" hochgestuft
     - Version 1.1:
       Listen-Elemente und Tabellen in Prüfung 2.1 ergänzt;
       Tabellen-Formate in Prüfung 2.2 ergänzt;
@@ -176,11 +180,36 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             <xsl:when test="$DocumentLanguage='fr-FR'">
                 <xsl:text>Fig.</xsl:text>
             </xsl:when>
-            <xsl:when test="$DocumentLanguage='sp-SP'">
+            <xsl:when test="$DocumentLanguage='es-ES'">
                 <xsl:text>Fig.</xsl:text>
             </xsl:when>
             <xsl:when test="$DocumentLanguage='it-IT'">
                 <xsl:text>Fig.</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>#FEHLER</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
+    
+    <xsl:variable name="ImageLabelPrefixPlural">
+        <!-- Ergänzung der Logik für die Ermittlung des Image-Label-Prefix: Wir testen nun auch die
+        Plural-Formen in den entsprechenden Sprachen ab. -->
+        <xsl:choose>
+            <xsl:when test="$DocumentLanguage='de-DE'">
+                <xsl:text>Abb.</xsl:text>
+            </xsl:when>
+            <xsl:when test="$DocumentLanguage='en-GB'">
+                <xsl:text>Figs.</xsl:text>
+            </xsl:when>
+            <xsl:when test="$DocumentLanguage='fr-FR'">
+                <xsl:text>Figs.</xsl:text>
+            </xsl:when>
+            <xsl:when test="$DocumentLanguage='es-ES'">
+                <xsl:text>Figs.</xsl:text>
+            </xsl:when>
+            <xsl:when test="$DocumentLanguage='it-IT'">
+                <xsl:text>Figg.</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:text>#FEHLER</xsl:text>
@@ -1298,10 +1327,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     <xsl:with-param name="ID">3.1</xsl:with-param>
                     <xsl:with-param name="CheckName">Journal-Metadaten</xsl:with-param>
                     <xsl:with-param name="CheckResult">Journal-Metadaten gefunden: OK. 
-                        Die Journal-Metadaten im InDesign-Export werden jedoch vom JATS-Konverter 
-                        nicht verwendet, sondern als statisches XML in die JATS-Daten geschrieben.
-                    Wenn Sie Änderungen an XML-Struktur oder Inhalten benötigen, wenden Sie sich bitte
-                    an den Konvertierungs-Entwickler.</xsl:with-param>
+                        Die Journal-Metadaten aus dem InDesign-Export in die JATS-Daten übernommen.</xsl:with-param>
                     <xsl:with-param name="Type">Info</xsl:with-param>
                 </xsl:call-template>
             </xsl:when>
@@ -1311,12 +1337,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     <xsl:with-param name="CheckName">Journal-Metadaten</xsl:with-param>
                     <xsl:with-param name="CheckResult">Journal-Metadaten nicht korrekt ausgezeichnet: 
                         Textrahmen mit Formatnamen 'journal-meta' wurde nicht gefunden, oder mehr als einmal 
-                        gefunden. Bitte prüfen Sie die InDesign-Auszeichnung an dieser Stelle. 
-                        Die Journal-Metadaten im InDesign-Export werden jedoch vom JATS-Konverter 
-                        nicht verwendet, sondern als statisches XML in die JATS-Daten geschrieben.
-                        Wenn Sie Änderungen an XML-Struktur oder Inhalten benötigen, wenden Sie sich bitte
-                        an den Konvertierungs-Entwickler.</xsl:with-param>
-                    <xsl:with-param name="Type">Warnung</xsl:with-param>
+                        gefunden. Bitte prüfen Sie die InDesign-Auszeichnung an dieser Stelle. </xsl:with-param>
+                    <xsl:with-param name="Type">Fehler</xsl:with-param>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -3351,12 +3373,32 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     <!-- Helper für Check 6.8 -->
     
     <xsl:template name="CountWrongPicLinks">
-        <xsl:variable name="PicLinksWithTarget" 
+        <xsl:variable name="PicLinksEqualToBU" select="count(//span[@class='text-abbildung']
+            [normalize-space(text())=//span[@class='bu-nummer']/text()])"/>
+        <xsl:variable name="PicLinksWithoutPrefix" 
             select="count(//span[@class='text-abbildung']
-            [normalize-space(text())=//span[@class='bu-nummer']/text()])+
-            count(//span[@class='text-abbildung']
             [concat($ImageLabelPrefix, ' ', normalize-space(text()))
             =//span[@class='bu-nummer']/text()])"/>
+        <xsl:variable name="PicLinksWithPluralPrefix" 
+            select="count(//span[@class='text-abbildung']
+            [concat($ImageLabelPrefix, ' ', normalize-space(substring-after(text(),$ImageLabelPrefixPlural)))
+            =//span[@class='bu-nummer']/text()])"/>
+        <xsl:variable name="PicLinksWithTarget">
+            <xsl:choose>
+                <xsl:when test="$DocumentLanguage='de-DE'">
+                    <!-- Für Sprachen wie Deutsch, bei denen Singular- und Plural-Präfix identisch sind,
+                    darf nur das Singular-Präfix verwendet werden, sonst ist die Berechnung der korrekten
+                    Links falsch -->
+                    <xsl:value-of select="$PicLinksEqualToBU +
+                        $PicLinksWithoutPrefix"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$PicLinksEqualToBU +
+                        $PicLinksWithoutPrefix +
+                        $PicLinksWithPluralPrefix"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
         <xsl:variable name="PicLinks" select="count(//span[@class='text-abbildung'])"/>
         <xsl:value-of select="$PicLinks - $PicLinksWithTarget"/>
     </xsl:template>
@@ -3365,7 +3407,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         <xsl:for-each select="//span[@class='text-abbildung']">
             <xsl:variable name="RefText" select="normalize-space(text())"/>
             <xsl:if test="not(//span[@class='bu-nummer']/text()=$RefText) and 
-                not(//span[@class='bu-nummer']/text()=concat($ImageLabelPrefix, ' ', $RefText))">
+                not(//span[@class='bu-nummer']/text()=concat($ImageLabelPrefix, ' ', $RefText)) and
+                not(//span[@class='bu-nummer']/text()=concat($ImageLabelPrefix, ' ', substring-after($RefText, $ImageLabelPrefixPlural)))">
                 <xsl:text>Element: span</xsl:text>
                 <xsl:text>, Format: </xsl:text><xsl:value-of select="@class"/>
                 <xsl:text>, Text: '</xsl:text><xsl:value-of select="."/><xsl:text>'; </xsl:text>

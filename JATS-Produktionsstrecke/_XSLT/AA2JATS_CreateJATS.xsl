@@ -43,11 +43,13 @@
     Validierungsfehler als letzte Instanz geschehen, damit Fehler mit inhaltlichen Folgen nicht 
     unbemerkt aus den Daten verschwinden.
     
-    Version:  1.1
-    Datum: 2022-11-19
+    Version:  2.0
+    Datum: 2022-11-25
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
+    - Version 2.0:
+      Integration der Pluralformen für Abbildungs-Präfixe in die Logik zur Bild-Verlinkung
     - Version 1.1:
       Geordnete/Ungeordnete Listen und ihre Listenpunkte werden nun mit konvertiert;
       Format "italic" für Kursivstellungen wird nun unterstützt;
@@ -61,7 +63,6 @@
       Neue Variable ImageLabelPrefixPlural erstellt für Pluralformen-Erkennung;
       Parametrisierung nach Konverter-Version für Erzeugung Journal-Metadaten integrieren;
       Journal-Metadaten aus InDesign-Export erzeugen;
-      
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.8: 
@@ -203,7 +204,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             <xsl:when test="$DocumentLanguage='fr-FR'">
                 <xsl:text>Fig.</xsl:text>
             </xsl:when>
-            <xsl:when test="$DocumentLanguage='sp-SP'">
+            <xsl:when test="$DocumentLanguage='es-ES'">
                 <xsl:text>Fig.</xsl:text>
             </xsl:when>
             <xsl:when test="$DocumentLanguage='it-IT'">
@@ -228,7 +229,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
             <xsl:when test="$DocumentLanguage='fr-FR'">
                 <xsl:text>Figs.</xsl:text>
             </xsl:when>
-            <xsl:when test="$DocumentLanguage='sp-SP'">
+            <xsl:when test="$DocumentLanguage='es-ES'">
                 <xsl:text>Figs.</xsl:text>
             </xsl:when>
             <xsl:when test="$DocumentLanguage='it-IT'">
@@ -2016,8 +2017,28 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     </xsl:choose>
                 </xsl:attribute>
             </xsl:when>
-            <xsl:when test="not(contains($input-string, $ImageLabelPrefix))">
-                <!-- Fall 2: Wir erhalten nur eine Bildnummer ohne Präfix "Abb. " -->
+            <xsl:when test="contains($input-string, $ImageLabelPrefixPlural)">
+                <!-- Fall 2: Wir erhalten eine Zitation nach dem Muster "Abb. X", schneiden das 
+                "Abb."-Präfix ab und testen dann nochmal auf String(Nummer(Wert) = Wert,
+                hier realisiert für die Pluralformen -->
+                <xsl:attribute name="rid">
+                    <xsl:variable name="id-string" 
+                        select="normalize-space(substring-after($input-string, $ImageLabelPrefixPlural))"/>
+                    <xsl:choose>
+                        <xsl:when test="string(number($id-string)) = $id-string">
+                            <xsl:value-of select="concat('f-', $id-string)"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of
+                                select="'Fehler bei Erzeugung von Bild-ID in Template CreateImageRefID'"
+                            />
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="not(contains($input-string, $ImageLabelPrefix))
+                and not(contains($input-string, $ImageLabelPrefixPlural))">
+                <!-- Fall 3: Wir erhalten nur eine Bildnummer ohne Präfix "Abb. " -->
                 <xsl:attribute name="rid">
                     <xsl:variable name="id-string" select="normalize-space($input-string)"/>
                     <xsl:choose>

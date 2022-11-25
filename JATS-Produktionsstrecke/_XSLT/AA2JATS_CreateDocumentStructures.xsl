@@ -24,11 +24,13 @@
     - Neben diesen Struktur- und Hierarchie-Anpassungen bleibt die Datei ansonsten unverändert und 
       wird über eine Identity-Transformation auf sich selbst abgebildet.
     
-    Version:  1.1
-    Datum: 2022-11-19
+   Version:  2.0
+    Datum: 2022-11-25
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
+    - Version 2.0:
+      Versions-Anhebung aufgrund Fertigstellung des Release 2.0
     - Version 1.1:
       Neues Template für die Hierarchisierung von Contributor-Informationen im Journal-Meta,
       realisiert analog zur Logik für die Autoren-Informationen in Article-Meta;

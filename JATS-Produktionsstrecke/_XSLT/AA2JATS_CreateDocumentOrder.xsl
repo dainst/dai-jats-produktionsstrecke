@@ -29,15 +29,16 @@
     - Für den Backmatter-Bereich werden ausgewertet und mit Element-Containern herausgeschrieben:
     Fussnoten, Referenzen/Literaturverzeichnis, Abkürzungsverzeichnis/Glossar
     
-    Version:  1.1
-    Datum: 2022-11-19
+    Version:  2.0
+    Datum: 2022-11-25
     Autor/Copyright: Fabian Kern, digital publishing competence
     
     Changelog:
+    - Version 2.0:
+      Versions-Anhebung aufgrund Fertigstellung des Release 2.0
     - Version 1.1:
       Listen-Elemente in Template für Entfernung des XHTML-Namespace ergänzt;
       Named-Template und Sub-Template für den Aufbau des Journal-Meta-Containers integriert;
-      
     - Version 1.0: 
       Versions-Anhebung aufgrund Produktivstellung von Content und Produktionsstrecke
     - Version 0.5:
