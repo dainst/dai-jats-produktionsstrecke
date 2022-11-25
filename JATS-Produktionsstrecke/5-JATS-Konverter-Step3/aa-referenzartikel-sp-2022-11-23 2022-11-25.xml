@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?><article article-type="research-article" dtd-version="1.2" xml:lang="es-ES">
+   <front><journal-meta>
+         <journal-id journal-id-type="publisher-id">AA</journal-id>
+         <journal-title-group><journal-title>Archäologischer Anzeiger</journal-title></journal-title-group>
+         <contrib-group>
+            <role>Publisher/Editors</role>
+            <contrib contrib-type="Editor"><name><surname>Fless</surname><given-names>Friederike</given-names></name></contrib><contrib contrib-type="Editor"><name><surname>von Rummel</surname><given-names>Philipp</given-names></name></contrib>
+         </contrib-group>
+         <contrib-group>
+            <role>The directors of the departments and commissions:</role>
+            <contrib contrib-type="Co-Editor"><name><surname>Dally</surname><given-names>Ortwin</given-names></name><address><city>Rom</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>Sporn</surname><given-names>Katja</given-names></name><address><city>Athen</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>Raue</surname><given-names>Dietrich</given-names></name><address><city>Kairo</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>Pirson</surname><given-names>Felix</given-names></name><address><city>Istanbul</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>Marzoli</surname><given-names>Dirce</given-names></name><address><city>Madrid</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>van Ess</surname><given-names>Margarete</given-names></name><address><city>Berlin</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>Hansen</surname><given-names>Svend</given-names></name><address><city>Berlin</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>Bánffy</surname><given-names>Eszter</given-names></name><address><city>Frankfurt a. M.</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>Schuler</surname><given-names>Christof</given-names></name><address><city>München</city></address></contrib><contrib contrib-type="Co-Editor"><name><surname>Linstädter</surname><given-names>Jörg</given-names></name><address><city>Bonn</city></address></contrib>
+         </contrib-group>
+         <contrib-group>
+            <role>Advisory Board</role>
+            <contrib contrib-type="Advisory Board Member"><name><surname>Benecke</surname><given-names>Norbert</given-names></name><address><city>Berlin</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Bingöl</surname><given-names>Orhan </given-names></name><address><city>Ankara</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Durugönül</surname><given-names>Serra</given-names></name><address><city>Mersin</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Klinger </surname><given-names>Jörg W.</given-names></name><address><city>Berlin</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Ladstätter</surname><given-names>Sabine</given-names></name><address><city>Wien</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Lang</surname><given-names>Franziska</given-names></name><address><city>Darmstadt</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Osanna</surname><given-names>Massimo</given-names></name><address><city>Matera</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Rohn</surname><given-names>Corinna</given-names></name><address><city>Wiesbaden</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Rose</surname><given-names>Brian</given-names></name><address><city>Philadelphia</city></address></contrib><contrib contrib-type="Advisory Board Member"><name><surname>Shapiro</surname><given-names>Alan</given-names></name><address><city>Baltimore</city></address></contrib>
+         </contrib-group>
+         <issn publication-format="online">2510-4713</issn><issn publication-format="print">0003-8105</issn><isbn publication-format="print">##ISBN##</isbn>
+         <publisher><publisher-name>Deutsches Archäologisches Institut</publisher-name><publisher-loc><institution>Zentrale</institution><addr-line>Podbielskiallee 69–71</addr-line><city>14195 Berlin</city><country>Deutschland</country><ext-link ext-link-type="uri">www.dainst.org</ext-link></publisher-loc></publisher>
+         <custom-meta-group><custom-meta><meta-name>publishing-history</meta-name><meta-value>Published since 1889</meta-value></custom-meta><custom-meta><meta-name>peer-review-label</meta-name><meta-value>Peer Review</meta-value></custom-meta><custom-meta><meta-name>peer-review-text</meta-name><meta-value>All articles submitted to the Archäologischer Anzeiger are reviewed by international experts in a double-blind peer review process.</meta-value></custom-meta><custom-meta><meta-name>editing-notice-label</meta-name><meta-value>Editing and Typesetting</meta-value></custom-meta><custom-meta><meta-name>editing-notice-publishing-editor</meta-name><meta-value>Publishing editor: Deutsches Archäologisches Institut, Redaktion an der Zentrale in Berlin (https://www.dainst.org/standort/zentrale/redaktion)</meta-value></custom-meta><custom-meta><meta-name>editing-notice-article-submissions</meta-name><meta-value>Contact for article submissions: redaktion.zentrale@dainst.de</meta-value></custom-meta><custom-meta><meta-name>editing-notice-editing</meta-name><meta-value>Editing: Dorothee Fillies, Berlin (www.redaktion-layout-satz.de)</meta-value></custom-meta><custom-meta><meta-name>editing-notice-typesetting</meta-name><meta-value>Typesetting: le-tex publishing services GmbH, Leipzig</meta-value></custom-meta><custom-meta><meta-name>editing-notice-layout</meta-name><meta-value>Corporate Design: LMK Büro für Kommunikationsdesign, Berlin</meta-value></custom-meta><custom-meta><meta-name>editing-notice-webdesign</meta-name><meta-value>Webdesign: LMK Büro für Kommunikationsdesign, Berlin</meta-value></custom-meta><custom-meta><meta-name>editing-notice-webdesign-url</meta-name><meta-value>https://lm-kommunikation.de</meta-value></custom-meta><custom-meta><meta-name>editing-notice-conversion</meta-name><meta-value>XXML-Export, Conversion: digital publishing competence, München</meta-value></custom-meta><custom-meta><meta-name>editing-notice-conversion-url</meta-name><meta-value>https://www.dpc-consulting.org</meta-value></custom-meta><custom-meta><meta-name>editing-notice-development</meta-name><meta-value>Customizing Viewer: LEAN BAKERY, München</meta-value></custom-meta><custom-meta><meta-name>editing-notice-development-url</meta-name><meta-value>https://leanbakery.com</meta-value></custom-meta><custom-meta><meta-name>printing-notice</meta-name><meta-value>Printed and bound in Germany</meta-value></custom-meta></custom-meta-group>
+      </journal-meta><article-meta><article-id pub-id-type="doi">https://doi.org/10.34780/jr7c-72r8</article-id><title-group><article-title>Die Ausgrabungen in Boğazköy-Ḫattuša 2021 </article-title><subtitle>Subline </subtitle></title-group><contrib-group><contrib contrib-type="author"><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-4344-562X</contrib-id><name><surname>Schachner</surname><given-names>Andreas</given-names><prefix>Prof. Dr.</prefix></name><aff><institution-wrap><institution-id institution-id-type="gnd"> https://ror.org/041qv0h25</institution-id><institution>Deutsches Archäologisches Institut, Abteilung Istanbul</institution></institution-wrap><addr-line>Inönü Cad. 10</addr-line><city>34437 Istanbul</city><country>Türkei</country><email>andreas.schachner@dainst.de</email></aff></contrib><contrib contrib-type="co-author"><contrib-id contrib-id-type="orcid">https://orcid.org/###</contrib-id><name><surname>Muster</surname><given-names>Maxi</given-names><prefix>Prof. Dr.</prefix></name><aff><institution-wrap><institution-id institution-id-type="gnd">https://ror.org/###</institution-id><institution>Institut, Universität</institution></institution-wrap><addr-line>Anschrift</addr-line><city>Stadt</city><country>Land</country><email>E-Mail</email></aff></contrib><contrib contrib-type="co-author"><contrib-id contrib-id-type="orcid">https://orcid.org/###</contrib-id><name><surname>Muster</surname><given-names>Max</given-names><prefix>Dr.</prefix></name><aff><institution-wrap><institution-id institution-id-type="gnd">https://ror.org/###</institution-id><institution>Institut, Universität</institution></institution-wrap><addr-line>Anschrift</addr-line><city>Stadt</city><country>Land</country><email>E-Mail</email></aff></contrib></contrib-group><pub-date pub-type="collection"><year>2022</year><month>11</month><day>15</day></pub-date><volume>22/1</volume><permissions><copyright-statement content-type="print">© 2022 Deutsches Archäologisches Institut</copyright-statement><copyright-statement content-type="online">© 2022 Deutsches Archäologisches Institut</copyright-statement><copyright-holder content-type="print">Verlag/Publisher: Dr. Ludwig Reichert Verlag Wiesbaden (www.reichert-verlag.de)</copyright-holder><license license-type="print"><license-p content-type="copyright">All rights reserved.</license-p><license-p content-type="terms-of-use">All rights reserved. No parts of this publication may be reproduced, translated, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the German Archaeological Institute and the publisher.</license-p></license><license license-type="online"><license-p content-type="terms-of-use">https://publications.dainst.org/journals</license-p></license></permissions><self-uri content-type="online-url">https://doi.org/10.34780/a7k4-1atc</self-uri><abstract xml:lang="es-ES">
+            <title>Zusammenfassung</title>
+            <p><styled-content style-type="abstract-title">Die Ausgrabungen in Boğazköy-Ḫattuša 2021</styled-content></p>
+            <p><styled-content style-type="abstract-subtitle">Subline</styled-content></p>
+            <p><styled-content style-type="abstract-author">Andreas Schachner</styled-content></p>
+            <p><styled-content style-type="abstract-text">Die Arbeiten in der <italic>nördlichen Unterstadt</italic> verdichten das Bild der hethitischen und der römischen Nutzungsphasen weiter. Dabei wird einerseits deutlich, dass sich die kleinteilige hethitische Bebauung nach Osten und Süden auf der Terrasse fortsetzt. Andererseits konnten im Norden des Areals möglicherweise der Eingang zu der kaiserzeitlichen Therme von Norden, d. h. vom Militärlager aus, ebenso geklärt werden wie weitere Räume des Gebäudes. Grabungen, die auf der Büyükkale parallel zur Restaurierung des Gebäudes E notwendig wurden, legten nicht nur bisher unbekannte Bereiche der späteisenzeitlichen Bebauung frei, sondern erbrachten überraschenderweise Reste eines hethitischen Gebäudes, das möglicherweise die Verbindung zwischen dem Gebäude E und dem nördlichen Hof darstellt. Im Archiv der Boğazköy-Grabung aufgefundene und in den Grabungen neu gewonnene Radiokarbondatierungen verdichten das Bild der chronologischen Entwicklung der hethitischen ebenso wie der eisenzeitlichen Nutzungsperiode in der Unterstadt und auf der Büyükkale.</styled-content></p>
+         </abstract><trans-abstract xml:lang="en-GB">
+            <title>Abstract</title>
+            <p><styled-content style-type="abstract-title">The Excavations at Boğazköy-Ḫattuša in 2021</styled-content></p>
+            <p><styled-content style-type="abstract-subtitle">Subline</styled-content></p>
+            <p><styled-content style-type="abstract-author">Andreas Schachner</styled-content></p>
+            <p><styled-content style-type="abstract-text">The work in the northern <italic>Lower City</italic> further condenses the picture of the Hittite and Roman phases of use. On the one hand, it has become clear that the small-scale Hittite structures continue to the east and south on the terrace. On the other hand, in the north of the area, what is possibly the entrance to the bath building of the Roman imperial period from the north, i. e. from the military camp, has been clarified as well as further rooms of the building. Excavations that became necessary on the Büyükkale in parallel with the restoration of Building E not only uncovered previously unknown areas of the Late Iron Age architecture, but surprisingly yielded remains of a Hittite building that possibly constitutes the connection between Building E and the northern courtyard of the Hittite palace. Radiocarbon datings found in the archives of the Boğazköy excavation as well as new radiocarbon samples obtained during the excavations further consolidate the picture of the chronological development of the Hittite as well as the Iron Age period of use in the Lower City and on Büyükkale.</styled-content></p>
+         </trans-abstract><kwd-group xml:lang="es-ES">
+            <title>Schlagwörter</title>
+            <kwd>Ḫattuša</kwd><kwd>Unterstadt</kwd><kwd>Büyükkale</kwd><kwd>hethitische Zeit</kwd><kwd>römische Kaiserzeit</kwd><kwd>Bad</kwd><kwd>Radiokarbondatierungen</kwd>
+         </kwd-group><kwd-group xml:lang="en-GB">
+            <title>Keywords</title>
+            <kwd>Ḫattuša</kwd><kwd>Lower Town</kwd><kwd>Büyükkale</kwd><kwd>Hittite period</kwd><kwd>Roman imperial period</kwd><kwd>bath</kwd><kwd>radiocarbondating</kwd>
+         </kwd-group><funding-group><award-group><award-id>xyz12345</award-id></award-group></funding-group><custom-meta-group><custom-meta><meta-name>issue-summary</meta-name><meta-value>AA 2022/1 • 394 pages with 370 illustrations</meta-value></custom-meta><custom-meta><meta-name>citation-guideline</meta-name><meta-value>R. Meta – J. Ritter, A Forgotten Grave Monument in Apollonia (Albania), AA 2022/1, § 1–17, https://doi.org/10.34780/jr7c-72r8</meta-value></custom-meta><custom-meta><meta-name>issue-bibliography</meta-name><meta-value>https://zenon.dainst.org/Record/003019392</meta-value></custom-meta><custom-meta><meta-name>pod-order</meta-name><meta-value>https://reichert-verlag.de</meta-value></custom-meta><custom-meta><meta-name>cover-illustration</meta-name><meta-value>Inv. 33366, from NICH Technical Archive. Author: Guri Pani, 1988</meta-value></custom-meta><custom-meta><meta-name>title-department</meta-name><meta-value>Abteilung Istanbul</meta-value></custom-meta><custom-meta><meta-name>title-topic-location</meta-name><meta-value>Boğazköy-Ḫattuša, Türkei</meta-value></custom-meta></custom-meta-group></article-meta></front>
+   <body>
+      <p id="p-1">
+         <named-content content-type="paragraph-counter">1</named-content>Unter den Bedingungen der Corona-Pandemie musste das Arbeitsprogramm insbesondere in der zweiten Hälfte der Kampagne angepasst und schließlich etwas verkürzt werden. Einerseits lag ein besonderer Schwerpunkt auf der Ruinenpflege und zahlreichen Restaurierungsmaßnahmen<xref ref-type="fn" rid="fn-1">[1]</xref>, andererseits wurden die Grabungen mit größerem Abstand in und zwischen den Arealen durchgeführt, um allen Mitarbeiterinnen und Mitarbeitern mehr Raum zu geben. Schwerpunkt der Ausgrabungen war erneut die nördliche Unterstadt, deren verschiedene Terrassen weiter untersucht wurden, um 1. die stratigraphische Abfolge der bronzezeitlichen Bebauung auf der Nordterrasse der Unterstadt in chronologischer und struktureller Hinsicht zu verdichten und um 2. die Strukturen der römischen Epoche weiter freizulegen<xref ref-type="fn" rid="fn-2">[2]</xref>. Daneben wurden parallel zu Restaurierungsmaßnahmen Grabungen auf der Büyükkale begonnen, mit dem langfristigen Ziel, u. a. die dort noch nicht besuchergerecht hergestellten Areale entsprechend präsentieren zu können und offene Fragen zur Planung und Struktur der bronze- und eisenzeitlichen Bebauung zu klären<xref ref-type="fn" rid="fn-3">[3]</xref>.</p>
+      <sec id="s-1">
+         <title>Die späte Bronzezeit auf der nördlichen Terrasse der Unterstadt</title>
+         <p id="p-2">
+            <named-content content-type="paragraph-counter">2</named-content>Im Südwesten der seit 2015 erforschten Terrasse<xref ref-type="fn" rid="fn-4">[4]</xref> galt es zunächst, in den Planquadraten 295–297/400–402 eine flache, hügelartige Erhebung abschließend zu klären<xref ref-type="fn" rid="fn-5">[5]</xref>. Gleichzeitig wurde die Grabungsfläche parallel zu den bestehenden Arealen in den Planquadraten 296–297/402–404 nach Osten erweitert, um die beiden älteren Areale zu verbinden<xref ref-type="fn" rid="fn-6">[6]</xref>.</p>
+         <p id="p-3">
+            <named-content content-type="paragraph-counter">3</named-content>Die Fortführung der Arbeiten bestätigte in Bezug auf den genannten flachen, kreisrunden Hügel die bereits in der vorherigen Saison geäußerte Vermutung, dass es sich lediglich um eine Ansammlung von Steinen handelte, die bei der Nutzung des Areals als Dreschplatz dort zusammengetragen wurde. Dafür spricht nicht nur die lockere Zusammensetzung und völlig willkürliche Schichtung von Steinen verschiedenster Größe, sondern es weisen auch Funde von modernem Glas, Metall und Plastik zwischen den Steinen darauf hin. https://arachne.dainst.org/entity/6903087
+         </p>
+         <p id="p-4">
+            <named-content content-type="paragraph-counter">4</named-content>Die Baubefunde der jüngsten hethitischen Schicht unter dem Hügel erwiesen sich als relativ stark gestört, so dass zumindest in dieser Kampagne im Südwesten des Areals ebenso wenig zusammenhängende Befunde ergraben werden konnten wie in den Planquadraten 297–298/401–402, durch die der Anschluss an die Planquadrate 299/401–402 hergestellt werden sollte (<xref ref-type="fig" rid="f-1">Fig. 1</xref>)<xref ref-type="fn" rid="fn-7">[7]</xref>.</p>
+         <p id="p-5">
+            <named-content content-type="paragraph-counter">5</named-content>Zwar zeichnet sich die Fortsetzung der kleinteiligen Bebauung nach Süden in der Form ab, wie sie bereits in den früheren Jahren aufgedeckt wurde, jedoch konnten die Grundrisse noch nicht abschließend geklärt werden. Die Ausrichtung, Bauweise und Struktur der Bauten aus relativ kleinen Räumen verbinden die identifizierten Befunde mit den nördlich und östlich anschließenden Bereichen (<xref ref-type="fig" rid="f-1">Fig. 1</xref>). Insbesondere die Klärung der Zusammenhänge einzelner Häuser sowie die Fortsetzung der bereits nachgewiesenen Straßen nach Osten erwiesen sich angesichts des vorgezogenen Endes der Arbeiten als nicht mehr möglich. Auffallend ist, dass die Bebauung auch in den neu aufgedeckten Bereichen in einer etwa diagonal von Nordwesten nach Südosten durch die Planquadrate 295–297/400–402 verlaufenden Linie endet und damit die Vermutung einer großen Freifläche vor dem Stadttor zu bestätigen scheint<xref ref-type="fn" rid="fn-8">[8]</xref>.</p>
+         <p id="p-6">
+            <named-content content-type="paragraph-counter">6</named-content>Durch Grabungen in den Arealen 297–298/401–402 galt es, die früheren Flächen zu verbinden<xref ref-type="fn" rid="fn-9">[9]</xref>, ohne dass die städtebaulichen Zusammenhänge abschließend geklärt werden konnten (<xref ref-type="fig" rid="f-1">Fig. 1</xref>). Der Mangel an Baustrukturen und vergleichsweise weniger Steinschutt im nördlichen Teil dieser Fläche könnten möglicherweise auf einen kleinen Platz zwischen den ansonsten dicht an dicht gebauten Wohnhäusern hinweisen.</p>
+         <p id="p-7">
+            <named-content content-type="paragraph-counter">7</named-content>Im Südosten der nördlichen Unterstadt wurde das Areal 304–307/403–404 nach Süden erweitert, ohne dass zusammenhängende Strukturen der hethitischen Epoche erfasst worden wären (<xref ref-type="fig" rid="f-1">Figs. 1</xref>. <xref ref-type="fig" rid="f-2">2</xref>). Dies ist hauptsächlich darauf zurückzuführen, dass eine von Süden nach Norden verlaufende Erosionsrinne diesen Bereich schneidet. Die Wirkmächtigkeit der Erosion wird dadurch erkennbar, dass sich in dem stark gemischten Material auch ein Fragment eines Pithos mit eingeritztem Hieroglyphenzeichen fand (Bo21-5032-5105; <xref ref-type="fig" rid="f-3">Fig. 3</xref>), wie sie bisher nur aus den nordwestlichen Magazinen des Großen Tempels bekannt sind. <xref ref-type="fig" rid="f-3">Figs. 3</xref>. <xref ref-type="fig" rid="f-4">4</xref>
+         </p>
+         <p id="p-8">
+            <named-content content-type="paragraph-counter">8</named-content>Bemerkenswert ist der Fund einer größeren Anzahl von Votivtafeln mit Götternamen sehr verschiedener Zeiten (5.–2. Jh. v. Chr.) aus diesen Räumlichkeiten und</p>
+         <p>aus Straße F. Folgende Votivtafeln u. ä. wurden im Eingangskorridor A<sup>2</sup> und nahebei</p>
+         <p>gefunden:</p>
+         <list list-type="ordered">
+            <list-item><p>IG XII 3, 417 für Damater; ca. 4. Jh. v. Chr.</p></list-item>
+            <list-item><p>IG XII 3, 428, für Zeus Xenios; ca. 5. Jh. v. Chr.</p></list-item>
+            <list-item><p>IG XII 3, 433, für Hera; etwa 2. Jh. v. Chr.</p></list-item>
+            <list-item><p>IG XII 3, 441/1372, für Poseid(on Hip)potas; ca. 4. Jh. v. Chr.</p></list-item>
+            <list-item><p>IG XII 3, 442, für (Zeus) Sabazios; ca. 2. Jh. v. Chr.</p></list-item>
+         </list>
+         <p id="p-9">
+            <named-content content-type="paragraph-counter">9</named-content>Um diese zu ermitteln, haben die Geologen aus Genf und Bern eine multivariante Methode entwickelt, die nur sehr kleine Probenmengen benötigt, die aber</p>
+         <p>trotzdem interpretierbare Resultate liefert. Drei Analysen werden ausgeführt:</p>
+         <list list-type="bullet">
+            <list-item><p>die stabilen Kohlenstoff- und Sauerstoff-Isotopenverhältnisse,</p></list-item>
+            <list-item><p>der mineralische Hauptgemengeteil und das Korngefüge und</p></list-item>
+            <list-item><p>die Kathodomikrofazies.</p></list-item>
+         </list>
+         <p id="p-10">
+            <named-content content-type="paragraph-counter">10</named-content>Der Ziegel ist in einer sehr flüssigen und nicht ungefälligen Kursive beschrieben worden. Die variierende Schrifttiefe und Kerbung der Hasten weisen darauf hin, dass gelegentlich der <italic>stilus</italic> ausgetauscht bzw. neu gespitzt wurde. Die Schrift ist 4 bis 5 mm groß; runde Buchstaben (θ und ο) sind mitunter sehr viel kleiner als die übrigen, während φ und ψ mit Über- und Unterlänge geschrieben sind; am deutlichsten ausgeprägt ist diese bei ρ, wo die bis zu 11 mm lange Haste sogar leicht gebogen erscheint. ε und σ haben die lunare Form, die Hasten bei α und π die Tendenz zur Krümmung. Die beim Schreiben ausgehobenen Tonkrümel wurden nicht immer entfernt, und auch die aufgeworfenen Ränder nicht wieder geglättet. Der Abstand der Zeilen variiert stark (zwischen 1 und 7 mm). Hier kommt nun eine Tabelle ohne Binnenlinien:</p>
+         <table-wrap id="tw-1" position="anchor"><table id="t-1" rules="none">
+            
+            <tbody>
+               <tr>
+                  <td>
+                     <p>Die Inschrift (<xref ref-type="fig" rid="f-2">Fig. 2</xref>)</p>
+                  </td>
+                  <td/>
+                  <td>
+                     <p>Od. ξ</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>αὐτὰρ ὃ ἐγ λιμένος προσέβη τρηχεῖα̣ν [ἀταρ]–</p>
+                  </td>
+                  <td>
+                     <p>1</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>πὸν</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>χῶρον ἀνʼ ὑλήεντα διʼ ἄκριας, ᾗ οἱ Ἀθήνη</p>
+                  </td>
+                  <td>
+                     <p>2</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>πέφραδε δεῖον ὑφορβόν, ὅ οἱ βιότοιο μά[λι]–</p>
+                  </td>
+                  <td>
+                     <p>3</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>5</p>
+                  </td>
+                  <td>
+                     <p>στα</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>κήδετο οἰκήων, οὓς κτήσατο δεῖος Ὀδυσσε[ύς].</p>
+                  </td>
+                  <td>
+                     <p>4</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>τὸν δʼ ἄρʼ ἐνὶ προδόμῳ εὗρʼ ἥμενον, ἔν–</p>
+                  </td>
+                  <td>
+                     <p>5</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>θα οἱ αὐλὴ</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>ὑψηλὴ δέμνητο περισκέπτῳ ἐνὶ οἴκῳ,</p>
+                  </td>
+                  <td>
+                     <p>6</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>10</p>
+                  </td>
+                  <td>
+                     <p>καλή τε με̣γάλη τε, περίδρομος, ἥντε συβώ̣–</p>
+                  </td>
+                  <td>
+                     <p>7</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>της</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>αὐτὸς δʼ ἀμφὶ σύεσσιν ἐποιχομένοιο {ἀν}ἄ–</p>
+                  </td>
+                  <td>
+                     <p>8</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>νακτος,</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>νόσφιν δεσποίνης καὶ Λαέρταο γέροντος,</p>
+                  </td>
+                  <td>
+                     <p>9</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>15</p>
+                  </td>
+                  <td>
+                     <p>ῥυτοῖσιν λάεσσι καὶ ἐτρίγκωσεν ἀχέρδῳ.</p>
+                  </td>
+                  <td>
+                     <p>10</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>σταυροὺς δʼ ἐκτὸς ἔλασσε διαμπερὲς ἔνθα</p>
+                  </td>
+                  <td>
+                     <p>11</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>καὶ ἔνθα,</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>πυκνοὺς καὶ θαμέας, τὸ μέλαν δρυὸς</p>
+                  </td>
+                  <td>
+                     <p>12</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>ἀμφικεάσσας·</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>20</p>
+                  </td>
+                  <td>
+                     <p>ἔντοσθεν δʼ αὐλῆς συφεοὺς δυοκαίδεκα</p>
+                  </td>
+                  <td>
+                     <p>13</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>ποίει</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td/>
+                  <td>
+                     <p>
+                        <italic>linea</italic>
+                     </p>
+                  </td>
+                  <td/>
+               </tr>
+            </tbody>
+         </table></table-wrap>
+         <p id="p-11">
+            <named-content content-type="paragraph-counter">11</named-content>Es ist evident, dass zum Vergleich der Schriftformen weniger die Steininschriften heranzuziehen sind als vielmehr die zeitgenössische Buchschrift und die Papyri. Bei komplexeren Tabellen werden horizontale Linien gesetzt:</p>
+         <table-wrap id="tw-2" position="anchor"><table id="t-2" rules="rows">
+            
+            <thead>
+               <tr>
+                  <td>
+                     <p>
+                        <styled-content style-type="text-medium">Titel (Museum, Inv.; Kat.-Nr. bei von Moock 1998)</styled-content>
+                     </p>
+                  </td>
+                  <td>
+                     <p>
+                        <styled-content style-type="text-medium">Mit Ehemann*</styled-content>
+                     </p>
+                  </td>
+                  <td>
+                     <p>
+                        <styled-content style-type="text-medium">Mit Sohn**</styled-content>
+                     </p>
+                  </td>
+                  <td>
+                     <p>
+                        <styled-content style-type="text-medium">Mit weiteren männlichen Verwandten</styled-content>
+                     </p>
+                  </td>
+                  <td>
+                     <p>
+                        <styled-content style-type="text-medium">Mit weiblichen Verwandten</styled-content>
+                     </p>
+                  </td>
+                  <td>
+                     <p>
+                        <styled-content style-type="text-medium">Isiacae mit mehreren Verwandten</styled-content>
+                     </p>
+                  </td>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>
+                     <p>Grabrelief des Attikos und seiner Frau (Mantua, Palazzo Ducale, Inv. 6677; 451)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele in Eleusis (Grabungsdepot, Inv. 5201; Eingartner 1991, Kat. 101)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td>
+                     <p>
+                        <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/Sonderzeichen025.tif.png"/>
+                     </p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele in Athen, (Athen, Nationalmuseum [NM], Inv. 1224; 225)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele des Agathostratos und der Ma (Kerameikosmuseum, Inv. P 278; 132)</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td>
+                     <p>X (Vater)</p>
+                  </td>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele der Sophia und des Eukarpos (Athen, NM Inv. 1214; 221)</p>
+                  </td>
+                  <td/>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele des Musaios und der Amaryllis (Athen, NM, Inv. 1233; 231)</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td>
+                     <p>X (Bruder)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td>
+                     <p>X (Amaryllis mit Mousaios und Frau)</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele des Neikias und der Aristo (Piräus, Archäologisches Museum, o. Inv.?; 491)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele des Epigonos und der Elate (und des Ision) (Athen, NM 1308; 266)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele der Methe (Athen, 3. Ephorie, Inv. 1106; 14)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabrelief einer Isisanhängerin, sog. Alexandrastele (Athen NM Inv. 1193; 206)</p>
+                  </td>
+                  <td>
+                     <p>?</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele der Aphrodisia und einer <italic>Isiaca</italic> (Broom Hall, o. Inv.?; 412)</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele des Sohnes des Zosimos (Athen, NM Inv. 1378)</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td>
+                     <p>X (<italic>Isiaca</italic> und zwei Männer)</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele der Aphaleia und des Zosimos (Piräus, Inv. 489)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele der Agathemeris und des Sempronios Nikites (London, British Museum, Inv. 1878,0725.1; 446)</p>
+                  </td>
+                  <td/>
+                  <td>
+                     <p>X?</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabrelief eines Paares, Frau als <italic>Isiaca</italic> (Athen, NM, Inv. Aπο. 230; 361)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Fragment, Unterteil einer Naiskosstele, Ephebe und <italic>Isiaca</italic> (Athen, Agora, Inv. S 341; 29)</p>
+                  </td>
+                  <td/>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele einer <italic>Isiaca</italic> und einer sitzenden Frau (Athen, NM, Inv. 1296; 257)</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Grabstele des Sohnes des Soterion (Athen, NM, Inv. 1223; 225)</p>
+                  </td>
+                  <td>
+                     <p>X</p>
+                  </td>
+                  <td/>
+                  <td/>
+                  <td/>
+                  <td/>
+               </tr>
+               <tr>
+                  <td colspan="6">
+                     <p>* Es wird mit Eingartner 1991, 145 und Muehsam 1952, 65 davon ausgegangen, dass der auf der linken Seite der Stele stehende Mann in der Regel der Ehemann ist. ** Als Sohn wird eine männliche Person aufgrund ihres Alters bzw. ihrer Position auf der Stele bestimmt (s. Anm.*).</p>
+                  </td>
+               </tr>
+            </tbody>
+         </table></table-wrap>
+         <p id="p-12">
+            <named-content content-type="paragraph-counter">12</named-content>Das an einer Probe aus einem ca. 5,60 m × 8,00 m großen, zweiräumigen Grubenhauses<xref ref-type="fn" rid="fn-10">[10]</xref> der Eisenzeit in der südlichen Unterstadt gemessene Datum (Bo69-3) ist einer der wenigen Anhaltspunkte für die absolut-chronologische Stellung dieses Stadtbereichs. Trotz der methodisch bedingten statistischen Unsicherheit des Probendatums deckt es sich mit Radiokarbondatierungen der eisenzeitlichen Bebauung südöstlich von 
+               <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2242944">Kesikkaya</ext-link>
+            
+            <xref ref-type="fn" rid="fn-11">[11]</xref>, so dass die chronologische Interpretation der Befunde deutlich verbessert wird.</p>
+         <sec id="s-1.1">
+            <title>Bewertung der Datierungen</title>
+            <p id="p-13">
+               <named-content content-type="paragraph-counter">13</named-content>In dem topographisch zergliederten Gelände der hethitischen Hauptstadt kommt naturwissenschaftlichen Altersbestimmungen eine besondere Bedeutung zu, da nur so ein absolut-chronologischer Abgleich der Entwicklung in den einzelnen Stadtarealen möglich ist<xref ref-type="fn" rid="fn-12">[12]</xref>. Im Gesamtzusammenhang der bronzezeitlichen Stadt bestätigen die Daten von der Büyükkale eine Datierung der Stufe BK Vc bereits in das ausgehende 3. Jt. v. Chr., während die tendenziell und stratigraphisch jüngeren Proben der Stufe BK IVd weitere Anhaltspunkte für die Zeit der altassyrischen Handelsniederlassungen liefern<xref ref-type="fn" rid="fn-13">[13]</xref>. Das frühe Datum des ausgehenden 3. Jts. v. Chr. der Probe Bo69-4 aus einem heute nicht mehr genau lokalisierbaren »Suchschnitt in Areal J/17« der Unterstadt ist trotzdem vor dem Hintergrund der jüngsten Ergebnisse zur Chronologie der Unterstadt als Hinweis auf die potentiell sehr große Ausdehnung der Siedlung in ihrer Gründungsphase von Bedeutung<xref ref-type="fn" rid="fn-14">[14]</xref>.</p>
+         </sec>
+         <sec id="s-1.2">
+            <title>Büyükkale: Arbeiten am oberen Burghof</title>
+            <p id="p-14">
+               <named-content content-type="paragraph-counter">14</named-content>Die archäologischen Arbeiten auf der Büyükkale sind Teil eines langfristigen Vorhabens zur Klärung von Fragen der Struktur und Chronologie der hethitischen Königsburg<xref ref-type="fn" rid="fn-15">[15]</xref>, die aufgrund der topographischen Situation mit umfangreichen Restaurierungsmaßnahmen Hand in Hand gehen<xref ref-type="fn" rid="fn-16">[16]</xref>. Es sollen auch kleinere Grafiken z. b. zur Darstellung von Hieroglyphen als eps <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/Sonderzeichen025.tif1.png"/> oder als png <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/Sonderzeichen025.png"/> sowie QR-Codes dargestellt werden können<inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/QR_Code11148479610313515.png"/>
+            </p>
+         </sec>
+      </sec>
+      <sec id="s-2">
+         <title>Katalog</title>
+         <p id="p-21">
+            <named-content content-type="paragraph-counter">21</named-content>Ton und Technik der Keramik aus dem samischen Heraion hat Richard Eilmann 1933 in so ausgezeichneter Weise beschrieben , daß dem nichts hinzuzufügen ist. Charakteristisch ist der starke Gehalt an Glimmer, der deshalb bei der Tonbeschreibung nicht extra erwähnt ist.</p>
+         <sec id="s-2.3">
+            <title>FG VIIa</title>
+            <p>Westlich der Kultbildbasis unter den Fußbodenplatten OK +230.</p>
+            <p>
+               <styled-content style-type="catalog-number">Kat. 1 – Inv. K 3006: Krater</styled-content>
+            </p>
+            <p>Wandfragment, eine Scherbe aus FG XX (unter Niveau Hekatompedos II), Abb. 8.</p>
+            <p>H 24 cm.</p>
+            <p>Ton 5YR 6/6 rötlich gelb, Überzug 10YR 8/3 sehr blaß braun, Bemalung 5YR 4/4 rötlich-braun bis 5YR 3/2 dunkel rötlich-braun.</p>
+            <p>Dekoration: Unten ausgemalte Zone und zwei umlaufende Streifen, darüber im Mittelfeld zwei Mäander, rechtsläufig, schraffiert, Horizontalfeld (KO 23a), getrennt durch Rautenkette, schraffiert, Horizontalfeld (KO 39b), gerahmt von Rautenkette, schraffiert, Vertikalfeld (KO 39c); innen ausgemalt.</p>
+            <p>Vgl. Özgünel 2003, 78 Taf. 13 Abb. 1 (»Reifgeometrisch, ca. 850–750«); Verdan u. a. 2008, 11 f. Nr. 24. Abb. S. 144 (MG II).</p>
+            <p>Datierung: MG II (800–760).</p>
+            <p>
+               <styled-content style-type="catalog-number">Kat. 2 – Inv. K 3007, 3050: Krater</styled-content>
+            </p>
+            <p>Zwei Wandfragmente, Abb. 9.</p>
+            <p>H 11,6 cm (K 3007); 7,5 cm (K 3050).</p>
+            <p>Ton 5YR 7/4 hellrosa, Überzug 10YR 8/3 sehr blaß braun, Bemalung außen 5YR 5/4 braun bis 7.5YR 2.5/1 schwarz, innen 5YR 3/4 dunkel rötlich braun.</p>
+            <p>Dekoration: Im Mittelfeld unten (K 3050) Zinnenmuster, schraffiert, Horizontalfeld (KO 18a), darüber Mäander links- oder rechtsläufig, schraffiert, Horizontalfeld (KO 21a. 23a), darüber Parallel-Zickzack, vierfach, Vertikalstriche an den unteren Spitzen Horizontalfeld (vgl. KO 62b), rechts als Rahmung Mäander linksläufig, schraffiert, Vertikalfeld (KO 21h) zwischen vertikalen Parallelstrichen; innen ausgemalt.</p>
+            <p>Datierung: MG II (800–760).</p>
+            <p>Kat. 3 – Inv. K 3012: Skyphos</p>
+            <p>Fragment von Wand, Horizontalhenkel und Rand, Abb. 10</p>
+            <p>H 6,2 cm, D. 19cm.</p>
+            <p>Ton 2.5YR 7/8 hellrot, Überzug 10YR 8/4 sehr hell braun, Bemalung außen 2.5YR 6/6 hellrot, innen 5YR 5/8 gelblich rot.</p>
+            <p>Dekoration: in Mittelfeld Mäander linksläufig schraffiert, Horizontalfeld (KO 21b) gerahmt von vertikalen Parallelstriche; über Henkel achtstrahliger Stern, Füllornament (KO 71e); innen bis auf Streifen am Rand ausgemalt.</p>
+            <p>Vgl. Papadopoulos – Smithson 2017, 240 T25-1 Abb. 2.151.</p>
+            <p>Datierung: MG II (800–760)</p>
+         </sec>
+         <sec id="s-2.4">
+            <title>FG VII b</title>
+            <p>unter der Kalksteinplatte OK +230, auf der die Mittelstütze I stand</p>
+            <p>
+               <styled-content style-type="catalog-number">Kat. 4 – Inv. K 2441, K 3014: Krater</styled-content>
+            </p>
+            <p>zwei Wandfragmente, K 2441 aus FG XX , Abb. 11</p>
+            <p>H 5,5 cm (K 2441), 9,5 cm (K 3014)</p>
+            <p>Ton 5YR 8/3 hellrosa, Überzug 5YR 8/2 rosa-weiß. Bemalung: außen 5YR 5/4 rötlich braun bis 7.5YR 2.5/1 schwarz, innen 7.5YR 3/3 dunkelbraun.</p>
+            <p>Dekoration: unten Dreiecke, kreuzschraffiert, Horizontalfeld (KO 47h) gerahmt von horizontalen Parallellinien; oben im Mittelfeld Mäander (?), rechts daneben Rautenkette, dreifacher Umriß, mit Innenpunkten, Senkrechtfeld (vgl. KO 37c. 38e) und Rautenkette, kreuzschraffiert, Vertikalfeld (KO 39g), zwischen vertikalen Parallelstrichen.</p>
+            <p>Datierung: MG II (800–760)</p>
+            <p>
+               <styled-content style-type="catalog-number">Kat. 5 – Inv. K 3013: Krateriskos</styled-content>
+            </p>
+            <p>zwei Fragmente von Wand, Doppelhenkel und Rand, Abb. 12</p>
+            <p>H 7,5 cm bzw. 3,1 cm, D 24 cm.</p>
+            <p>Ton 5YR 5/2 rötlich grau, Überzug 5YR 5/1 grau. Bemalung 7.5YR 2.5/1 schwarz (Fehlbrand oder Sekundärbrand).</p>
+            <p>Dekoration: Vertikale Parallellinien (Rahmung von verlorenem Mittelfeld), auf Rand Punktreihe groß, Horizontalfeld (KO 79d), auf Henkel schraffiertes Band.</p>
+            <p>Datierung: MG II (800–760).</p>
+            <sec id="images-container"><title>Figures</title>
+               <fig id="poster-image" fig-type="poster-image"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/AA_Schachner_ContentPicture.jpg"/></fig>
+               <fig id="f-1" fig-type="content-image"><label>Fig. 1</label><caption><p>Boğazköy-Ḫattuša, Luftbild der Ausgrabungen auf der Westseite der nördlichen Unterstadtterrasse (Stand 10/2021)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/AA_Schachner_1.jpg"/></fig>
+               <fig id="f-2" fig-type="content-image"><label>Fig. 2</label><caption><p>Boğazköy-Ḫattuša, Luftbild der Ausgrabungen in den Planquadraten 304–307/403–404 der nördlichen Unterstadt (Stand 10/2021)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/AA_Schachner_2.jpg"/></fig>
+               <fig id="f-3" fig-type="content-image"><label>Fig. 3</label><caption><p>Boğazköy-Ḫattuša, Wandscherbe eines Pithos mit eingeritztem Zeichen, das wahrscheinlich als Hieroglyphe interpretiert werden kann</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/AA_Schachner_3.jpg"/></fig>
+               <fig id="f-4" fig-type="content-image"><label>Fig. 4</label><caption><p>Boğazköy-Ḫattuša, reliefierte Wandscherbe</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/AA_Schachner_4.jpg"/></fig>
+            </sec>
+         </sec>
+      </sec>
+   </body>
+   <back>
+      <ref-list content-type="references">
+         <ref id="ref-Neve1969"><label>Neve 1969</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000017377">
+               P. Neve, Bebauung nachhethitischer Zeit im Tempelbezirk und im Südareal, in: K. Bittel – H. G. Güterbock – H. Hauptmann – H. Kühne – P. Neve – W. Schirmer, Boğazköy IV. Funde aus den Grabungen 1967 und 1968, ADOG 14 (Berlin 1969) 32–35
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Neve1970"><label>Neve 1970</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000495258">
+               P. Neve, Grabungen und Restaurierungen im Bereich des Großen Tempels und beim sog. Südareal, in: K. Bittel – P. Neve, Vorläufiger Bericht über die Ausgrabungen in Boğazköy im Jahre 1969, MDOG 102, 1970, 5–26
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Neve1975"><label>Neve 1975</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000017378">
+               P. Neve, Grabungen im Gebiet des großen Tempels (Tempel I) im Jahr 1970 (P. Neve), mit einem Beitrag von H. Otten über die Inschrift auf den Quadern vor der Südecke des Tempelbezirks, in: K. Bittel – H. G. Güterbock – G. Neumann – P. Neve – H. Otten – U. Seidl, Boğazköy V. Funde aus den Grabungen 1970 und 1971, ADOG 18 (Berlin 1975) 9–29
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Schachner2011"><label>Schachner 2011</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000872271">
+               A. Schachner, Hattuscha. Auf der Suche nach dem sagenhaften Großreich der Hethiter (München 2011)
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Schachner2015a"><label>Schachner 2015a</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/001449028">
+               A. Schachner, Die Ausgrabungen in Boğazköy-Ḫattuša 2014, AA 2015/1, 69–107
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Schachner2020a"><label>Schachner 2020a</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/002001085">
+               A. Schachner, Die Ausgrabungen in Boğazköy-Ḫattuša 2019, AA 2020/1, § 1–111
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-Schachner2021a"><label>Schachner 2021a</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/002053235">
+               A. Schachner, Die Ausgrabungen in Boğazköy-Ḫattuša 2020, AA 2021/1, § 1–95
+            </ext-link>
+         </mixed-citation></ref>
+         <ref id="ref-SchoopSeeher2006"><label>Schoop – Seeher 2006</label><mixed-citation>
+            
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000708028">
+               U.-D. Schoop – J. Seeher, Absolute Chronologie in Boğazköy-Ḫattuša. Das Potential der Radiokarbondaten, in: D. P. Mielke – U. Schoop – J. Seeher (Hrsg.), 
+            </ext-link>
+            <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="zenon" xlink:href="https://zenon.dainst.org/Record/000708028">
+               Strukturierung und Datierung in der hethitischen Archäologie. Voraussetzungen – Probleme – Neue Ansätze. Internationaler Workshop Istanbul 16.–27. November 2004, Byzas 4 (Istanbul 2006) 53–75
+            </ext-link>
+         </mixed-citation></ref>
+      </ref-list>
+      <fn-group content-type="footnotes">
+         <title>Fussnoten</title>
+         <fn id="fn-1"><label>1</label><p>
+               s. u. § 157–162.</p></fn>
+         <fn id="fn-2"><label>2</label><p>
+               s. u. § 82–106.</p></fn>
+         <fn id="fn-3"><label>3</label><p>
+               s. u. § 24–75.</p></fn>
+         <fn id="fn-4"><label>4</label><p>
+               Für die Befunde <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="aa-referenzartikel-sp-2022-11-23-web-resources/image/Sonderzeichen025.tif.png"/> der Vorjahre s. <xref ref-type="bibr" rid="ref-Schachner2020a">Schachner 2020a</xref>, § 2–42; <xref ref-type="bibr" rid="ref-Schachner2021a">Schachner 2021a</xref>, § 3–14. In der Kampagne 2021 wurden keine weiteren Befunde der <italic>kārum</italic>-Zeit erfasst.</p></fn>
+         <fn id="fn-5"><label>5</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Schachner2021a">Schachner 2021a</xref>, § 1 f. Abb. 2.</p></fn>
+         <fn id="fn-6"><label>6</label><p>
+               Für die Lage der Planquadrate s. <xref ref-type="bibr" rid="ref-Schachner2021a">Schachner 2021a</xref>, Abb. 1. 10.</p></fn>
+         <fn id="fn-7"><label>7</label><p>
+               Für das Areal 299/401–402 s. <xref ref-type="bibr" rid="ref-Schachner2021a">Schachner 2021a</xref>, Abb. 14. 
+                  <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" specific-use="extrafeatures" xlink:href="https://gazetteer.dainst.org/place/2283199">Boğazköy-Ḫattuša</ext-link>
+               
+            </p></fn>
+         <fn id="fn-8"><label>8</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Schachner2021a">Schachner 2021a</xref>, § 8 Abb. 10.</p></fn>
+         <fn id="fn-9"><label>9</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Schachner2021a">Schachner 2021a</xref>, § 12 f. Abb. 10. Siehe hier auch <xref ref-type="fig" rid="f-3">Figs. 3</xref>. <xref ref-type="fig" rid="f-4">4</xref>.</p></fn>
+         <fn id="fn-10"><label>10</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Neve1969">Neve 1969</xref>; <xref ref-type="bibr" rid="ref-Neve1970">Neve 1970</xref>, 11 Abb. 2; <xref ref-type="bibr" rid="ref-Neve1975">Neve 1975</xref>, 9–12 Abb. 1–4. Funktional wird das Haus aufgrund der Installationen und Funde vielleicht als Back- oder Kochhaus gedient haben.</p></fn>
+         <fn id="fn-11"><label>11</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Schachner2015a">Schachner 2015a</xref>, 78 f. Abb. 12.</p></fn>
+         <fn id="fn-12"><label>12</label><p>
+               
+               <xref ref-type="bibr" rid="ref-SchoopSeeher2006">Schoop – Seeher 2006</xref>.</p></fn>
+         <fn id="fn-13"><label>13</label><p>
+               s. <xref ref-type="bibr" rid="ref-Schachner2011">Schachner 2011</xref>, 18 f. (Chronologietabelle).</p></fn>
+         <fn id="fn-14"><label>14</label><p>
+               
+               <xref ref-type="bibr" rid="ref-Schachner2021a">Schachner 2021a</xref>, § 4–19.</p></fn>
+         <fn id="fn-15"><label>15</label><p>
+               Die Deutsche Orientgesellschaft (DOG) hat die Arbeiten mit einer Anschubfinanzierung unterstützt, die einen neuen Blick auf eines ihrer traditionellen Forschungsfelder eröffnet und für die wir sehr dankbar sind.</p></fn>
+         <fn id="fn-16"><label>16</label><p>
+               Für die Restaurierungen am Gebäude E s. u. § 61–65. 159–160.</p></fn>
+      </fn-group>
+      
+   </back>
+</article>
