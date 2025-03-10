@@ -43,6 +43,13 @@
     Validierungsfehler als letzte Instanz geschehen, damit Fehler mit inhaltlichen Folgen nicht 
     unbemerkt aus den Daten verschwinden.
     
+    Version: 2.1
+    Datum: 06.03.2025
+    Autor: Benedikt Boyxen, DAI
+    
+        Changelog:
+    - Version 2.1: Änderung der Tabellenstruktur, damit Tabellen vom Viewer gerendert werden können. Das id-Attribut wurde von <table> auf <table-wrap> verschoben, das rules-Attribut wird nun in <table-wrap> gesetzt; und der Tag <tbody> wurde entfernt.
+    
     Version:  2.0
     Datum: 2022-11-25
     Autor/Copyright: Fabian Kern, digital publishing competence
@@ -1035,7 +1042,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     </xsl:template>
 
     
-    <!-- Body: Tabellen -->
+     <!-- Body: Tabellen -->
 
     <xsl:template match="table">
         <!-- Behandlung der Tabellen-Elemente in den Daten: Wir nehmen hier die Tabellen-Struktur aus 
@@ -1044,42 +1051,43 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         das rules-Attribut für die Linierung der Tabelle bestimmt -->
         <xsl:element name="table-wrap">
             <xsl:attribute name="id">
-                <xsl:call-template name="CreateTableWrapID"/>
+                <xsl:call-template name="CreateTableID"/>
             </xsl:attribute>
             <xsl:attribute name="position" select="'anchor'"/>
-            <xsl:element name="table">
-                <xsl:attribute name="id">
-                    <xsl:call-template name="CreateTableID"/>
-                </xsl:attribute>
-                <xsl:attribute name="rules">
-                    <!-- Abhängig von den Formaten an den Texten in den Zellen bestimmen wir hier,
+            <xsl:attribute name="rules">
+                <!-- Abhängig von den Formaten an den Texten in den Zellen bestimmen wir hier,
                          ob die Tabellen ein rules-Attribut für die Linierung bekommt oder nicht -->
-                    <xsl:choose>
-                        <xsl:when test="count(descendant::p[@class='table-text-rows']) &gt; 0">
-                            <xsl:text>rows</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="count(descendant::p[@class='table-text-cols']) &gt; 0">
-                            <xsl:text>cols</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="count(descendant::p[@class='table-text-all']) &gt; 0">
-                            <xsl:text>all</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="count(descendant::p[@class='table-text']) &gt; 0">
-                            <xsl:text>none</xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>none</xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:attribute>
-                <!-- Weitere Kind-Elemente werden bis auf <colgroup> schlicht durchgereicht -->
+                <xsl:choose>
+                    <xsl:when test="count(descendant::p[@class='table-text-rows']) &gt; 0">
+                        <xsl:text>rows</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="count(descendant::p[@class='table-text-cols']) &gt; 0">
+                        <xsl:text>cols</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="count(descendant::p[@class='table-text-all']) &gt; 0">
+                        <xsl:text>all</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="count(descendant::p[@class='table-text']) &gt; 0">
+                        <xsl:text>none</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>none</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:element name="table">
+    <!-- Weitere Kind-Elemente werden bis auf <colgroup> schlicht durchgereicht -->
                 <xsl:apply-templates/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="colgroup">
-        <!-- Wir filtern colgroup aus, da hier keine sinnvollen Informationen hängen -->
+    <!-- Wir filtern colgroup aus, da hier keine sinnvollen Informationen hängen -->
+    <xsl:template match="colgroup"/>
+    
+    <!-- Entfernt <tbody>, aber behält seine Inhalte (also <tr>-Elemente) -->
+    <xsl:template match="tbody">
+        <xsl:apply-templates/>
     </xsl:template>
 
     <!-- Body: Abbildungen -->
