@@ -44,12 +44,12 @@
     unbemerkt aus den Daten verschwinden.
     
     Version: 2.1
-    Datum: 06.03.2025
+    Datum: 11.03.2025
     Autor: Benedikt Boyxen, DAI
     
         Changelog:
-    - Version 2.1: Änderung der Tabellenstruktur, damit Tabellen vom Viewer gerendert werden können. Das id-Attribut wurde von <table> auf <table-wrap> verschoben, das rules-Attribut wird nun in <table-wrap> gesetzt; und der Tag <tbody> wurde entfernt.
-    
+    - Version 2.1: Änderung der Tabellenstruktur, damit Tabellen vom Viewer gerendert werden können. Das id-Attribut wurde von <table> auf <table-wrap> verschoben, <table-wrap> enthält jetzt nur noch 'id' und 'position="anchor"'; zusätzlich werden nun <thead> und <tbody> entfernt.
+   
     Version:  2.0
     Datum: 2022-11-25
     Autor/Copyright: Fabian Kern, digital publishing competence
@@ -1054,7 +1054,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                 <xsl:call-template name="CreateTableID"/>
             </xsl:attribute>
             <xsl:attribute name="position" select="'anchor'"/>
-            <xsl:attribute name="rules">
+            <xsl:element name="table">
+                <xsl:attribute name="rules">
                 <!-- Abhängig von den Formaten an den Texten in den Zellen bestimmen wir hier,
                          ob die Tabellen ein rules-Attribut für die Linierung bekommt oder nicht -->
                 <xsl:choose>
@@ -1075,17 +1076,22 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
-            <xsl:element name="table">
+            
     <!-- Weitere Kind-Elemente werden bis auf <colgroup> schlicht durchgereicht -->
                 <xsl:apply-templates/>
-            </xsl:element>
+            </xsl:element> 
         </xsl:element>
     </xsl:template>
     
-    <!-- Wir filtern colgroup aus, da hier keine sinnvollen Informationen hängen -->
-    <xsl:template match="colgroup"/>
+    <xsl:template match="colgroup">
+        <!-- Wir filtern colgroup aus, da hier keine sinnvollen Informationen hängen -->
+    </xsl:template>
     
-    <!-- Entfernt <tbody>, aber behält seine Inhalte (also <tr>-Elemente) -->
+    <!-- Damit der Viewer die Tabellen rendert, müssen <thead> und <tbody> entfernt werden; die Inhalte (also <tr>-Elemente) bleiben erhalten -->
+    <xsl:template match="thead">
+        <xsl:apply-templates/>
+    </xsl:template>
+
     <xsl:template match="tbody">
         <xsl:apply-templates/>
     </xsl:template>
